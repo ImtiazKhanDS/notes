@@ -8,3 +8,4 @@ share: true
 4. pydantic
 5. fastapi
 6. llamaindex
+7. lm-format-enforcer
