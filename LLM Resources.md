@@ -26,6 +26,7 @@ share: true
 21. Pushing the Boundaries of LLMs: Sparse & Flash Attention, Quantisation, Pruning, Distillation, LORA youtu.be/mF7OM_XU2S4
   
 21. Kaggle's LLM Science Exam competition [https://lnkd.in/gvrFhfR8](https://lnkd.in/gvrFhfR8) made participants answer hard science questions. The winning solution showed Llama-2 70b with prompting gets 80%. + finetuning via SFT you get 86%. But + finetuning + RAG you get 93%. All had to undergo finetuning since the output was MMLU's classification type ie output A, B, C, D etc (so a classification problem).  
+22. https://maartengrootendorst.substack.com/p/a-visual-guide-to-mamba-and-state
   
 1. Together.ai all models in one place  
 2. Colm website for research ideas
