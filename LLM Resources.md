@@ -1,14 +1,17 @@
 ---
+id: LLM Resources
+aliases: []
+tags: []
 share: true
 ---
-1. Watched video by Andrew karpathy  
-2. Watch video by Jeremy howard  
-3. Explore langchain   
+1. Watch video by Andrew karpathy -- done  
+2. Watch video by Jeremy howard  -- done
+3. Explore langchain   --In-progress
 4. Explore Cody neovim  
-5. Explore llama2  
-6. Explore mixtral  
+5. Explore llama2  -- In-progress
+6. Explore mixtral  In-progress
 7. Explore mamba architecture  
-8. Explore Rag based approaches  
+8. Explore Rag based approaches -- In-progress  
 9. Search  
 10. Ranking  
 11. Personalisation of search results.  
