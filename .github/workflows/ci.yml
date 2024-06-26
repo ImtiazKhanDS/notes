@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially
+jobs:
+  build:
+    steps:
+    - uses: actions/checkout@v4
+    - uses: wranders/markdown-to-pages-action@v1
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        files: |-
+          README.md
+          test/README.md
+          test/nested/readme.md
+    - run: cp ./images ./dist/images/
+    - uses: actions/upload-pages-artifact@v3
+      with:
+        path: dist
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - uses: actions/deploy-pages@v4
+      id: deployment
