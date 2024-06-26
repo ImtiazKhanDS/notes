@@ -5,7 +5,7 @@ docker container run diamol/ch02-hello-diamol
 
 
 
-![[Pasted image 20240517055109.png]]
+![[Pastedimage_20240517055109.png]]
 
 ![[Pasted image 20240517055301.png]]
 
