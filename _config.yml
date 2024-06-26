@@ -11,3 +11,4 @@ relative_links:
   collections: true
 include:
   - README.md
+  - Health/Diet.md
