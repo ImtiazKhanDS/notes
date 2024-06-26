@@ -11,39 +11,18 @@ docker container run diamol/ch02-hello-diamol
 ![[Pasted image 20240517055301.png]]
 
 docker container ls
-
-`> docker container top f1` `PID     USER     TIME     COMMAND` `69622   root     0:00     /bin/sh`
-
-`> docker container logs f1` 
-`/ # hostname` 
-`f1695de1f2ec`
-
-`docker container inspect f1
- ``[`    `{`         `"Id": "f1695de1f2ecd493d17849a709ffb78f5647a0bcd9d10f0d97ada0fcb7b05e98",`         `"Created": "2019-06-20T12:13:52.8360567Z"`
-
-`docker container ls --all
-
-`CONTAINER ID IMAGE                    COMMAND                     CREATED              STATUS`f1695de1f2ec diamol/base              "/bin/sh"                   About an hour ago    Exited (0)`858a26ee2741 diamol/ch02-hello-diamol "/bin/sh -c ./cmd.sh"       3 hours ago          Exited (0)`2cff9e95ce83 diamol/ch02-hello-diamol "/bin/sh -c ./cmd.sh"       4 hours ago          Exited (0)
-
-`docker container run --detach --publish 8088:80 diamol/ch02-hello- diamol-web`
-
-- `--detach`--Starts the container in the background and shows the container ID
-- `--publish`--Publishes a port from the container to the computer
-  `
+docker container ls --all
 
 ![[Pasted image 20240525135346.png]]
-`
 
 docker container stats e53
-`CONTAINER ID NAME CPU % PRIV WORKING SET NET I/O`BLOCK I/O`e53085ff0cc4 reverent_dubinsky 0.36% 16.88MiB 250kB / 53.2kB`19.4MB / 6.21MB
-
 docker container rm --force $(docker container ls --all --quiet)
 
 **docker image pull diamol/ch03-web-ping**
 
 ![[Pasted image 20240526154234.png]]
 
-`docker container run -d --name web-ping diamol/ch03-web-ping`
+docker container run -d --name web-ping diamol/ch03-web-ping
 
 The `-d` flag is a short form of `--detach`, so this container will run in the background.
 
@@ -51,7 +30,8 @@ docker container logs web-ping
 
 ![[Pasted image 20240526225014.png]]
 
-`docker rm -f web-ping` `docker container run --env TARGET=google.com diamol/ch03-web-ping`
+docker rm -f web-ping 
+docker container run --env TARGET=google.com diamol/ch03-web-ping
 
 ![[Pasted image 20240526225230.png]]
 
@@ -143,3 +123,4 @@ Dockerfile for building a Node.js app with npm
 docker container run --name accesslog -d -p 801:80 --network nat access-log
 
 ![[Pasted image 20240626142524.png]]
+
