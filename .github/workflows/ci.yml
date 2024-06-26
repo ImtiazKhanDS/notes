@@ -1,51 +1,31 @@
-name: CI
+name: Deploy Jekyll site to GitHub Pages
 
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - main  # Set this to your default branch
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Convert Markdown to Pages
-      uses: wranders/markdown-to-pages-action@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        files: |-
-          README.md
-          test/README.md
-          test/nested/readme.md
+      - name: Setup Ruby
+        uses: actions/setup-ruby@v1
+        with:
+          ruby-version: '2.7'
 
-    - name: Copy images to dist folder
-      run: cp -r ./images ./dist/images/
+      - name: Install Jekyll and Bundler
+        run: gem install jekyll bundler
 
-    - name: Upload pages artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        path: dist
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
-      id: deployment
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
