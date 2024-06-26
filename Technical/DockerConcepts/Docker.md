@@ -1,43 +1,41 @@
+---
+id: Docker
+aliases: []
+tags: []
+---
+
 docker container run diamol/ch02-hello-diamol
 
-
-![[Pasted image 20240517055158.png]]
-
-
-
-![[Pastedimage_20240517055109.png]]
+![[Pasted_image_20240517055158.png]]
 
 ![[Pasted image 20240517055301.png]]
 
 docker container ls
 
-
- `> docker container top f1` `PID     USER     TIME     COMMAND` `69622   root     0:00     /bin/sh`
+`> docker container top f1` `PID     USER     TIME     COMMAND` `69622   root     0:00     /bin/sh`
 
 `> docker container logs f1` 
 `/ # hostname` 
 `f1695de1f2ec`
 
- `docker container inspect f1
+`docker container inspect f1
  ``[`    `{`         `"Id": "f1695de1f2ecd493d17849a709ffb78f5647a0bcd9d10f0d97ada0fcb7b05e98",`         `"Created": "2019-06-20T12:13:52.8360567Z"`
 
 `docker container ls --all
 
-``CONTAINER ID IMAGE                    COMMAND                     CREATED              STATUS``f1695de1f2ec diamol/base              "/bin/sh"                   About an hour ago    Exited (0)``858a26ee2741 diamol/ch02-hello-diamol "/bin/sh -c ./cmd.sh"       3 hours ago          Exited (0)``2cff9e95ce83 diamol/ch02-hello-diamol "/bin/sh -c ./cmd.sh"       4 hours ago          Exited (0)
-
+`CONTAINER ID IMAGE                    COMMAND                     CREATED              STATUS`f1695de1f2ec diamol/base              "/bin/sh"                   About an hour ago    Exited (0)`858a26ee2741 diamol/ch02-hello-diamol "/bin/sh -c ./cmd.sh"       3 hours ago          Exited (0)`2cff9e95ce83 diamol/ch02-hello-diamol "/bin/sh -c ./cmd.sh"       4 hours ago          Exited (0)
 
 `docker container run --detach --publish 8088:80 diamol/ch02-hello- diamol-web`
 
 - `--detach`--Starts the container in the background and shows the container ID
 - `--publish`--Publishes a port from the container to the computer
-`
+  `
 
 ![[Pasted image 20240525135346.png]]
 `
 
 docker container stats e53
-``CONTAINER ID NAME CPU % PRIV WORKING SET NET I/O``BLOCK I/O``e53085ff0cc4 reverent_dubinsky 0.36% 16.88MiB 250kB / 53.2kB``19.4MB / 6.21MB
-
+`CONTAINER ID NAME CPU % PRIV WORKING SET NET I/O`BLOCK I/O`e53085ff0cc4 reverent_dubinsky 0.36% 16.88MiB 250kB / 53.2kB`19.4MB / 6.21MB
 
 docker container rm --force $(docker container ls --all --quiet)
 
@@ -63,14 +61,13 @@ The Dockerfile is a simple script you write to package up an application--it’
 
 The web-ping Dockerfile
 
- `FROM diamol/node` 
+`FROM diamol/node` 
  `ENV TARGET="blog.sixeyed.com"`
   `ENV METHOD="HEAD"` 
   `ENV INTERVAL="3000"
   WORKDIR /web-ping` `
   COPY app.js .` `
   CMD ["node", "/web-ping/app.js"]`
-
 
 - `FROM` --Every image has to start from another image. In this case, the `web-ping`image will use the `diamol/node` image as its starting point. That image has Node.js installed, which is everything the web-ping application needs to run.
 - `ENV` --Sets values for environment variables. The syntax is `[key]="[value]"`, and there are three `ENV`instructions here, setting up three different environment variables.
@@ -80,7 +77,7 @@ The web-ping Dockerfile
 
 ![[Pasted image 20240526231013.png]]
 
- Turn this Dockerfile into a Docker image by running `docker` `image` `build` :
+Turn this Dockerfile into a Docker image by running `docker` `image` `build` :
 
 `docker image build --tag web-ping .`
 
@@ -94,13 +91,11 @@ List all the images where the tag name starts with “w”:
 
 You’ll see your web-ping image listed:
 
- `> docker image ls w*` `REPOSITORY TAG    IMAGE ID     CREATED        SIZE` `web-ping   latest f2a5c430ab2a 14 minutes ago 75.3MB`
-
+`> docker image ls w*` `REPOSITORY TAG    IMAGE ID     CREATED        SIZE` `web-ping   latest f2a5c430ab2a 14 minutes ago 75.3MB`
 
 Run a container from your own image to ping Docker’s website every five seconds:
 
 `docker container run -e TARGET=docker.com -e INTERVAL=5000 web-ping`
-
 
 ![[Pasted image 20240528074903.png]]
 
@@ -115,14 +110,11 @@ docker system df
 
 `docker image build -t web-ping:v2 .`
 
-
 ![[Pasted image 20240601224851.png]]
 
 Any Dockerfile you write should be optimized so that the instructions are ordered by how frequently they change--with instructions that are unlikely to change at the start of the Dockerfile, and instructions most likely to change at the end. The goal is for most builds to only need to execute the last instruction, using the cache for everything else. That saves time, disk space, and network bandwidth when you start sharing your images.
 
-
 ![[Pasted image 20240602054908.png]]
-
 
 ![[Pasted image 20240602055102.png]]
 
@@ -132,27 +124,22 @@ Containers access each other across a virtual network, using the virtual IP addr
 
 Now when you run containers you can explicitly connect them to that Docker network using the `--network` flag, and any containers on that network can reach each other using the container names.
 
-
 Run a container from the image, publishing port 80 to the host computer, and connecting to the `nat` network:
 
- `docker container run --name iotd -d -p 800:80 --network nat image-of-the-day`
-
-
+`docker container run --name iotd -d -p 800:80 --network nat image-of-the-day`
 
 Dockerfile for building a Node.js app with npm
 
- `FROM diamol/node AS builder`  
+`FROM diamol/node AS builder`  
  `WORKDIR /src` 
  `COPY src/package.json .`  
  `RUN npm install`  `# app` `FROM diamol/node`  `EXPOSE 80` `CMD ["node", "server.js"]`  `WORKDIR /app` `COPY --from=builder /src/node_modules/ /app/node_modules/` `COPY src/ .`
 
-
 ![[Pasted image 20240604074055.png]]
-
 
 `cd ch04/exercises/access-log` 
 `docker image build -t access-log .`
 
- docker container run --name accesslog -d -p 801:80 --network nat access-log
+docker container run --name accesslog -d -p 801:80 --network nat access-log
 
 ![[Pasted image 20240626142524.png]]
