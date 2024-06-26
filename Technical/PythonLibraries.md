@@ -10,4 +10,5 @@ share: true
 6. pandas
 7. matplotlib
 8. nbdev
+9. pandas
 
