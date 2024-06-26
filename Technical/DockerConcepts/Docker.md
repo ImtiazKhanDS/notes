@@ -122,5 +122,4 @@ Dockerfile for building a Node.js app with npm
 
 docker container run --name accesslog -d -p 801:80 --network nat access-log
 
-![[Pasted image 20240626142524.png]]
-
+![[Pasted_image_20240626142524.png]]
