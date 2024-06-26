@@ -3,3 +3,11 @@ description: A website generated from my Obsidian notes
 theme: minima
 
 # Other Jekyll configuration options
+
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - README.md
