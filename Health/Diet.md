@@ -1,8 +1,10 @@
 
 ***Master Class Gut Health***
-							
-							   All disease begins in the gut.
-												   - Hippocrates
+
+
+All diseases begins in the gut 
+                    - Hippocrates
+
 
 ***Daily Essentials***
 
