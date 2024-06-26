@@ -8,6 +8,5 @@ Building a second brain here below.
 
 ### Technical
 
-1. [Docker Concepts](Technical/DockerConcepts/Docker.md)
-2. [LLM Resources](Technical/LLMResources.md)
-3. [Python Stack](Technical/PythonLibraries.md)
+1. [LLM Resources](Technical/LLMResources.md)
+2. [Python Stack](Technical/PythonLibraries.md)
