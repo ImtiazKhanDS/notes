@@ -29,5 +29,12 @@
      1. Identity : I am a person who writes each day
      2. System : Write 100 words each day
 5. Example : To get in shape
-6.
+     1. Identity : I am a person who doesn’t miss workouts
+     2. System : Wake up early , get dressed and exercise.
+ 6. Example : To improve your relationship 
+     1. I am a type of person who makes partner’s life easier 
+     2. Find one thing each day that I can take of their plate
+7. Creating a new habit
+     1. Take your ultimate goal
+     2. 
 
