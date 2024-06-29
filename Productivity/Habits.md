@@ -55,4 +55,8 @@
    2. Example Diderot effect : I go to the washroom -> I wash my hands -> Dry my hands -> Use the towel -> Oh I need to do the laundry -> Oh I have to go to buy some detergents.
    3. The momentum that feeds from one action to another in Diderot effect can also be used while building habits
    4. By this you not only make it easy for yourself to show up every day but also, you make it easy to win every day.
-   5. Template : I will perform X behaviour on this day  at this place on this Z time?
+   5. Template Have clear plan: I will perform X behaviour on this day  at this place on this time?
+   6. Example : I will get a flue  shot on November 14 at government hospital at 9 AM
+   7. The more you do these specific behaviours the more momentum you gain the more rewarding it will be.
+   8. You don’t need motivation what you need is implementation intentions with which you are likely to do something than waiting for motivation to strike you.
+   9. Behaviour change starts with 
