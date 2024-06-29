@@ -59,4 +59,5 @@
    6. Example : I will get a flue  shot on November 14 at government hospital at 9 AM
    7. The more you do these specific behaviours the more momentum you gain the more rewarding it will be.
    8. You don’t need motivation what you need is implementation intentions with which you are likely to do something than waiting for motivation to strike you.
-   9. Behaviour change starts with 
+   9. Behaviour change starts with self awareness 
+   10. Set an implementation intention.
