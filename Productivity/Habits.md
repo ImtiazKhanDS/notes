@@ -40,5 +40,8 @@
      3. Figure out a process that reinforces being that person.
  
  **The Habit Feedback loop**
-  1. 
+  1. *Habit* : The strategies we follow to solve the problems we repeatedly face.
+  2. Four stages of a habit feedback loop
+     1. Cue : The trigger that tells the brain to initiate the habit 
+     2. Craving : The desire or motivation 
 
