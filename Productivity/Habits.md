@@ -53,4 +53,6 @@
 1. **Make it obvious**
    1. Diderot effect: When one action leads to another action 
    2. Example Diderot effect : I go to the washroom -> I wash my hands -> Dry my hands -> Use the towel -> Oh I need to do the laundry -> Oh I have to go to buy some detergents.
-   3. The momentum that feeds from one action to another in di
+   3. The momentum that feeds from one action to another in Diderot effect can also be used while building habits
+   4. By this you not only make it easy for yourself to show up every day but also, you make it easy to win every day.
+   5. Template : I will perform X behaviour on this day  at this place on this Z time?
