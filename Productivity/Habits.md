@@ -46,4 +46,4 @@
      2. **Craving** : The desire or motivation for a particular outcome
      3. **Response** : The thought or action you take to form the habit
      4. **Reward** : The payoff you get from the habit
- 3. 
+ 3. The habits that you have are the optimal way on
