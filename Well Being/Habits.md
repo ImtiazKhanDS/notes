@@ -25,16 +25,17 @@
 1. The stories that you tell about yourself are they serving you or hindering you ?
 2. Determine who you want to become
 3. Create habits that support that identity 
-4. Example :Become a writer
+4. Example :*Become a writer*
      1. Identity : I am a person who writes each day
      2. System : Write 100 words each day
-5. Example : To get in shape
+5. Example : *To get in shape*
      1. Identity : I am a person who doesn’t miss workouts
      2. System : Wake up early , get dressed and exercise.
- 6. Example : To improve your relationship 
+ 6. Example : *To improve your relationship*
      1. I am a type of person who makes partner’s life easier 
      2. Find one thing each day that I can take of their plate
-7. Creating a new habit
+7. **Creating a new habit**
      1. Take your ultimate goal
-     2. 
+     2. Translate the goal into an identity
+     3. Figure out a process that reinforces being that person.
 
