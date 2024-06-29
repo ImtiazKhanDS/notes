@@ -17,4 +17,9 @@
 6. Goals have an endpoint , systems last forever 
 7. If you reclaim the habit as fast as you could the breaking of it doesn’t matter much
 8. Goals are about results, systems are about process
-9. Start with systems 
+9. Start with systems when you want to change your goals
+10. Goals are short term , systems are long term.
+
+**Habits make our Identity** 
+
+1. The stories that you tell about yourself are they serving you or hindering you ?
