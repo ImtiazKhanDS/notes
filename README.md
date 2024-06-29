@@ -8,7 +8,7 @@ Building a second brain here below.
 
 ### Productivity
 
-1.  [Atomic Habits](Productivity/habits.md)
+1.  [Atomic Habits](Productivity/Habits.md)
 
 ### Technical
 
