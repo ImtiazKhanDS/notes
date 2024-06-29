@@ -38,4 +38,7 @@
      1. Take your ultimate goal
      2. Translate the goal into an identity
      3. Figure out a process that reinforces being that person.
+ 
+ **The Habit Feedback loop**
+  1. 
 
