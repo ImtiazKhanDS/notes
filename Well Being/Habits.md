@@ -23,3 +23,11 @@
 **Habits make our Identity** 
 
 1. The stories that you tell about yourself are they serving you or hindering you ?
+2. Determine who you want to become
+3. Create habits that support that identity 
+4. Example :Become a writer
+     1. Identity : I am a person who writes each day
+     2. System : Write 100 words each day
+5. Example : To get in shape
+6.
+
