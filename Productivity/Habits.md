@@ -50,3 +50,7 @@
 
 **Laws of behavioural change**
 
+1. **Make it obvious**
+   1. Diderot effect: When one action leads to another action 
+   2. Example Diderot effect : I go to the washroom -> I wash my hands -> Dry my hands -> Use the towel -> Oh I need to do the laundry -> Oh I have to go to buy some detergents.
+   3. The momentum that feeds from one action to another in di
