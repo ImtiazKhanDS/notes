@@ -64,3 +64,6 @@
 2. **Make it Attractive**
    1. Getting somebody involved in the habit
    2. Come up with a ritual that feels right and makes you plugged in.
+   3. Reframe your mindset , instead of saying oh I have to do lot of work say I get the opportunity to do product work.
+   4. Change Obligation to opportunity.
+   5. Socialize your habit , because social expectations help you stay on the habit.
