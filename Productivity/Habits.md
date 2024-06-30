@@ -61,3 +61,6 @@
    8. You don’t need motivation what you need is implementation intentions with which you are likely to do something than waiting for motivation to strike you.
    9. Behaviour change starts with self awareness 
    10. Set an implementation intention.
+2. **Make it Attractive**
+   1. Getting somebody involved in the habit
+   2. Come up with a ritual that feels right and makes you plugged in.
