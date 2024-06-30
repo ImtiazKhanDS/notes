@@ -67,7 +67,8 @@
    2. Come up with a ritual that feels right and makes you plugged in.
    3. Reframe your mindset , instead of saying oh I have to do lot of work say I get the opportunity to do product work.
    4. Change Obligation to opportunity.
-   5. Socialise your habit , because social expectations help you stay on the habit.
+   5. Social expectations help you stay on the habit.
    6. The more attractive a behaviour the forming it is.
    7. Reprogram your story
    8. Reframe your mindset from “have to” to “get to”
+   9. Socialise your habit
