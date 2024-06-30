@@ -72,3 +72,5 @@
    7. Reprogram your story
    8. Reframe your mindset from “have to” to “get to”
    9. Socialise your habit
+3. **Make it easy**
+   1. 
