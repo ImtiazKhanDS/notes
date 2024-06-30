@@ -73,4 +73,9 @@
    8. Reframe your mindset from “have to” to “get to”
    9. Socialise your habit
 3. **Make it easy**
-   1. 
+   1. Motion is often preparation , research or planning or the things that you do before you take an action 
+   2. Action is the type of thing that delivers the result that you are looking for. 
+   3. Example : Reading is motion , writing is action.
+   4. Example : Going to the gym and talking to a personal trainer is a motion whereas getting under the bar and doing a set of squats is an action.
+   5. Motion is fine if it complements the action you are taking.
+   6. Habit shaping : You start an easy version of the 
