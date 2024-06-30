@@ -78,4 +78,7 @@
    3. Example : Reading is motion , writing is action.
    4. Example : Going to the gym and talking to a personal trainer is a motion whereas getting under the bar and doing a set of squats is an action.
    5. Motion is fine if it complements the action you are taking.
-   6. Habit shaping : You start an easy version of the 
+   6. Habit shaping : You start with an easy version of the habit , you build it more gradually into a larger version.
+   7. Example : You start running with 1 mile then 2 miles , then 5 miles , later half marathon, leading up to a marathon.
+   8. 2minute rule : Whatever habit you are trying to create , can you roll it down to 2 minutes.
+   9. Example : Read 30 books an year, 
