@@ -81,4 +81,7 @@
    6. Habit shaping : You start with an easy version of the habit , you build it more gradually into a larger version.
    7. Example : You start running with 1 mile then 2 miles , then 5 miles , later half marathon, leading up to a marathon.
    8. 2minute rule : Whatever habit you are trying to create , can you roll it down to 2 minutes.
-   9. Example : Read 30 books an year, 
+   9. Example : Read 30 books an year  -> 2minute rule -> read 1 page 
+   10. Know the difference between action and motion
+   11. Shape your habits to make them stick
+   12. Use the 2 minute rule.
