@@ -143,3 +143,7 @@
 **Make it difficult** : Substitute with something that gives the same feeling or Reduce the consumption.
 
 **Make it unsatisfying**: Accomplish the first three steps this takes care of itself.
+
+**5 pm to 9 pm habits that affect 9 am to 5 pm**
+
+
