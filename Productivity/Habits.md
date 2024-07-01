@@ -146,7 +146,7 @@
 
 **5 pm to 9 pm habits that affect 9 am to 5 pm**
 
-1. Scrolling mindlessly is the prolly the greatest interruption we all have 
+1. Scrolling mindlessly is the probably the greatest interruption we all have 
 2. One space one use
 3. If you can have a separate room or zone then work can happen in there and personal life can happen elsewhere. 
 4. You want fewer steps between you and desired behaviour and more steps between you and undesired behaviour 
