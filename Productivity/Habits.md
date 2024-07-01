@@ -151,3 +151,6 @@
 3. If you can have a separate room or zone then work can happen in there and personal life can happen elsewhere. 
 4. You want fewer steps between you and desired behaviour and more steps between you and undesired behaviour 
 5. Leave your mobile in another room , don’t take it to your home office 
+6. Time will magnify what every you feed it
+7. If you have good habits time becomes your ally , if you have bad habits time becomes your enemy
+8. 
