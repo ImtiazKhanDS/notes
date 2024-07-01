@@ -85,3 +85,9 @@
    10. Know the difference between action and motion
    11. Shape your habits to make them stick
    12. Use the 2 minute rule.
+4. **Make it satisfying** 
+   1. A lot of returns while building habits are delayed.
+   2. Example : You are working out since a month but no signs of change 
+   3. It’s better to have a long time line but also have some signals of progress each day.
+   4. Signals of progress gives you momentum
+   5. Visual measures help you 
