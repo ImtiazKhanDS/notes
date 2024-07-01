@@ -116,7 +116,7 @@
 
 **2. Question** : How do I make a habit of saving money for a house ?
 
-**Answer**:  Productivity is different for different individuals, So let’s take writing as an example.
+**Answer**:  collection of financial habits that make you reach the goal.
 
 **Goal** : To save for a house
 **System** : Collection of habits that lead to saving finances every day.
@@ -129,10 +129,9 @@
 
 **Make it satisfying**: Ultimately purchasing the house which makes it satisfying.
 
-**3. Question** : How do I make a habit of saving money for a house ?
+**3. Question** : How can I apply the four laws in quitting smoking  ?
 
-**Answer**:  Productivity is different for different individuals, So let’s take writing as an example.
-
+**Answer**:  For building 
 **Goal** : To save for a house
 **System** : Collection of habits that lead to saving finances every day.
 
