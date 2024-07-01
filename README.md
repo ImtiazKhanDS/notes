@@ -9,8 +9,3 @@ Building a second brain here below.
 ### Productivity
 
 1.  [Atomic Habits](Productivity/Habits.md)
-
-### Technical
-
-1. [LLM Resources](Technical/LLMResources.md)
-2. [Python Stack](Technical/PythonLibraries.md)
