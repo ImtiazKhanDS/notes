@@ -90,4 +90,8 @@
    2. Example : You are working out since a month but no signs of change 
    3. It’s better to have a long time line but also have some signals of progress each day.
    4. Signals of progress gives you momentum
-   5. Visual measures help you 
+   5. Visual measures help demonstrate your progress, and making progress is highly satisfying.
+   6. We likely stick to a habit when our experience is satisfying 
+   7. Reward the good habit immediately 
+   8. What is immediately rewarded is repeated 
+   9. Track progress to fe successful 
