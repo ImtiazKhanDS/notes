@@ -109,4 +109,22 @@
 
 **Make it attractive** : Write about what interests you
 
-Make it easy : Just write one sentence 
+**Make it easy** : Just write one sentence 
+
+**Make it satisfying**: Reward yourself with a treat , get a coffee or  use social media browse for 15 mins etc
+
+
+**Question** : How do I make a habit of saving money for a house ?
+
+**Answer**:  Productivity is different for different individuals, So let’s take writing as an example.
+
+**Goal** : To save for a house
+**System** : Collection of habits that lead to saving finances every day.
+
+**Make it obvious** : Write the topic that you want to write about and stick it on the keyboard or keep the google doc open with the topic name
+
+**Make it attractive** : Write about what interests you
+
+**Make it easy** : Just write one sentence 
+
+**Make it satisfying**: Reward yourself with a treat , get a coffee or  use social media browse for 15 mins etc
