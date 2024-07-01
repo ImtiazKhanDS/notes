@@ -131,11 +131,12 @@
 
 **3. Question** : How can I apply the four laws in quitting smoking  ?
 
-**Answer**:  For building 
-**Goal** : To save for a house
-**System** : Collection of habits that lead to saving finances every day.
+**Answer**:  For building a habit you make it obvious, attractive easy and satisfying but for breaking it you do the inverse , you make it invisible, unattractive, difficult and unsatisfying.
 
-**Make it obvious** : Use a spread sheet , to show the amount of money you saved per week.
+**Goal** : Quit Smoking
+**System** : Collection of habits that lead to quitting smoking.
+
+**Make it invisible** : Change your commute to avoid where you buy cigarettes 
 
 **Make it attractive** : Envision the home that you like to have.
 
