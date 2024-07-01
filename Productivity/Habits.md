@@ -95,3 +95,9 @@
    7. Reward the good habit immediately 
    8. What is immediately rewarded is repeated 
    9. Track progress to become successful 
+
+**Unpacking the Most common Habits**
+
+Question : I want to be more productive and avoid procrastination, How do I apply 4 laws of behaviour change?
+
+Answer: 
