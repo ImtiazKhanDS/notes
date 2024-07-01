@@ -155,3 +155,4 @@
 7. If you have good habits time becomes your ally , if you have bad habits time becomes your enemy
 8. Don’t worry too much about your current position think about your current trajectory, is it becoming 1 % better or 1% worse ?
 9. Scale your habits down , make it simple , utilise those four laws and try to master the art of showing up.
+10. Bias towards action to achieve remarkable results
