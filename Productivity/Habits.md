@@ -98,6 +98,15 @@
 
 **Unpacking the Most common Habits**
 
-Question : I want to be more productive and avoid procrastination, How do I apply 4 laws of behaviour change?
+**Question** : I want to be more productive and avoid procrastination, How do I apply 4 laws of behaviour change?
 
-Answer: 
+**Answer**:  Productivity is different for different individuals, So let’s take writing as an example.
+
+**Goal** : To write every day
+**System** : Collection of habits that lead to writing every day.
+
+**Make it obvious** : Write the topic that you want to write about and stick it on the keyboard or keep the google doc open with the topic name
+
+**Make it attractive** : Write about what interests you
+
+Make it easy : Just write one sentence 
