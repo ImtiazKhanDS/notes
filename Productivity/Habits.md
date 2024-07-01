@@ -94,4 +94,4 @@
    6. We likely stick to a habit when our experience is satisfying 
    7. Reward the good habit immediately 
    8. What is immediately rewarded is repeated 
-   9. Track progress to fe successful 
+   9. Track progress to fsuccessful 
