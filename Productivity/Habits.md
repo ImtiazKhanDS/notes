@@ -138,8 +138,8 @@
 
 **Make it invisible** : Change your commute to avoid where you buy cigarettes 
 
-**Make it attractive** : Envision the home that you like to have.
+**Make it unattractive** : Do not identify yourself as a smoker
 
-**Make it easy** : Automating your savings from your bank account to savings account monthly or weekly
+**Make it difficult** : Substitute with something that gives the same feeling or Reduce the consumption.
 
-**Make it satisfying**: Ultimately purchasing the house which makes it satisfying.
+**Make it unsatisfying**: Accomplish the first three steps this takes care of itself.
