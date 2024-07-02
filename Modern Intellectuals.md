@@ -18,4 +18,6 @@
 
 1. You don’t have to talk truth to power , you don’t have to tell the CEO of Exxon Mobil that use of fossil fuels is going to destroy humans , He already knows that for 40 years.
 2. You have to talk to the powerless
-3. We don’t know the truth we do our best which is 
+3. We don’t own the truth , We don’t know the truth , we do our best which is try to get the powerless to think for themselves
+4. Some Truths can only be achieved by activism, For example women’s rights , civil rights etc.
+5. 
