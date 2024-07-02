@@ -11,4 +11,6 @@
 3. Tell the stories that entertain and engage you 
 4. Practice writing for someone who loves you
 5. If something is fun to read that is your voice .
-6. If you read it aloud you will notice something’s that are dead spots 
+6. If you read it aloud you will notice something’s that are dead spots and boring , you can catch those and change it.
+7. Try your story with a group of friends observe their reaction and see where it’s working .
+8. Ears understand the emotion of a story eyes don’t, If you list
