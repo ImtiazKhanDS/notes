@@ -1,5 +1,5 @@
-
-~ In conversation with Noam Chomsky
+**Media Today**
+                 ~ Noam Chomsky
 
 1. When you go to social media , you are going into a self reinforcing bubble where your own views are replicated and expanded.
 2. In some sense it’s polarising and creating extreme views.
@@ -24,4 +24,3 @@
 6. There is a large decline in the unions. What is interesting is everybody is becoming isolated , common opinions and perspectives which forms a union are demolished because of this isolated world. This way it’s easy to persuade you or me to join them instead of opposing them. They feed their ideologies into you through technology and you lose the power of thinking independently.
 7. Example : Climate scientists have been warning that by the end of this century Eastern Mediterranean is heating more rapidly than the rest of the world. Temperatures will have risen 5 degree Celsius. Sea levels will have risen by 2 to 2.5 metres ~ 10 feet roughly , what happens when sea level rises to 10 feet ? All the settled areas will be inundated.
 8. We are racing to disaster when we know how to avoid it.
-9. 

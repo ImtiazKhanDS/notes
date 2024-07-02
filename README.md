@@ -9,3 +9,7 @@ Building a second brain here below.
 ### Productivity
 
 1.  [Atomic Habits](Productivity/Habits.md)
+
+### Media
+
+1.   [Media Today](Media/Media.md)
