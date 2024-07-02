@@ -2,14 +2,6 @@ Building a second brain here below.
 
 ### All Posts
 
-### Health
-
-1. [Gut Health Diet](Health/Diet.md)
-
-### Productivity
-
-1.  [Atomic Habits](Productivity/Habits.md)
-
-### Media
-
-1.   [Media Today](Media/Media.md)
+ [Gut Health Diet](Health/Diet.md)
+[Atomic Habits](Productivity/Habits.md)
+[Media Today](Media/Media.md)
