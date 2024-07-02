@@ -2,7 +2,7 @@ Building a second brain here below.
 
 ### All Posts
 
-3. [Media Today](Media/Media.md)
+-  [Media Today](Media/Media.md)
 
 2. [Atomic Habits](Productivity/Habits.md)
 
