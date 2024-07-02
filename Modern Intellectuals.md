@@ -20,4 +20,5 @@
 2. You have to talk to the powerless
 3. We don’t own the truth , We don’t know the truth , we do our best which is try to get the powerless to think for themselves
 4. Some Truths can only be achieved by activism, For example women’s rights , civil rights etc.
-5. 
+5. What people should be worried about now are institutional structures which are directed to profit and power for the few.
+6. There is a large decline in the unions. What is interesting is everybody is becoming isolated , common opinions and perspectives which forms a union are demolished because of this isolated world. This way it’s easy to persuade you are me to join them instead of opposing them. They feed their ideologies into you through technology and you lose the power of thinking independently.
