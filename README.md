@@ -4,6 +4,6 @@ Building a second brain here below.
 
 -  [Media Today](Media/Media.md)
 
-2. [Atomic Habits](Productivity/Habits.md)
+-  [Atomic Habits](Productivity/Habits.md)
 
-1. [Gut Health Diet](Health/Diet.md)
+-  [Gut Health Diet](Health/Diet.md)
