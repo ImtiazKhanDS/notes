@@ -9,4 +9,6 @@
 1. You need a story because facts don’t stick story does.
 2. The simplest mistake that writers think is that the material is inside them as opposed to outside them 
 3. Tell the stories that entertain and engage you 
-4. 
+4. Practice writing for someone who loves you
+5. If something is fun to read that is your voice .
+6. If you read it aloud you will notice something’s that are dead spots 
