@@ -12,4 +12,10 @@
 7. Critical voices are not welcomed, Those who support state powers are welcomed and honoured but those who analyse and criticise state crimes are vilified and condemned.
 8. If you believe in freedom of speech you have to believe in freedom of speech for views you don’t like or despise.
 9. Go back to classical Greece there was a man who was made to commit suicide because he was corrupting the youth of Athens by asking some many questions . His name was Socrates. Say a thing against a system you’re out.
-10. Large countries like United States can manufacture consent and get what 
+10. Large countries like United States can manufacture consent and get what they want , an example : Cuba war 182 countries opposed this war only US and Israel supported this war.
+
+**Turning Truth into Activism**
+
+1. You don’t have to talk truth to power , you don’t have to tell the CEO of Exxon Mobil that use of fossil fuels is going to destroy humans , He already knows that for 40 years.
+2. You have to talk to the powerless
+3. We don’t know the truth we do our best which is 
