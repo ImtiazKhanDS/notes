@@ -22,4 +22,7 @@
 14. Boil your story down to the essence and then you explode all your thoughts around it. The essence is the hub and all your points around are perspectives, facts etc.
 15. You want the topic to lead you to the character or vice versa , they go together hand in hand.
 16. Find a character you want to follow
-17. 
+17. Allow characters to take over your story even if conventional wisdom is that’s not about who you are writing a story about.
+18. Taking somebody who is unimportant and saying no this person is very important to the story.
+19. Be curious about your characters.
+20. You can move the spotlight to the characters you want to show, Don’t write abou
