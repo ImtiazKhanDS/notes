@@ -19,4 +19,7 @@
 11. Pay attention to your curiosity because your curiosity will lead to a passion on the page
 12. You can make anything interesting or important by just the power of your curiosity 
 13. Some of the best books written about are things that you would never imagine a book would be written about.
-14. 
+14. Boil your story down to the essence and then you explode all your thoughts around it. The essence is the hub and all your points around are perspectives, facts etc.
+15. You want the topic to lead you to the character or vice versa , they go together hand in hand.
+16. Find a character you want to follow
+17. 
