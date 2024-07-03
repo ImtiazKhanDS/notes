@@ -16,3 +16,7 @@
 8. Ears understand the emotion of a story eyes don’t, If you listen to a story you get emotionally connected to it rather than when you just read it with your eyes.
 9. Don’t go hunting for ideas , just be alive what interests you in the world.
 10. When you find something interesting just note it down , come back to it later.
+11. Pay attention to your curiosity because your curiosity will lead to a passion on the page
+12. You can make anything interesting or important by just the power of your curiosity 
+13. Some of the best books written about are things that you would never imagine a book would be written about.
+14. 
