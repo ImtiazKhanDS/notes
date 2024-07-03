@@ -27,4 +27,6 @@
 19. Be curious about your characters.
 20. You can move the spotlight to the characters you want to show, Don’t stick to write about characters that are famous , In that case you will be saying something which the reader knows already.
 21. Find the motive behind your characters 
-22. Find the gold by thinking about things differently , some view which is not expressed, some character which other people think unimportant, some story that no 
+22. Find the gold by thinking about things differently , some view which is not expressed, some character which other people think unimportant, some story that no one cares about.
+23. Characters motive : Why they do what they do ?
+24. 
