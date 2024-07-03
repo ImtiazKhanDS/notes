@@ -29,4 +29,11 @@
 21. Find the motive behind your characters 
 22. Find the gold by thinking about things differently , some view which is not expressed, some character which other people think unimportant, some story that no one cares about.
 23. Characters motive : Why they do what they do ?
-24. 
+    1. Look at their past
+    2. What are their triggers ?
+    3. What are their obsessions?
+    4. What are their goals ?
+    5. What are their needs ?
+24. People do things for a reason just be alive to what that reason could be.
+25. Listen to how people tell stories
+26. 
