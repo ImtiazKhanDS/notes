@@ -37,4 +37,8 @@
 24. People do things for a reason just be alive to what that reason could be.
 25. Listen to how people tell stories
 26. Some people tell the stories where they are always the victim , some people tell the stories where they are the smartest person, some people tell stories where they are lucky or grateful. It’s your job as a writer to only write how you see it and hope things may fall in.
-27. An analogy of a writer is like a tape recorder , looking at your own recording first time on a tape recorder you may say , that’s not me or I don’t know I sounded like that or that’s  little different or I don’t want to hear it . But
+27. An analogy of a writer is like a tape recorder , looking at your own recording first time on a tape recorder you may say , that’s not me or I don’t know I sounded like that or that’s  little different or I don’t want to hear it . But the tape recorder is not lying, it actually giving you what you sound like. A writers job is to be the tape recorder 
+28. Getting your subjects to open up
+29. You have to create an environment for your subject where they feel safe to open up.
+30. Make yourself an useful listener 
+31. 
