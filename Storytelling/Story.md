@@ -41,4 +41,9 @@
 28. Getting your subjects to open up
 29. You have to create an environment for your subject where they feel safe to open up.
 30. Make yourself an useful listener 
-31. 
+
+**Tackles Sub-primes Crypto and Premonitions**
+
+1. Slow down the action 
+2. Even casual conversations could lead to your next story.
+3. 
