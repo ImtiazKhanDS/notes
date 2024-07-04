@@ -79,4 +79,7 @@
 27. Walk a mile in your characters shoes.
 28. A discovery process in the environment of a character could lead to gold.
 29. Insist on your view of the character and story. You will likely running against the characters view of themselves.
-30. 
+
+**Start to Finish**
+
+1. 
