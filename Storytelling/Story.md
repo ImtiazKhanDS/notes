@@ -61,3 +61,6 @@
    3. Green : explanations
 10. Using these card structures and reshuffling them you can inexpensively play with the structure and gives chance to argue with your own structure.
 11. Figure out your beginning and end before you start.
+12. If you have a beginning and ending then you can create a relationship between those two structures , For example end where you have begun.
+13. There’s something timeless about the structure where you come back to the place where you started.
+14. 
