@@ -63,4 +63,6 @@
 11. Figure out your beginning and end before you start.
 12. If you have a beginning and ending then you can create a relationship between those two structures , For example end where you have begun.
 13. There’s something timeless about the structure where you come back to the place where you started.
-14. 
+14. General advice : shorter is always better, if you want to write a 500 page book , make it 280. If you want to write a 30 word sentence make it 15.
+15. Verbosity gets in the way of meaning and connecting so it’s like make it punchier.
+16. Infuse your characters with personal stakes.
