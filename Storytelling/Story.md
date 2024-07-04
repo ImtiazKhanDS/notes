@@ -46,4 +46,4 @@
 
 1. Slow down the action 
 2. Even casual conversations could lead to your next story.
-3. 
+3. Look for friction between perception and reality 
