@@ -76,4 +76,5 @@
 24. Ask your character for information on multiple situations 
 25. Know the character’s environment 
 26. If it’s in your head as a picture it’s so much easier to paint that picture in readers mind.
-27. 
+27. Walk a mile in your characters shoes.
+28. A discovery process in the environment of a character could lead to gold.
