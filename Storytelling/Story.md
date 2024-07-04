@@ -47,3 +47,5 @@
 1. Slow down the action 
 2. Even casual conversations could lead to your next story.
 3. Look for friction between perception and reality 
+4. Places where the whole world is looking wrong and you can show it . It’s a huge opportunity when you can explain a mistake the world is making in the form of a character
+5. 
