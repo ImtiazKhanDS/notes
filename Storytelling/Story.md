@@ -54,4 +54,10 @@
    3. The stories provide multiple hooks to pique the interest of your audience 
 6. Broadly what I am doing in this world as a writer is filtering what is interesting and organising it into a story.
 7. The process starts by talking to people or wandering around and observing scenes
-8. Building blocks of a story are characters scenes and expl
+8. Building blocks of a story are characters scenes and explanations 
+9. Cards
+   1. Orange : characters
+   2. Yellow : scenes
+   3. Green : explanations
+10. Using these card structures and reshuffling them you can inexpensively play with the structure and gives chance to argue with your own structure.
+11. Figure out your beginning and end before you start.
