@@ -48,4 +48,10 @@
 2. Even casual conversations could lead to your next story.
 3. Look for friction between perception and reality 
 4. Places where the whole world is looking wrong and you can show it . It’s a huge opportunity when you can explain a mistake the world is making in the form of a character
-5. 
+5. Parallel plot structure
+   1. Incorporate multiple stories linked by common characters or themes
+   2. The stories unfold concurrently 
+   3. The stories provide multiple hooks to pique the interest of your audience 
+6. Broadly what I am doing in this world as a writer is filtering what is interesting and organising it into a story.
+7. The process starts by talking to people or wandering around and observing scenes
+8. Building blocks of a story are characters scenes and expl
