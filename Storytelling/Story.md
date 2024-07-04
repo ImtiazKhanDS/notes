@@ -69,4 +69,6 @@
 17. The most difficult subjects can be explained to the most slow-witted man if he has not formed any idea of them already , but the simplest thing cannot be made clear to the most intelligent man if he is firmly persuaded that he knows already.
 18. The trick to explain complex things is to create the characters that you are attached to.
 19. Don’t feel the need to prove how smart you are 
-20. 
+20. Make the reader feel smart rather than making yourself smart and reader feel stupid through your writing. Make the reader understand.
+21. Some of the things you should simplify and leave it out to make the reader understand, knowingly that it’s a vulnerability since you didn’t go to the details , There would be someone who would question that, But you have to take that risk so that reader gets it in a digestible way.
+22. 
