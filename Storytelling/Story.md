@@ -82,4 +82,4 @@
 
 **Start to Finish**
 
-1. 
+1. Make the book into little manageable tasks
