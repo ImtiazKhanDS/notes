@@ -91,4 +91,5 @@
 7. Create in the morning and edit it in the evening 
 8. Have the nerve to be yourself
 9. Write for someone you love or trust
-10. 
+10. If you are going to do anything meaningful someone is not gonna like it.
+11. 
