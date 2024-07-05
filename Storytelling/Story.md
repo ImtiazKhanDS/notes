@@ -86,4 +86,9 @@
 2. Have your own space and environment where you don’t get distracted 
 3. Create a small private space so that you associate that place with writing so that you minimise distractions 
 4. It’s useful to have a routine but don’t be superstitious. Make your Routine loose or flexible
-5. Don’t get up until you have 1000 words
+5. Don’t get up until you have 1000 words.
+6. Make your self criticism positive 
+7. Create in the morning and edit it in the evening 
+8. Have the nerve to be yourself
+9. Write for someone you love or trust
+10. 
