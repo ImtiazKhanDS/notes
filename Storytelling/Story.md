@@ -82,4 +82,8 @@
 
 **Start to Finish**
 
-1. Make the book into little manageable tasks
+1. Make the book into little manageable tasks.
+2. Have your own space and environment where you don’t get distracted 
+3. Create a small private space so that you associate that place with writing so that you minimise distractions 
+4. It’s useful to have a routine but don’t be superstitious. Make your Routine loose or flexible
+5. Don’t get up until you have 1000 words
