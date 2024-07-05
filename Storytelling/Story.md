@@ -92,4 +92,5 @@
 8. Have the nerve to be yourself
 9. Write for someone you love or trust
 10. If you are going to do anything meaningful someone is not gonna like it.
-11. 
+11. Reward is that you see the human imagination of society’s judgement where your character rises out of the judgement and shows to all why no one can be judged.
+12. Knowing your ending 
