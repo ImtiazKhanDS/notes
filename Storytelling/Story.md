@@ -97,5 +97,6 @@
 13. The ending guides you to an emotional place that informs the rest of the story
 14. Knowing what happens to your character at the end will help frame and guide your writing 
 15. Don’t start off writing a particular book , let the material take you to write
-16. Funny stories that end in a dark place is the theme of Michael Lewis books
-17. 
+16. Getting into someone’s world and asking about their experience on a specific question would help you more on the story
+17. Just adopt being curious and find stories in everything you see.
+18. Funny stories that end in a dark place is the theme of Michael Lewis books
