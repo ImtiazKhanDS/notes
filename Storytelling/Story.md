@@ -93,4 +93,9 @@
 9. Write for someone you love or trust
 10. If you are going to do anything meaningful someone is not gonna like it.
 11. Reward is that you see the human imagination of society’s judgement where your character rises out of the judgement and shows to all why no one can be judged.
-12. Knowing your ending 
+12. Knowing your ending helps you guide through the story
+13. The ending guides you to an emotional place that informs the rest of the story
+14. Knowing what happens to your character at the end will help frame and guide your writing 
+15. Don’t start off writing a particular book , let the material take you to write
+16. Funny stories that end in a dark place is the theme of Michael Lewis books
+17. 
