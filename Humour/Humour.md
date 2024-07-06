@@ -30,4 +30,6 @@
 16. Make varying levels of voice in your talk to make people stick which prevents them to wander to other places
 17. It’s important to know the consequences of your action in real time.
 18. There is no sense in being present if you are not present their mentally 
-19. It’s dope to think about the 
+19. It’s dope to think about the next things you want to do .
+20. After each accomplishment create the road for the next goal
+21. I like to wake up in the morn
