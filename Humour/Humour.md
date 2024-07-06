@@ -24,4 +24,5 @@
     3. Forward posture is engaged in conversation 
     4. Laid back , hands over knee , legs crossed is observant and contained.
 12. Use humility and self deprecation to your self advantage.
-13. 
+13. Acknowledge the other person to be smart and ask him to dumb it down for you so you can take the information easily.
+14. 
