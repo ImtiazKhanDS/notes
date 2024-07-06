@@ -12,4 +12,6 @@
 2. Make your environment active , make an environment of movers
 3. Being honest is funny
 4. Everybody goes to a person with a sense of humour to shake hands or do hifi’s since they relate it easily.
-5. 
+5. Prefer joke like structure in stories , tell stories not jokes.
+6. Use callbacks : A joke that refers to the previously told joke in the conversation 
+7. 
