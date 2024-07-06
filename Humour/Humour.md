@@ -36,4 +36,7 @@
 22. Fear only exists until you make decision to over come it.
 23. The crazy idea seeds that you plant blossom at the time when you least expect them to be.
 24. There’s power in your words , there’s power in what you and what you believe 
-25. 
+25. Humour makes a person an effective leader it helps people to relate to you more and you have the opportunity to raise people’s spirits 
+26. Most profound results come from simplification 
+27. People should think to be around or you should make people feel good when they are around you.
+28. If you can laugh together you can live together , if you can live together you can love each other.
