@@ -28,3 +28,6 @@
 14. Getting people to drop their shoulders and be comfortable makes conversation productive 
 15. Use your hand gestures to seek more attention.
 16. Make varying levels of voice in your talk to make people stick which prevents them to wander to other places
+17. It’s important to know the consequences of your action in real time.
+18. There is no sense in being present if you are not present their mentally 
+19. It’s dope to think about the 
