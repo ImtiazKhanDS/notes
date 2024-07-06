@@ -34,4 +34,6 @@
 20. After each accomplishment create the road for the next goal
 21. I like to wake up in the morning with an attitude that I grateful that I have something to do, that feeling is a massive driving component 
 22. Fear only exists until you make decision to over come it.
-23. 
+23. The crazy idea seeds that you plant blossom at the time when you least expect them to be.
+24. There’s power in your words , there’s power in what you and what you believe 
+25. 
