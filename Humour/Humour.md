@@ -9,4 +9,7 @@
 **Discovering the power of humour**
 
 1. Humour softens whoever is on the other side of conversation 
-2. 
+2. Make your environment active , make an environment of movers
+3. Being honest is funny
+4. Everybody goes to a person with a sense of humour to shake hands or do hifi’s since they relate it easily.
+5. 
