@@ -39,4 +39,6 @@
 25. Humour makes a person an effective leader it helps people to relate to you more and you have the opportunity to raise people’s spirits 
 26. Most profound results come from simplification 
 27. People should think to be around or you should make people feel good when they are around you.
-28. If you can laugh together you can live together , if you can live together you can love each other.
+28. What do you want to do ? Why you want to do it ? If you want to achieve that,  are you willing to do something each day to achieve that? . Are you willing to be accountable?
+29. If you can laugh together you can live together , if you can live together you can love each other.
+30. Volcano can’t erupt if you don’t make it hot , dope !
