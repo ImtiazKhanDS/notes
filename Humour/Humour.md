@@ -25,4 +25,6 @@
     4. Laid back , hands over knee , legs crossed is observant and contained.
 12. Use humility and self deprecation to your self advantage.
 13. Acknowledge the other person to be smart and ask him to dumb it down for you so you can take the information easily.
-14. 
+14. Getting people to drop their shoulders and be comfortable makes conversation productive 
+15. Use your hand gestures to seek more attention.
+16. Make varying levels of voice in your talk to make people stick which prevents them to wander to other places
