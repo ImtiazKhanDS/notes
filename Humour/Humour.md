@@ -14,4 +14,7 @@
 4. Everybody goes to a person with a sense of humour to shake hands or do hifi’s since they relate it easily.
 5. Prefer joke like structure in stories , tell stories not jokes.
 6. Use callbacks : A joke that refers to the previously told joke in the conversation 
-7. 
+7. Create a nucleus (overall subject ) and stay in it : Example : How life is at 40 ?
+8. Know your beginning, know your middle and know your ending 
+9. Owning the room wit humour , humour enables to take control of an environment 
+10. 
