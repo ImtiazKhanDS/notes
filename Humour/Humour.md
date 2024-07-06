@@ -32,4 +32,6 @@
 18. There is no sense in being present if you are not present their mentally 
 19. It’s dope to think about the next things you want to do .
 20. After each accomplishment create the road for the next goal
-21. I like to wake up in the morn
+21. I like to wake up in the morning with an attitude that I grateful that I have something to do, that feeling is a massive driving component 
+22. Fear only exists until you make decision to over come it.
+23. 
