@@ -18,4 +18,10 @@
 8. Know your beginning, know your middle and know your ending 
 9. Owning the room wit humour , humour enables to take control of an environment 
 10. Avoid the assumption or mental thought that the room is cold and you need to break the ice , Just reverse that assumption and say the room is warm.
-11. Reading the room 
+11. Reading the room
+    1. shoulders down is relaxed person
+    2. Sitting posture straight is focused , having concentration 
+    3. Forward posture is engaged in conversation 
+    4. Laid back , hands over knee , legs crossed is observant and contained.
+12. Use humility and self deprecation to your self advantage.
+13. 
