@@ -17,4 +17,5 @@
 7. Create a nucleus (overall subject ) and stay in it : Example : How life is at 40 ?
 8. Know your beginning, know your middle and know your ending 
 9. Owning the room wit humour , humour enables to take control of an environment 
-10. 
+10. Avoid the assumption or mental thought that the room is cold and you need to break the ice , Just reverse that assumption and say the room is warm.
+11. Reading the room 
