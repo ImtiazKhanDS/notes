@@ -21,4 +21,7 @@
    5. Balance 
 5. Bio-motor skills are the functions that body uses to when it’s doing any kind of physical activity 
 6. Example : Running to catch a subway train or diving for a catch in cricket field.
-7. 
+7. When you think about working out choose activities that you love doing 
+8. Everybody’s body is different there no one regime that fits all .
+9. Start with workout themes -> then focus on a goal
+10. 
