@@ -35,5 +35,5 @@
 1. Theme : Tissue flossing 
   1. Requirements : Foam Roll
   2. Foam back rolling
-  3. ![[Assets/back_roll.png]]
+  3. ![Foam Back Roll](../Assets/back_roll.png)
   4. 
