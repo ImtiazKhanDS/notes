@@ -32,5 +32,6 @@
     3. Think about realistic scheduling
 
 **Mobility Workout**
-1. Tissue flossing 
-2. 
+1. Theme : Tissue flossing 
+  1. Requirements : Foam Roll
+  2. 
