@@ -41,4 +41,7 @@
 3. Foam side rolling both left and right 
 
 ![Foam side Roll](../Assets/side_roll.png)
-4. Invert rolling on thighs  ![Foam invert Roll](../Assets/invert_roll.png)
+
+4. Invert rolling on thighs  
+
+![Foam invert Roll](../Assets/invert_roll.png)
