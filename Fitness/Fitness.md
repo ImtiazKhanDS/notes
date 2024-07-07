@@ -24,4 +24,6 @@
 7. When you think about working out choose activities that you love doing 
 8. Everybody’s body is different there no one regime that fits all .
 9. Start with workout themes -> then focus on a goal
-10. 
+10. In your work theme always have rest days , the body needs to recover from workout and helps better growth.
+11. Let go off perfection just try to be consistent 
+12. 
