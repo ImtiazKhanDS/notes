@@ -34,14 +34,15 @@
 **Mobility Workout**
 1. Theme : Tissue flossing 
   1. Requirements : Foam Roll
-  2. Foam back rolling    
+  
+  **Foam back rolling**    
   
   ![Foam Back Roll](../Assets/back_roll.png)
 
-3. Foam side rolling both left and right 
+ **Foam side rolling both left and right** 
 
 ![Foam side Roll](../Assets/side_roll.png)
 
-4. Invert rolling on thighs  
+ **Invert rolling on thighs**  
 
 ![Foam invert Roll](../Assets/invert_roll.png)
