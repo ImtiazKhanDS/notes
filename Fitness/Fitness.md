@@ -13,5 +13,12 @@
    6. Environmental Health 
    7. Spiritual Health 
    8. Occupational Health 
-4. Biomotor Skills
-   1. Coord
+4. Bio-motor Skills
+   1. Coordination 
+   2. Strength
+   3. Endurance and Conditioning 
+   4. Agility
+   5. Balance 
+5. Bio-motor skills are the functions that body uses to when it’s doing any kind of physical activity 
+6. Example : Running to catch a subway train or diving for a catch in cricket field.
+7. 
