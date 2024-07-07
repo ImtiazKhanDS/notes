@@ -34,6 +34,6 @@
 **Mobility Workout**
 1. Theme : Tissue flossing 
   1. Requirements : Foam Roll
-  2. Foam back rolling
-  3. ![Foam Back Roll](../Assets/back_roll.png)
-  4. 
+  2. Foam back rolling 
+    ![Foam Back Roll](../Assets/back_roll.png)
+
