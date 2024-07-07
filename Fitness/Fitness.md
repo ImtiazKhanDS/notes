@@ -26,4 +26,11 @@
 9. Start with workout themes -> then focus on a goal
 10. In your work theme always have rest days , the body needs to recover from workout and helps better growth.
 11. Let go off perfection just try to be consistent 
-12. 
+12. Building workouts
+    1. Think of your goals
+    2. Think of your themes you like
+    3. Think about realistic scheduling
+
+**Mobility Workout**
+1. Tissue flossing 
+2. 
