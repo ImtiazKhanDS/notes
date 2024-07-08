@@ -35,4 +35,4 @@
 1. Theme : Tissue flossing 
   1. Requirements : Foam Roll
   2. Watch Mobility workout here 
-  3. ![[Mobility Workout][https://youtube.com/@imtiazkhands?si=1apIfEjwaYxSD9Kr]
+  3. https://youtube.com/@imtiazkhands?si=hkK1-WzCQx-Y8qHz
