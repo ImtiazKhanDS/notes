@@ -58,3 +58,7 @@
 - shoulders rotating for few seconds inward and outward
 
 ![Shoulders rotate](../Assets/shoulders_rotate.png)
+
+- Alternating hands on to the shoulders 
+
+![[Pasted image 20240708073936.png]]
