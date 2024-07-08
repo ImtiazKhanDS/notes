@@ -43,6 +43,9 @@
 
 ![Foam side Roll](../Assets/side_roll.png)
 
- **Invert rolling on thighs**  
+ **Invert rolling on thighs both left and right**  
 
 ![Foam invert Roll](../Assets/invert_roll.png)
+**Hip rolling on both left and right sides** 
+
+![Hip Rolling ](../Assets/hip_roll.png)
