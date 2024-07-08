@@ -34,31 +34,5 @@
 **Mobility Workout**
 1. Theme : Tissue flossing 
   1. Requirements : Foam Roll
-  2. 
-  
-  **Foam back rolling**    
-  
-  ![Foam Back Roll](../Assets/back_roll.png)
-
- **Foam side rolling both left and right** 
-
-![Foam side Roll](../Assets/side_roll.png)
-
- **Invert rolling on thighs both left and right**  
-
-![Foam invert Roll](../Assets/invert_roll.png)
-**Hip rolling on both left and right sides** 
-
-![Hip Rolling ](../Assets/hip_roll.png)
-
-**Circuit -1** 
-
-  - loose jogging for 30 seconds
-  ![Loose Jogging](../Assets/loose_jog.png)
-
-- shoulders rotating for few seconds inward and outward
-
-![Shoulders rotate](../Assets/shoulders_rotate.png)
-
-- Alternating hands on to the shoulders 
-
+  2. Watch Mobility workout here 
+  3. ![[Mobility Workout][https://youtube.com/@imtiazkhands?si=1apIfEjwaYxSD9Kr]
