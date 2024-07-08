@@ -53,4 +53,8 @@
 **Circuit -1** 
 
   - loose jogging for 30 seconds
-  ![Loose Jogging](Assets/loose_jog.png)
+  ![Loose Jogging](../Assets/loose_jog.png)
+
+- shoulders rotating for few seconds
+
+![Shoulders rotate](../Assets/shoulders_rotate.png)
