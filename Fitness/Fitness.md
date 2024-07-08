@@ -49,3 +49,8 @@
 **Hip rolling on both left and right sides** 
 
 ![Hip Rolling ](../Assets/hip_roll.png)
+
+**Circuit -1** 
+
+  - loose jogging for 30 seconds
+  ![Loose Jogging](Assets/loose_jog.png)
