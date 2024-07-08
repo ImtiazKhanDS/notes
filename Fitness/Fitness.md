@@ -62,4 +62,3 @@
 
 - Alternating hands on to the shoulders 
 
-![[Pasted image 20240708073936.png]]
