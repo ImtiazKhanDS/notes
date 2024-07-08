@@ -55,6 +55,6 @@
   - loose jogging for 30 seconds
   ![Loose Jogging](../Assets/loose_jog.png)
 
-- shoulders rotating for few seconds
+- shoulders rotating for few seconds inward and outward
 
 ![Shoulders rotate](../Assets/shoulders_rotate.png)
