@@ -61,3 +61,7 @@ How do you know what routine you are following is helping you ?
    6. Gallstones
 5. Body Composition vs Body Mass Index
    1. Body mass index = 100* Height / Weight
+   2. Body mass index might not be a true representation because of cultural differences in a region , what truly represents correct evaluation is body composition
+   3. Body fat percentage = 100 * Total mass of fat/Total mass of body
+   4. One should typically have good skeletal mass as opposed to visceral fat
+   5. 
