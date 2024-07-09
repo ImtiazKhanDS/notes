@@ -59,4 +59,5 @@ How do you know what routine you are following is helping you ?
    4. Sleep Apnea
    5. Asthma
    6. Gallstones
-5. Body Co
+5. Body Composition vs Body Mass Index
+   1. Body mass index = 100* Height / Weight
