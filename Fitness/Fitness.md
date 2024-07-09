@@ -73,4 +73,4 @@ How do you know what routine you are following is helping you ?
    11. ![Waist Hip](../Assets/WaistHip.png)
    12. Waist / Hip , For men it should be less than 0.9 and for women it should be less than 0.85
    13. ![Blood Pressure](../Assets/blood_pressure.png)
-   14. The pulse at 
+   14. The pulse rate for your heart should be lower when you are at rest which gives a good indication that your heart is healthy. Athletes typically have a resting heart rate between 48 to 55
