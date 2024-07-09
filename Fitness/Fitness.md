@@ -35,4 +35,14 @@
 1. Theme : Tissue flossing 
   1. Requirements : Foam Roll
   2. Watch Mobility workout [here](https://www.youtube.com/playlist?list=PLZ-DKrzjBM7tEs8wJWnC5AFfqz4KFMpUb)
-  
+
+How do you know what routine you are following is helping you ?
+
+**Data is king**
+1. Record quantitative and qualitative data 
+2. Quantitative 
+   1. Weight
+   2. Body fat percentage 
+   3. Pulse 
+   4. Blood pressure 
+   5. Glucose levels 
