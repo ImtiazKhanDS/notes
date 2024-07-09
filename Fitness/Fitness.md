@@ -40,9 +40,22 @@ How do you know what routine you are following is helping you ?
 
 **Data is king**
 1. Record quantitative and qualitative data 
-2. Quantitative 
+2. **Quantitative** 
    1. Weight
    2. Body fat percentage 
    3. Pulse 
    4. Blood pressure 
    5. Glucose levels 
+3. **Qualitative**
+   1. Thirst
+   2. Hunger
+   3. Exhaustion
+   4. Serenity
+   5. Exhilration
+4. **Weight related Health problems**
+   1. Heart disease and stroke 
+   2. Diabetes 
+   3. High blood pressure 
+   4. Sleep Apnea
+   5. Asthma
+   6. Gallstones
