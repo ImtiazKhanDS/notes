@@ -64,4 +64,7 @@ How do you know what routine you are following is helping you ?
    2. Body mass index might not be a true representation because of cultural differences in a region , what truly represents correct evaluation is body composition
    3. Body fat percentage = 100 * Total mass of fat/Total mass of body
    4. One should typically have good skeletal mass as opposed to visceral fat
-   5. ![](../Assets/visceral_fat.p)
+   5. ![](../Assets/visceral_fat.png)
+   6. Visceral fat forms around internal organs which has to be under control.
+   7. Women’s body fat percentage should bel less than 26 percent
+   8. Men’s body fat percentage should be less than 18 percent
