@@ -2,6 +2,8 @@ Building a second brain here below.
 
 ### All Posts
 
+- [Building second Brain](GetAbstract/SecondBrain.md)
+
 - [Fitness Basics](Fitness/Fitness.md)
 
 - [Using Humour as a tool](Humour/Humour.md)
