@@ -8,9 +8,15 @@
    2. Organise
    3. Distill
    4. Express 
-4. Note taking 
+4. Take Notes on which
    1. Inspires you
    2. Useful
    3. Personal relevance 
    4. Different perspective 
-5. 
+5. Getting started is more important than perfection 
+
+**Takeaways**
+1. Don’t rely solely on your brain to keep track of information : Create a digital system 
+2. Harness the power of technology to turn information into knowledge 
+3. Capture knowledge assets following your intuition and curiosity 
+4. 
