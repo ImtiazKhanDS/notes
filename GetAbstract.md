@@ -19,4 +19,8 @@
 1. Don’t rely solely on your brain to keep track of information : Create a digital system 
 2. Harness the power of technology to turn information into knowledge 
 3. Capture knowledge assets following your intuition and curiosity 
-4. 
+4. Organise information to make a flow and make ideas actionable 
+5. Distill information to highlight the most important bits of information 
+6. Express your ideas , Experiment on a smaller scale
+7. When your creativity dries up build momentum by collecting ideas and leveraging yesterday’s momentum 
+8. Effective digital organisers maintain good habits 
