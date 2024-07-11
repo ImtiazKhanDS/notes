@@ -7,5 +7,5 @@ theme: minima
 plugins:
   - jekyll-relative-links
 relative_links:
-  enabled: true
-  collections: true
+  enabled: false
+  collections: false
