@@ -7,7 +7,7 @@ theme: minima
 plugins:
   - jekyll-relative-links
 relative_links:
-  enabled: false
+  enabled: true
   collections: true
 include:
-  - Technical/DockerConcepts/
+  - Assets/
