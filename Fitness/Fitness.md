@@ -100,4 +100,6 @@ How do you know what routine you are following is helping you ?
    4. Salmon
    5. Herring
 8. Only use olive oil
-9. 
+9. **Food Hacks**
+   1. Unlock iron with vitamin c
+     1. Kale 
