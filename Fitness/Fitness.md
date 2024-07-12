@@ -116,9 +116,4 @@ How do you know what routine you are following is helping you ?
         5. Peppermint
         6. Ginger 
      2. Digestion potion
-         1. Ingredients 
-             1. Hot Water
-             2. Fresh Ginger
-             3. Lemon slices
-             4. Astragalus
-         2. Combine all items and let them steep , Enjoy between meals for digestion
+    ![digestion potion](../assets/images/digestion_potion.png)
