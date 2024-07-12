@@ -83,4 +83,9 @@ How do you know what routine you are following is helping you ?
 
 **The Ocho food system** 
 
-1. 
+1. Create a nutritional checklist for your body
+2. Diet plan checklist
+   1. Do you feel good ?
+   2. Impact on digestion
+   3. Does it meet your fitness goals ?
+   4. Eat with intent 
