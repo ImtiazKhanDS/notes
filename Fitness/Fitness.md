@@ -106,4 +106,5 @@ How do you know what routine you are following is helping you ?
    2.  Don’t settle for struggle salad , if you want to have something else that’s fine but add veggies to your diet
    3. Boost your blood with beets
      1. Walnuts good for brain health
-     2. Beets have something called nitrates when mixes with something in your saliva creates nitric oxide which makes blood flow faster and reduces effort on heart to pump blood, There is a whole industry on this popularizing 
+     2. Beets have something called nitrates when mixes with something in your saliva creates nitric oxide which makes blood flow faster and reduces effort on heart to pump blood, There is a whole industry on this popularising beet juices
+   4. 
