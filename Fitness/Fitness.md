@@ -89,3 +89,15 @@ How do you know what routine you are following is helping you ?
    2. Impact on digestion
    3. Does it meet your fitness goals ?
    4. Eat with intent 
+3. Make a kitchen audit and remove things that you do not want to eat.
+4. Stay away from added sugars
+5. Think vegetables
+6. For protein have meat or lean fish
+7. Fish categories
+   1. Sardines
+   2. Mackerel 
+   3. Anchovies 
+   4. Salmon
+   5. Herring
+8. Only use olive oil
+9. 
