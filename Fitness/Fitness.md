@@ -78,3 +78,9 @@ How do you know what routine you are following is helping you ?
 **Working out Smarter and Harder**
 1. Resilience is nothing back bouncing back
 2. Knowing when to rest and knowing when to work harder is an athletes mindset.
+
+**HIIT workout** [here](https://www.youtube.com/playlist?list=PLZ-DKrzjBM7tEs8wJWnC5AFfqz4KFMpUb)
+
+**The Ocho food system** 
+
+1. 
