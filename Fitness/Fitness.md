@@ -102,4 +102,6 @@ How do you know what routine you are following is helping you ?
 8. Only use olive oil
 9. **Food Hacks**
    1. Unlock iron with vitamin c
-     1. Kale 
+     1. Kale (one type of cabbage) is rich in iron , but not easily digestible but if you add vitamin c like lemon to it , then it becomes easily digestible.
+   2.  Don’t settle for struggle salad , if you want to have something else that’s fine but add veggies to your diet
+   3. 
