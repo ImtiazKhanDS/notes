@@ -116,6 +116,5 @@ How do you know what routine you are following is helping you ?
         5. Peppermint
         6. Ginger 
      2. Digestion potion
-    ![digestion potion](Fitness-image-1.png)
-   5. Stay hydrated and chew food thoroughly
+    ![digestion potion](../assets/images/digestion_potion.png) Stay hydrated and chew food thoroughly
    6. Process your food for  progress : stick to steam and sauté
