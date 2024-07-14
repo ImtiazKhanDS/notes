@@ -125,4 +125,9 @@ How do you know what routine you are following is helping you ?
 **The importance of recovery**
 
 1. Resilience is all about how you can bounce back from an injury
+2. We are over training but under recovering 
+
+**Physiological Baselines**
+
+1. Muscular state
 2. 
