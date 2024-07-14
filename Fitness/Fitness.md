@@ -118,3 +118,11 @@ How do you know what routine you are following is helping you ?
      2. Digestion potion
     ![digestion potion](../assets/images/digestion_potion.png) Stay hydrated and chew food thoroughly
    6. Process your food for  progress : stick to steam and sauté
+
+
+**Strength workout** [here](https://www.youtube.com/playlist?list=PLZ-DKrzjBM7tEs8wJWnC5AFfqz4KFMpUb)
+
+**The importance of recovery**
+
+1. Resilience is all about how you can bounce back from an injury
+2. 
