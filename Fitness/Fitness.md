@@ -127,13 +127,7 @@ How do you know what routine you are following is helping you ?
 1. Resilience is all about how you can bounce back from an injury
 2. We are over training but under recovering 
 
-**Physiological Baselines**
+ 
+3. Your body is only resting when you are truly sleeping other times it’s actually not resting.
 
-1. **Muscular state**
-   1. Are your muscles relaxed or in spasm ?
-2. **Mental State**
-   1. How do you feel while resting ?
-3. **Hormones**
-   1. How are your cortisol levels ?
-4. Neurophysiological state
 
