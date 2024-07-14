@@ -129,5 +129,11 @@ How do you know what routine you are following is helping you ?
 
 **Physiological Baselines**
 
-1. Muscular state
-2. 
+1. **Muscular state**
+   1. Are your muscles relaxed or in spasm ?
+2. **Mental State**
+   1. How do you feel while resting ?
+3. **Hormones**
+   1. How are your cortisol levels ?
+4. Neurophysiological state
+
