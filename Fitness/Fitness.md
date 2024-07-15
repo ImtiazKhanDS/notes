@@ -132,8 +132,16 @@ How do you know what routine you are following is helping you ?
 4. Key recovery concepts 
    1. Breathing
 5. Three key recovery strategies are
-   1. Active Active. - walking jump roping
+   1. Active Active. - 
+     1. Walking  
+     2. Jump roping
+     3. Stretching 
+     4. Massage rolling
+     5. Foam rolling
    2. Passive Active - 
+     1. Ice bath
+     2. Heat
    3. Passive Passive
+     1. 
 
 
