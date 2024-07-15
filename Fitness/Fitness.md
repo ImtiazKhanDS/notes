@@ -127,7 +127,7 @@ How do you know what routine you are following is helping you ?
 1. Resilience is all about how you can bounce back from an injury
 2. We are over training but under recovering 
 
-![physiology baseline](Fitness-image-1.jpg)
+![physiology baseline](../assets/images/physiology_baseline.jpg)
 3. Your body is only resting when you are truly sleeping other times it’s actually not resting.
 4. Key recovery concepts 
    1. Breathing
