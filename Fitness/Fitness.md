@@ -157,6 +157,13 @@ How do you know what routine you are following is helping you ?
    2. Run up stairs on your way to work
    3. Pre-lunch stretching
    4. Late afternoon stretching 
-2. 
+2. Meditation
+   1. Spending time with family members
+3. Spending time in nature
+4. Tissue flossing 
+5. Overcoming excuses
+6. Setup your environment for best results so that you reduce your external cues to distraction
+7. Will power is overrated, 
+
 
 
