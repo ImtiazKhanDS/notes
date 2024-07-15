@@ -147,6 +147,16 @@ How do you know what routine you are following is helping you ?
      6. Everyone has a cold threshold
    3. Passive Passive
      1. Sleep
-     2. 
+     2. The body needs sleep time to repair itself
+     3. When you sleep properly your cortisol levels decrease.
+
+**Catalysts for success's**
+
+1. Exercise Snacks
+   1. Morning Jump rope
+   2. Run up stairs on your way to work
+   3. Pre-lunch stretching
+   4. Late afternoon stretching 
+2. 
 
 
