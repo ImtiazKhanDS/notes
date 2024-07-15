@@ -129,6 +129,11 @@ How do you know what routine you are following is helping you ?
 
 ![physiology baseline](../assets/images/physiology_baseline.jpg)
 3. Your body is only resting when you are truly sleeping other times it’s actually not resting.
-4. Key rec
+4. Key recovery concepts 
+   1. Breathing
+5. Three key recovery strategies are
+   1. Active Active. - walking jump roping
+   2. Passive Active - 
+   3. Passive Passive
 
 
