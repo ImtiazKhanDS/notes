@@ -140,8 +140,13 @@ How do you know what routine you are following is helping you ?
      5. Foam rolling
    2. Passive Active - 
      1. Ice bath
-     2. Heat
+     2. Heat (Hot shower)
+     3. Use cold for acute injuries 
+     4. Do not take ice baths too often
+     5. Be conservative with your temperature
+     6. Everyone has a cold threshold
    3. Passive Passive
-     1. 
+     1. Sleep
+     2. 
 
 
