@@ -163,7 +163,9 @@ How do you know what routine you are following is helping you ?
 4. Tissue flossing 
 5. Overcoming excuses
 6. Setup your environment for best results so that you reduce your external cues to distraction
-7. Will power is overrated, 
+7. Will power is overrated, consistency is underrated 
+8. Take baby-steps everyday to reach to your goals
+9. 
 
 
 
