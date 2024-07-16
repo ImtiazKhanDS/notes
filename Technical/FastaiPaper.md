@@ -20,4 +20,6 @@
   5. Tabular Data Classification
   6. Collaborative Filtering
 7. The learning rate finder does a mock training with an exponentially growing learning rate over 100 iterations. A good value is then the minimum value on the graph divided by 10.
-8. 
+8. Learner's 2-way callback system allows gradients , data ,losses , control flow and anything else to be read and changed at any point during training.
+9. Fastai’s callback system is the first that we are aware of that supports the design principles necessary for complete two-way callbacks:
+   1. A callback should be availabe to every single point that code 
