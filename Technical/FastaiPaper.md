@@ -6,7 +6,7 @@
    2. hackable and configurable
 2. Fastai wanted the development speed of Keras and customisability of PyTorch which has resulted into layered architecture Design
 
-![Fastai Architecture](../assets/images/FastaiPaper-image-1.png)
+![Fastai Architecture](FastaiPaper-image-1.png)
 
 
 3. Fastai provides a `single Learner class` which brings together architecture, optimiser, and data, and automatically chooses an appropriate loss function wherever possible.
@@ -25,4 +25,4 @@
    1. A callback should be available to every single point that code can be run during training, so that a user can customise every single detail of the training method;
    2. Every callback should be able to access every piece of information available at that stage in the training loop, including hyper-parameters, losses, gradients, input and target data and so forth;
    3. Every callback should be able to modify all these pieces of information , at any time before they are used, and be able to skip a batch, epoch, training or validation section or cancel the whole training loop.
-10. 
+10. `NBDEV` is a system for exploratory programming.
