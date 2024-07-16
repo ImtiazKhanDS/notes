@@ -6,7 +6,7 @@
    2. hackable and configurable
 2. Fastai wanted the development speed of Keras and customisability of PyTorch which has resulted into layered architecture Design
 
-![Fastai Architecture](FastaiPaper-image-1.png)
+![Fastai Architecture](../assets/images/FastaiPaper-image-1.png)
 
 
 3. Fastai provides a `single Learner class` which brings together architecture, optimiser, and data, and automatically chooses an appropriate loss function wherever possible.
@@ -20,6 +20,9 @@
   5. Tabular Data Classification
   6. Collaborative Filtering
 7. The learning rate finder does a mock training with an exponentially growing learning rate over 100 iterations. A good value is then the minimum value on the graph divided by 10.
-8. Learner's 2-way callback system allows gradients , data ,losses , control flow and anything else to be read and changed at any point during training.
+8. `Learner's 2-way callback system` allows gradients , data ,losses , control flow and anything else to be read and changed at any point during training.
 9. Fastai’s callback system is the first that we are aware of that supports the design principles necessary for complete two-way callbacks:
-   1. A callback should be availabe to every single point that code 
+   1. A callback should be available to every single point that code can be run during training, so that a user can customise every single detail of the training method;
+   2. Every callback should be able to access every piece of information available at that stage in the training loop, including hyper-parameters, losses, gradients, input and target data and so forth;
+   3. Every callback should be able to modify all these pieces of information , at any time before they are used, and be able to skip a batch, epoch, training or validation section or cancel the whole training loop.
+10. 
