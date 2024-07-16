@@ -1,5 +1,6 @@
 
 ##### Simplest Guide To Stock Market
+     Edward D Ryan 
 
 1. Companies are the corner stone of stock market and people are the most important part of any company.
 2. The CEO is focused on broad strategies
@@ -38,4 +39,7 @@
 25. Companies become available to individual investors through Initial Public Offerings (IPO)
 26. In United States there are two major stock exchange's
     - New York stock exchange (NYSE)
-    - 
+    - NASDAQ stock exchange 
+27. You can purchase two stocks in two ways
+     - By whatever share price is on the listing 
+     - By creating limit order where you purchase only if the price is below the limit you set
