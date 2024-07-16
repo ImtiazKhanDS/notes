@@ -27,4 +27,8 @@
 18. Judging a company by its share price is almost useless 
 19. The most direct way to buy a stock is to open a brokerage account
 20. The four largest brokers in United States are 
-     - 
+     - Charles Schwab 
+     - Fidelity Investments
+     - ETrade
+     - TD AmeriTrade
+21. So buy let’s say Apple shares by opening brokerage account in Fidelity investments , Here Apple does not know you are the shareholder it only knows that fidelity investments owns some shares
