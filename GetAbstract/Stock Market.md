@@ -13,4 +13,7 @@
 7. The revenue increasing is a healthy sign but the expenses rising should be an alarm to the investor.
 8. The income statement 
    - net income  = revenue - expenses
- 9. 
+ 9. The balance sheet is a record of how much a company owns and how much it owes.
+ 10. Things the company owns are called assets and things it owes are called liabilities.
+ 11. Company’s Networth = Assets - Liabilities 
+ 12. The cashflow statement tells how much money is coming and going out , it tells us ab
