@@ -16,4 +16,10 @@
  9. The balance sheet is a record of how much a company owns and how much it owes.
  10. Things the company owns are called assets and things it owes are called liabilities.
  11. Company’s Networth = Assets - Liabilities 
- 12. The cashflow statement tells how much money is coming and going out , it tells us ab
+ 12. The cashflow statement tells how much money is coming and going out , it tells us about the company’s financials from a different angle 
+ 13. Capital implying funds is a fancy of saying funds , funds are the second most important ingredient of a company after people 
+ 14. Companies can get funds in two ways
+     1. Debt
+     2. Equity
+15. Large corporations rely on both the sources
+16. Uber raised money through 
