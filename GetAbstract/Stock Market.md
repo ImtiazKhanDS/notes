@@ -34,4 +34,8 @@
 21. So buy let’s say Apple shares by opening brokerage account in Fidelity investments , Here Apple does not know you are the shareholder it only knows that fidelity investments owns some shares
 22. Valuation of a stock is driven by a variety of subjective matters.
 23. One metric that is useful for valuation is price to earnings ratio also known as **PE Ratio**
-24. If Nike sells a share at 
+24. If Nike sells a share at 100 dollars and the annual profit per share in the end of year is 4 dollar per share then P/E ratio is 25.
+25. Companies become available to individual investors through Initial Public Offerings (IPO)
+26. In United States there are two major stock exchange's
+    - New York stock exchange (NYSE)
+    - 
