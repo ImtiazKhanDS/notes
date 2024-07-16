@@ -9,4 +9,5 @@
 ![Fastai Architecture](FastaiPaper-image-1.png)
 
 
-3. 
+3. Fastai provides a `single Learner class` which brings together architecture, optimiser, and data, and automatically chooses an appropriate loss function wherever possible.
+4. Transfer learning is critically important for training models quickly, accurately, and cheaply, but the details matter a great deal,  fastai automatically provides transfer learning optimised batch normalisation, training, layer freezing, and discriminative learning rates.
