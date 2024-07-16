@@ -32,3 +32,6 @@
      - ETrade
      - TD AmeriTrade
 21. So buy let’s say Apple shares by opening brokerage account in Fidelity investments , Here Apple does not know you are the shareholder it only knows that fidelity investments owns some shares
+22. Valuation of a stock is driven by a variety of subjective matters.
+23. One metric that is useful for valuation is price to earnings ratio also known as **PE Ratio**
+24. If Nike sells a share at 
