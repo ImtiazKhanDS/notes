@@ -22,4 +22,9 @@
      1. Debt
      2. Equity
 15. Large corporations rely on both the sources
-16. Uber raised money through 
+16. Uber raised money through equity , its net worth was 75 billion dollars before it became profitable 
+17. A share of stock represents the partial ownership of a company
+18. Judging a company by its share price is almost useless 
+19. The most direct way to buy a stock is to open a brokerage account
+20. The four largest brokers in United States are 
+     - 
