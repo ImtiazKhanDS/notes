@@ -15,7 +15,9 @@
 6. Some of the tasks used in the paper are 
   1. Image Classification
   2. Image Segmentation
-  3. Sentiment Classification
-  4. Tabular Data Classification
-  5. Collaborative Filtering
-  6. 
+  3. Object Detection
+  4. Sentiment Classification
+  5. Tabular Data Classification
+  6. Collaborative Filtering
+7. The learning rate finder does a mock training with an exponentially growing learning rate over 100 iterations. A good value is then the minimum value on the graph divided by 10.
+8. 
