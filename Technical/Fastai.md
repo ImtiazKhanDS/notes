@@ -1,6 +1,4 @@
-1. @delegates problem and solution : https://www.fast.ai/posts/2019-08-06-delegation.html
-2. @delegates is a decorator is used to fix non appearing kwargs parameters to appear when you do shift tab in Jupyter or any repl environment.
-3. This delegates function is part of fastcore library under meta.py
+
 
 
 ### Function Explanations notebook wise
@@ -9,7 +7,7 @@
 
 ##### Functions
 
-`setup_cuda`
+1. setup_cuda
 
 ```
 def setup_cuda(benchmark=defaults.benchmark):
@@ -21,7 +19,7 @@ def setup_cuda(benchmark=defaults.benchmark):
         torch.backends.cudnn.benchmark = benchmark
 ```
 
-1. torch.backends.cudnn.benchmark = True , This enables benchmark mode in cudnn.
+1. `torch.backends.cudnn.benchmark = True` , This enables benchmark mode in cudnn.
 
 benchmark mode is good whenever your input sizes for your network do not vary. This way, 
 
@@ -36,4 +34,6 @@ worse runtime performances.
 References
 
 1. fast core top features :  https://fastpages.fast.ai/fastcore/
-2. 
+2. @delegates problem and solution : https://www.fast.ai/posts/2019-08-06-delegation.html
+3. @delegates is a decorator is used to fix non appearing kwargs parameters to appear when you do shift tab in Jupyter or any repl environment.
+4. This delegates function is part of fastcore library under meta.py
