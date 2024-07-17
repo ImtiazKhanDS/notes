@@ -118,7 +118,7 @@ class ArrayBase(ndarray):
      return x if isinstance(x,ndarray) else array(x)
 ```
 
-	1. @classmethod : 
+	1. @classmethod : A classmethod() is a built-in function in Python that is used _to define a method that is bound to the class and not the instance of the class_.
 
 
 
