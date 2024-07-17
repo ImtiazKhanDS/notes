@@ -9,7 +9,7 @@
 
 1. setup_cuda
 
-```
+```Python
 def setup_cuda(benchmark=defaults.benchmark):
     "Sets the main cuda device and sets `cudnn.benchmark` to `benchmark`"
     if torch.cuda.is_available():
