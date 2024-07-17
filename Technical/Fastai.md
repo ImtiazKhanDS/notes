@@ -83,7 +83,8 @@ def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
 ```
 
    1. **hasattrs** tests whether im contains all attributes `data , cpu and permute` which handles PyTorch axis order.
-   2. handles one channel images
+   2. handles one channel images im=im[...,0] so here if the image dimension is 28 * 28 * 1 , then ellipsis followed by 0 makes it 28 * 28
+   3. 
 
 
 
