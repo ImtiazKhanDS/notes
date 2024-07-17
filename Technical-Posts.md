@@ -2,7 +2,7 @@ Building a second brain here below.
 
 ### All Posts
 
-- [Fastai Paper Highlights](Technical/FastaiPaper.md)
+- [Fastai Paper Highlights](FastaiPaper.md)
 
 - [LLMResources](Technical/LLMResources.md)
 

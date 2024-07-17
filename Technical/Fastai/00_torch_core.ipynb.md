@@ -1,11 +1,6 @@
 
 
-
-### Function Explanations notebook wise
-
-#### 00_torch_core.ipynb
-
-##### Functions
+##### Code Reading
 
 1. **setup_cuda**
 
@@ -111,9 +106,19 @@ def show_images(ims, nrows=1, ncols=None, titles=None, **kwargs):
 ```
 
 
-	1. 
+	1. subplots function returns a numpy array on which we can use .flat attribute to get each axs in a list and iterate over it to send that ax to show_image function for plotting.
 
+7. ArrayBase
 
+	```python
+class ArrayBase(ndarray):
+    "An `ndarray` that can modify casting behavior"
+    @classmethod
+    def _before_cast(cls, x):
+     return x if isinstance(x,ndarray) else array(x)
+```
+
+	1. @classmethod : 
 
 
 
