@@ -6,7 +6,7 @@
    2. hackable and configurable
 2. Fastai wanted the development speed of Keras and customisability of PyTorch which has resulted into layered architecture Design
 
-![Fastai Architecture](FastaiPaper-image-1.png)
+![Fastai Architecture](../../assets/images/FastaiPaper-image-1.png)
 
 
 3. Fastai provides a `single Learner class` which brings together architecture, optimiser, and data, and automatically chooses an appropriate loss function wherever possible.
