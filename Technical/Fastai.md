@@ -45,6 +45,8 @@ def subplots(
     ```
 
    1. The decorator @delegates will pass down keyword arguments from plt.subplots to subplots function , so that you can use shift-tab to see all the parameters of plt.subplots while calling subplots
+   2. figsize is determined by nrows and ncols, very briefly figsize = (ncols * imsize, nrows * imsize)
+   3. Returns fig and ax , fig is the actual figure , ax is a array which helps to go into each section of figure.
 
 References
 
