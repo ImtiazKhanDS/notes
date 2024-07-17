@@ -56,7 +56,7 @@ def subplots(
     return min(5, max(1,r))
 ```
 
-   1.  bounds an image used in [show_image]()function.
+   1.  bounds an image used in show_image function below.
 
 4. **show_image**
 
