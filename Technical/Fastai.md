@@ -82,7 +82,7 @@ def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
     return ax
 ```
 
-   1. **hasattrs** tests whether im contains all attributes data , cpu and permute
+   1. **hasattrs** tests whether im contains all attributes `data , cpu and permute` which handles PyTorch axis order.
 
 
 
