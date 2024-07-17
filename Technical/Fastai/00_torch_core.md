@@ -19,7 +19,7 @@ def setup_cuda(benchmark=defaults.benchmark):
 
 2. **subplots**
 
-    ```Python 
+    ``` python 
 @delegates(plt.subplots, keep=True)
 def subplots(
     nrows:int=1, # Number of rows in returned axes grid
@@ -45,7 +45,7 @@ def subplots(
 
 3. **fig_bounds**
 
-   ```Python
+   ``` python
    def _fig_bounds(x):
     r = x//32
     return min(5, max(1,r))
@@ -55,7 +55,7 @@ def subplots(
 
 4. **show_image**
 
-   ```Python
+   ``` python
 @delegates(plt.Axes.imshow, keep=True, but=['shape', 'imlim'])
 def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
     "Show a PIL or PyTorch image on `ax`."
@@ -81,7 +81,7 @@ def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
 
 5. **show_titled_image** 
 
-   ```Python
+   ``` python
 @delegates(show_image, keep=True)
 def show_titled_image(o, **kwargs):
     "Call `show_image` destructuring `o` to `(img,title)`"
@@ -93,7 +93,7 @@ def show_titled_image(o, **kwargs):
 
 6. **show_images** 
 
-	```python
+	``` python
 @delegates(subplots)
 def show_images(ims, nrows=1, ncols=None, titles=None, **kwargs):
     "Show all images `ims` as subplots with `rows` using `titles`."
@@ -108,7 +108,7 @@ def show_images(ims, nrows=1, ncols=None, titles=None, **kwargs):
 
 7. ArrayBase
 
-	```python
+	``` python
 class ArrayBase(ndarray):
     "An `ndarray` that can modify casting behavior"
     @classmethod
@@ -122,7 +122,7 @@ class ArrayBase(ndarray):
 
 8. ArrayImageBase
 
-	```python
+	``` python
 	class ArrayImageBase(ArrayBase):
     "Base class for arrays representing images"
     _show_args = {'cmap':'viridis'}
