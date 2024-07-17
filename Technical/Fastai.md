@@ -19,17 +19,7 @@ def setup_cuda(benchmark=defaults.benchmark):
         torch.backends.cudnn.benchmark = benchmark
 ```
 
-1. `torch.backends.cudnn.benchmark = True` , This enables benchmark mode in cudnn.
-
-benchmark mode is good whenever your input sizes for your network do not vary. This way, 
-
-cudnn will look for the optimal set of algorithms for that particular configuration (which 
-
-takes some time). This usually leads to faster runtime. But if your input sizes changes at 
-
-each iteration, then cudnn will benchmark every time a new size appears, possibly leading to 
-
-worse runtime performances.
+1. `torch.backends.cudnn.benchmark = True` , This enables benchmark mode in cudnn.benchmark mode is good whenever your input sizes for your network do not vary. This way, cudnn will look for the optimal set of algorithms for that particular configuration (which takes some time). This usually leads to faster runtime. But if your input sizes changes at each iteration, then cudnn will benchmark every time a new size appears, possibly leading to worse runtime performances.
 
 References
 
