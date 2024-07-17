@@ -14,8 +14,6 @@ def setup_cuda(benchmark=defaults.benchmark):
         torch.backends.cudnn.benchmark = benchmark 
 ```
 
-
-
 	1. **torch.backends.cudnn.benchmark = True** , This enables benchmark mode       in           cudnn.benchmark mode is good whenever your input sizes for your network do not vary. This way, cudnn will look for the optimal set of algorithms for that particular configuration (which takes some time). This usually leads to faster runtime. But if your input sizes changes at each iteration, then cudnn will benchmark every time a new size appears,          possibly leading to worse runtime performances.
 	2. Sets a default gpu device.
 
@@ -118,12 +116,24 @@ class ArrayBase(ndarray):
      return x if isinstance(x,ndarray) else array(x)
 ```
 
-	1. @classmethod : A classmethod() is a built-in function in Python that is used _to define a method that is bound to the class and not the instance of the class_.
+	1. **@classmethod** : A classmethod() is a built-in function in Python that is used _to define a method that is bound to the class and not the instance of the class_. class methods are aware of the class state.
+	2. An `instance method`, simply put, is a function defined inside of a class. It varies with the different instances of the class, Whereas a `class method` is a method which, unlike the instance method, is applied to all instances of the class.
 
 
+8. ArrayImageBase
 
+	```python
+	class ArrayImageBase(ArrayBase):
+    "Base class for arrays representing images"
+    _show_args = {'cmap':'viridis'}
+    def show(self, ctx=None, **kwargs):
+        return show_image(self, ctx=ctx, **{**self._show_args, **kwargs})
+```
 
-References
+	1. Base class for representing images
+	2. 
+
+**References**
 
 1. fast core top features :  https://fastpages.fast.ai/fastcore/
 2. @delegates problem and solution : https://www.fast.ai/posts/2019-08-06-delegation.html
