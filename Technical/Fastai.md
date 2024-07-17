@@ -16,11 +16,11 @@ def setup_cuda(benchmark=defaults.benchmark):
         if torch.cuda.current_device()==0:
             def_gpu = int(os.environ.get('DEFAULT_GPU') or 0)
             if torch.cuda.device_count()>=def_gpu: torch.cuda.set_device(def_gpu)
-        torch.backends.cudnn.benchmark = benchmark
-```
+        torch.backends.cudnn.benchmark = benchmark 
+        ```
 
-   1. **torch.backends.cudnn.benchmark = True** , This enables benchmark mode in           cudnn.benchmark mode is good whenever your input sizes for your network do not vary. This way, cudnn will look for the optimal set of algorithms for that particular configuration (which takes some time). This usually leads to faster runtime. But if your input sizes changes at each iteration, then cudnn will benchmark every time a new size appears,          possibly leading to worse runtime performances.
-   2. Sets a default gpu device.
+	    1. **torch.backends.cudnn.benchmark = True** , This enables benchmark mode       in           cudnn.benchmark mode is good whenever your input sizes for your network do not vary. This way, cudnn will look for the optimal set of algorithms for that particular configuration (which takes some time). This usually leads to faster runtime. But if your input sizes changes at each iteration, then cudnn will benchmark every time a new size appears,          possibly leading to worse runtime performances.
+	    2. Sets a default gpu device.
 
 2. **subplots**
 
@@ -44,9 +44,9 @@ def subplots(
     return fig,ax
     ```
 
-   1. The decorator `@delegates` will pass down keyword arguments from plt.subplots to subplots function , so that you can use shift-tab to see all the parameters of plt.subplots while calling subplots
-   2. figsize is determined by nrows and ncols, very briefly `figsize = (ncols * imsize, nrows * imsize)`
-   3. Returns `fig` and `axs` , fig is the actual figure , `axs` is a array which helps to go into each section of figure.
+    1. The decorator `@delegates` will pass down keyword arguments from plt.subplots to subplots function , so that you can use shift-tab to see all the parameters of plt.subplots while calling subplots
+    2. figsize is determined by nrows and ncols, very briefly `figsize = (ncols * imsize, nrows * imsize)`
+    3. Returns `fig` and `axs` , fig is the actual figure , `axs` is a array which helps to go into each section of figure.
 
 3. **fig_bounds**
 
@@ -56,7 +56,7 @@ def subplots(
     return min(5, max(1,r))
 ```
 
-   1.  bounds an image used in show_image function below.
+    1.  bounds an image used in show_image function below.
 
 4. **show_image**
 
@@ -81,8 +81,8 @@ def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
     return ax
 ```
 
-   1. **hasattrs** tests whether im contains all attributes `data , cpu and permute` which handles PyTorch axis order.
-   2. handles one channel images im=im[...,0] so here if the image dimension is 28 * 28 * 1 , then ellipsis followed by 0 makes it 28 * 28
+    1. **hasattrs** tests whether im contains all attributes `data , cpu and permute` which handles PyTorch axis order.
+    2. handles one channel images im=im[...,0] so here if the image dimension is 28 * 28 * 1 , then ellipsis followed by 0 makes it 28 * 28
 
 5. **show_titled_image** 
 
@@ -94,7 +94,7 @@ def show_titled_image(o, **kwargs):
 ```
 
    
-  1. ```{Python}show_titled_image((im, 'A puppy'), figsize =(2,2)```  provide image and ti
+    1. ```{Python}show_titled_image((im, 'A puppy'), figsize =(2,2)```  provide image and title to show titled image.
 
 
 
