@@ -2,7 +2,7 @@ Building a second brain here below.
 
 ### All Posts
 
-- [Fastai Code Reading](Fastai/fastai_notes.md)
+- [Fastai Code Reading](Technical/Fastai/fastai_notes.md)
 
 - [LLMResources](Technical/LLMResources.md)
 
