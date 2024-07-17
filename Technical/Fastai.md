@@ -25,7 +25,7 @@ def setup_cuda(benchmark=defaults.benchmark):
 2. **subplots**
 
     ```Python 
-    @delegates(plt.subplots, keep=True)
+@delegates(plt.subplots, keep=True)
 def subplots(
     nrows:int=1, # Number of rows in returned axes grid
     ncols:int=1, # Number of columns in returned axes grid
@@ -61,7 +61,6 @@ def subplots(
 4. **show_image**
 
    ```Python
-   #|export
 @delegates(plt.Axes.imshow, keep=True, but=['shape', 'imlim'])
 def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
     "Show a PIL or PyTorch image on `ax`."
@@ -86,7 +85,16 @@ def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
    2. handles one channel images im=im[...,0] so here if the image dimension is 28 * 28 * 1 , then ellipsis followed by 0 makes it 28 * 28
 
 5. **show_titled_image** 
+
+   ```Python
+@delegates(show_image, keep=True)
+def show_titled_image(o, **kwargs):
+    "Call `show_image` destructuring `o` to `(img,title)`"
+    show_image(o[0], title=str(o[1]), **kwargs)
+```
+
    
+  1. ```{Python}show_titled_image((im, 'A puppy'), figsize =(2,2)```  provide image and ti
 
 
 
