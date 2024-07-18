@@ -157,8 +157,32 @@ class ArrayImageBase(ArrayBase):
 
 
 	1. Base class for representing images
-	2. 
 
+
+9. **ArrayImage**
+
+
+	``` python
+class ArrayImage(ArrayImageBase):
+    "An array representing an image"
+    pass
+```
+
+
+
+10. **ArrayImageBW**
+
+
+
+	``` python
+class ArrayImageBW(ArrayImage):
+    "An array representing an image"
+    _show_args = {'cmap':'Greys'}
+```
+
+
+
+11. **ArrayMask**
 
 
 **References**
