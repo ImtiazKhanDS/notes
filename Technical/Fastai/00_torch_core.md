@@ -123,7 +123,7 @@ def show_images(ims, nrows=1, ncols=None, titles=None, **kwargs):
 	1. subplots function returns a numpy array on which we can use .flat attribute to get each axs in a list and iterate over it to send that ax to show_image function for plotting.
 
 
-7. ArrayBase
+7. **ArrayBase**
 
 
 
@@ -141,7 +141,7 @@ class ArrayBase(ndarray):
 	2. An `instance method`, simply put, is a function defined inside of a class. It varies with the different instances of the class, Whereas a `class method` is a method which, unlike the instance method, is applied to all instances of the class.
 
 
-8. ArrayImageBase
+8. **ArrayImageBase**
 
 
 
