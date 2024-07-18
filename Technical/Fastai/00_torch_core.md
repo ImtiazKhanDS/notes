@@ -185,6 +185,17 @@ class ArrayImageBW(ArrayImage):
 11. **ArrayMask**
 
 
+
+	``` python
+class ArrayMask(ArrayImageBase):
+    "An array representing an image mask"
+    _show_args = {'alpha':0.5, 'cmap':'tab20', 'interpolation':'nearest'}
+```
+
+
+
+	1. `interpolation='nearest'` means that to display a pixel, the colour of the nearest corresponding pixel in the input data is used without any blending with other pixels. This results in a blocky image appearance, as there is no smoothing between pixels. It's particularly useful when you want to see the individual pixels clearly, such as in image masks or when working with pixel-art images, where smoothing between pixels could obscure important details
+
 **References**
 
 1. fast core top features :  https://fastpages.fast.ai/fastcore/
