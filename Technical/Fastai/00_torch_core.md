@@ -141,6 +141,7 @@ class ArrayBase(ndarray):
 	2. An `instance method`, simply put, is a function defined inside of a class. It varies with the different instances of the class, Whereas a `class method` is a method which, unlike the instance method, is applied to all instances of the class.
 
 
+
 8. **ArrayImageBase**
 
 
