@@ -122,13 +122,13 @@ class ArrayBase(ndarray):
 
 8. ArrayImageBase
 
-	``` python
-	class ArrayImageBase(ArrayBase):
+   ``` python
+class ArrayImageBase(ArrayBase):
     "Base class for arrays representing images"
     _show_args = {'cmap':'viridis'}
     def show(self, ctx=None, **kwargs):
         return show_image(self, ctx=ctx, **{**self._show_args, **kwargs})
-```
+    ```
 
 	1. Base class for representing images
 	2. 
