@@ -89,7 +89,10 @@ def show_titled_image(o, **kwargs):
 ```
 
    
-    1. ```{python}show_titled_image((im, 'A puppy'), figsize =(2,2)```  provide image and title to show titled image.
+    1. {% highlight python %}
+       show_titled_image((im, 'A puppy'), figsize =(2,2)
+        
+        provide image and title to show titled image.
 
 6. **show_images** 
 
