@@ -14,10 +14,14 @@ def setup_cuda(benchmark=defaults.benchmark):
         torch.backends.cudnn.benchmark = benchmark 
 ```
 
+
 	1. **torch.backends.cudnn.benchmark = True** , This enables benchmark mode       in           cudnn.benchmark mode is good whenever your input sizes for your network do not vary. This way, cudnn will look for the optimal set of algorithms for that particular configuration (which takes some time). This usually leads to faster runtime. But if your input sizes changes at each iteration, then cudnn will benchmark every time a new size appears, possibly leading to worse runtime performances.
 	2. Sets a default gpu device.
 
+
 2. **subplots**
+
+
 
     ``` python 
 @delegates(plt.subplots, keep=True)
@@ -39,6 +43,7 @@ def subplots(
     return fig,ax
     ```
 
+
     1. The decorator `@delegates` will pass down keyword arguments from plt.subplots to subplots function , so that you can use shift-tab to see all the parameters of plt.subplots while calling subplots
     2. figsize is determined by nrows and ncols, very briefly `figsize = (ncols * imsize, nrows * imsize)`
     3. Returns `fig` and `axs` , fig is the actual figure , `axs` is a array which helps to go into each section of figure.
@@ -53,7 +58,9 @@ def subplots(
 
     1.  bounds an image used in show_image function below.
 
+
 4. **show_image**
+
 
    ``` python
 @delegates(plt.Axes.imshow, keep=True, but=['shape', 'imlim'])
@@ -76,22 +83,31 @@ def show_image(im, ax=None, figsize=None, title=None, ctx=None, **kwargs):
     return ax
 ```
 
+
     1. **hasattrs** tests whether im contains all attributes `data , cpu and permute` which handles PyTorch axis order.
     2. handles one channel images im=im[...,0] so here if the image dimension is 28 * 28 * 1 , then ellipsis followed by 0 makes it 28 * 28
 
+
+
 5. **show_titled_image** 
 
-   ``` python
+
+
+   ```python
 @delegates(show_image, keep=True)
 def show_titled_image(o, **kwargs):
     "Call `show_image` destructuring `o` to `(img,title)`"
     show_image(o[0], title=str(o[1]), **kwargs)
 ```
 
-   
+
+
     1. `show_titled_image((im, 'A puppy'), figsize =(2,2)` provide image and title to show titled image.
 
+
 6. **show_images** 
+
+
 
 	``` python
 @delegates(subplots)
@@ -106,7 +122,10 @@ def show_images(ims, nrows=1, ncols=None, titles=None, **kwargs):
 
 	1. subplots function returns a numpy array on which we can use .flat attribute to get each axs in a list and iterate over it to send that ax to show_image function for plotting.
 
+
 7. ArrayBase
+
+
 
 	``` python
 class ArrayBase(ndarray):
@@ -116,11 +135,15 @@ class ArrayBase(ndarray):
      return x if isinstance(x,ndarray) else array(x)
 ```
 
+
+
 	1. **@classmethod** : A classmethod() is a built-in function in Python that is used _to define a method that is bound to the class and not the instance of the class_. class methods are aware of the class state.
 	2. An `instance method`, simply put, is a function defined inside of a class. It varies with the different instances of the class, Whereas a `class method` is a method which, unlike the instance method, is applied to all instances of the class.
 
 
 8. ArrayImageBase
+
+
 
    ``` python
 class ArrayImageBase(ArrayBase):
@@ -130,8 +153,12 @@ class ArrayImageBase(ArrayBase):
         return show_image(self, ctx=ctx, **{**self._show_args, **kwargs})
     ```
 
+
+
 	1. Base class for representing images
 	2. 
+
+
 
 **References**
 
