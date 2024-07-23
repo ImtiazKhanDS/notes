@@ -7,3 +7,6 @@
 4. Fundamental principles of economics 
    1. People respond to incentives 
    2. Each transaction has an equal give and take
+5. Your sale is my purchase
+6. You have to understand the past to improve your future
+7. 
