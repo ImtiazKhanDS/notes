@@ -18,3 +18,5 @@
 14. IS curve (investment and savings ) if the federal cuts the interest rate , people will borrow more spend more spending the economy expands , gdp increases
 
 ![](../assets/images/LMCurve.png)
+   15. Fed controls these curves to maintain a healthy GDP
+   16. 
