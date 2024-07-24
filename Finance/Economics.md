@@ -13,4 +13,6 @@
 8. Productivity depends upon people doing different things
 9. Wealth is about what you can do rather than holding on to what you have 
 10. Say's it’s that supply creates its own demand, So in an economy, whenever there is a productive growth through supply , demand follows it. But this may not necessarily be true because there were times that the great depression happened, and there were times where recession kicked in, even though the countries economy was productive.
-11. 
+11. The more the interest rate given by banks the more people will try to economise on that.
+12. LM curve if the economy expands the interest increase.
+13. IS curve 
