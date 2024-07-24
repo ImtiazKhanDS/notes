@@ -9,4 +9,8 @@
    2. Each transaction has an equal give and take
 5. Your sale is my purchase
 6. You have to understand the past to improve your future
-7. 
+7. Wealth of a country doesn’t reside in gold or silver but in the production of goods , in short in productivity 
+8. Productivity depends upon people doing different things
+9. Wealth is about what you can do rather than holding on to what you have 
+10. Say's it’s that supply creates its own demand, So in an economy, whenever there is a productive growth through supply , demand follows it. But this may not necessarily be true because there were times that the great depression happened, and there were times where recession kicked in, even though the countries economy was productive.
+11. 
