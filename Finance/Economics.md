@@ -19,4 +19,5 @@
 
 ![](../assets/images/LMCurve.png)
    15. Fed controls these curves to maintain a healthy GDP
-   16. 
+   16. **Bank run** : A cyclical process where anxieties over a bank’s instability cause large groups of people to withdraw their money thereby making a bank more and more unstable
+   17. **Shadow banking** Financial activities like offering credit 

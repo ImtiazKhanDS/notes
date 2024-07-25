@@ -4,4 +4,4 @@
    2. BSE - Bombay Stock Exchange
 3. Market participant categories
    1. Domestic Retail participants, like you me individuals
-   2. NRI’s and O
+   2. NRI’s and OCI’s , people of indian origin but outside india 
