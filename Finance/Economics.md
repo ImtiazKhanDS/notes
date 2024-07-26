@@ -26,4 +26,6 @@
    20. **Liquidity trap** : The point at which the returns on investments become so low that , people would rather hold money than invest.
    21. Financial crisis will happen here and there the only solution to that is having a system which is kind of a shock absorber to reduce the impact, Banks should have enough reserves and should have a safety net.
    22. There is a growing gap of income . There are only few who hold the majority of the income which poses a danger to the economy.
-   23. Income is what you earn either through salary or through stock dividends, wealth is 
+   23. Income is what you earn either through salary or through stock dividends, wealth is what you own.
+   24. If your rate of income is is increasing more than the rate of economy you will be able to generate wealth.
+   25. 
