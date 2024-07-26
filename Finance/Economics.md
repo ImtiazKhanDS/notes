@@ -24,4 +24,5 @@
    18. **Ponzi scheme** : A fraudulent investment offered in an asset that doesn’t exist where funds from new investors are paid as returns to the previous investors 
    19. **Zero lower bound** : The point at which interest rates fall to zero and at which the federal can no longer stimulate economic activity by printing more money
    20. **Liquidity trap** : The point at which the returns on investments become so low that , people would rather hold money than invest.
-   21. 
+   21. Financial crisis will happen here and there the only solution to that is having a system which is kind of a shock absorber to reduce the impact, Banks should have enough reserves and should have a safety net.
+   22. There is a growing gap of income . 
