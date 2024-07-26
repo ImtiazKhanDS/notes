@@ -25,4 +25,5 @@
    19. **Zero lower bound** : The point at which interest rates fall to zero and at which the federal can no longer stimulate economic activity by printing more money
    20. **Liquidity trap** : The point at which the returns on investments become so low that , people would rather hold money than invest.
    21. Financial crisis will happen here and there the only solution to that is having a system which is kind of a shock absorber to reduce the impact, Banks should have enough reserves and should have a safety net.
-   22. There is a growing gap of income . 
+   22. There is a growing gap of income . There are only few who hold the majority of the income which poses a danger to the economy.
+   23. Income is what you earn either through salary or through stock dividends, wealth is 
