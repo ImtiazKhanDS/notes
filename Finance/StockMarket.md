@@ -3,5 +3,8 @@
    1. NSE - National Stock Exchange
    2. BSE - Bombay Stock Exchange
 3. Market participant categories
-   1. Domestic Retail participants, like you me individuals
-   2. NRI’s and OCI’s , people of indian origin but outside india 
+	   1. **Domestic Retail Participants** – These are people like you and me transacting in markets
+	2. **NRI’s and OCI** – These are people of Indian origin but based outside India
+	3. **Domestic Institutions** – These are corporate entities in India
+	4. **Domestic Asset Management Companies (AMC)** – Mutual fund companies like SBI Mutual Fund, HDFC AMC, Edelweiss, ICICI Pru, etc.
+	4. **Foreign Institutional Investors** – Non-Indian corporate entities. These could be foreign asset management companies, hedge funds, and other investors.
