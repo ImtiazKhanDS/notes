@@ -28,4 +28,11 @@
    22. There is a growing gap of income . There are only few who hold the majority of the income which poses a danger to the economy.
    23. Income is what you earn either through salary or through stock dividends, wealth is what you own.
    24. If your rate of income is is increasing more than the rate of economy you will be able to generate wealth.
-   25. 
+   25. Who decides the compensation of CEO , the compensation committee decides , who appoints the compensation commitee, the ceo.
+   26. Advocating for inequality
+     1. Universal Government healthcare
+     2. Minimum wage
+     3. Promote Unions to protect rights
+   27. Taxes
+      1. People want to maintain medic aid , they are okay to pay taxes for that
+      2. 
