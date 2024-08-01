@@ -17,4 +17,6 @@
 	11. ProcessPoolExecutor
 	12. `L` a replacement for `list`
 	13. Transform
-3. More Details here  https://fastcore.fast.ai/tour.html
+3. More Details [here]( https://fastcore.fast.ai/tour.html)
+4. Resources
+	1. https://www.fast.ai/2019/08/06/delegation/
