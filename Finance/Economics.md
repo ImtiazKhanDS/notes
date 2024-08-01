@@ -35,4 +35,6 @@
      3. Promote Unions to protect rights
    27. Taxes
       1. People want to maintain medic aid , they are okay to pay taxes for that
-      2. 
+      2. Corporate tax in US is high by international standards 
+      3. If you are raising good money then taxes doesn’t matter that much becomes a secondary issue.
+   28. 
