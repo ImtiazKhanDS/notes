@@ -1,1 +1,1 @@
-1. 
+1. Working yourself out , Every business / company has a vision statement , for that vision statement they have KPI's , they track their 
