@@ -10,4 +10,6 @@
 9. Berkshire Hathaway’s main business is insurance
 10. Wisdom nuggets from warren buffet
      1. Read all his investment philosophies basic models of investing and screening businesses 
-     2. Buy Islamic ETF’s 
+     2. Buy Islamic ETF’s or use a broker that allows you to screen ETFs for halal stocks only
+     3. Buy sukuk or shariah compliant low risk investments instead of bonds
+     4. Don’t ignore private markets , roughly 80 percent of Berkshire Hathaway’s income comes from this.
