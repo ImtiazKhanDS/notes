@@ -10,6 +10,6 @@
    3. **Be a legacy builder , don't keep money in your bank.**
      1. Invest 
      2. Give charity
-  4.  Prophetic Preference ( do it way ) - Give preference to the counter party
+  4.  **Prophetic Preference** ( do it way ) - Give preference to the counter party
      
 	
