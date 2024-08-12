@@ -8,4 +8,4 @@
 8. https://www.islamicfinanceguru.com/articles/islamic-finance/islamic-finance-book-list
 9. [https://cur8.capital](https://cur8.capital/)
 10. Nester peer to peer lending
-11. 
+11. https://www.calculator.net/investment-calculator.html
