@@ -18,4 +18,5 @@
 
 1. Liquidity: How quickly you can encash
 2. Volatility : simply means prices go up and down
-3. For individual haram investments e.g shares in an alchohol manufacturer, you should divest from such assets as soon as you can. Let's say you bought 5000 rs/- of Diageo shares which are now worth 
+3. For individual haram investments e.g shares in an alchohol manufacturer, you should divest from such assets as soon as you can. Let's say you bought 5000 rs/- of Diageo shares which are now worth 5200, you should sell those immediately and give away the 200 profit and keep the 5000 (assuming you made the 5000 from halal sources before investing.)
+4. A more complex problem occurs if your haram investments are comingled with halal investments , In that case calculate the percentage of Fund that is amounting to haram allocation , for example lets say 44 % , So you have to give away 44% of the profits and keep the rest.
