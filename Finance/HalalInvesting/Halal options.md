@@ -23,4 +23,6 @@
 5. In certain cases its more complicated than this , for example only lets say only 75 % of the fund is in equities , rest is in debt, or fixed interest etc. 
 6. Total investment = 100,
    halal equity part = 75, 
-    Total out = 200, halal total equity = 150 , but then within this there is haram component so 150 * 44/100 = 66
+   Total out = 200,
+   halal total equity = 150 ,
+   but then within this there is haram component so 150 * 44/100 = 66
