@@ -22,5 +22,8 @@
 4. A more complex problem occurs if your haram investments are comingled with halal investments , In that case calculate the percentage of Fund that is amounting to haram allocation , for example lets say 44 % , So you have to give away 44% of the profits and keep the rest.
 5. In certain cases its more complicated than this , for example only lets say only 75 % of the fund is in equities , rest is in debt, or fixed interest etc. 
 6. Fund : 74.14% equities, 14.49 % bonds and 8.08 % derivatives, of this lets say 27% is haram equities , so now total haram section = 27%* 74.14%. + 14.49% + 8.08%  = 42.87% , Unfortunately in this case around 42.87% of profits will be derived, Therefore if you have profited 1000 rs/- over a period of 5 years , then you have to give away 420 rs/-
-7. Shorting : When businesses perform poorly , certain fund managers get very exicited , since it opens up the possibility of "shorting". Shorting is a mechanism that allows you to borrow shares from an existing shareholder , sell those shares on the market , as long as you promise to give those shares back to the shareholder from whom you borrowed them. Where the share prices decrease in that 
+7. Shorting : When businesses perform poorly , certain fund managers get very exicited , since it opens up the possibility of "shorting". Shorting is a mechanism that allows you to borrow shares from an existing shareholder , sell those shares on the market , as long as you promise to give those shares back to the shareholder from whom you borrowed them. Where the share prices decrease in that time , you have a net gain.
+8. The share holder is no worse off - since all you do is borrow 10 gamestop shares from them and return 10 gamestop shares to them. But the winner is the person shorting because they benfit from the share price going down.
+9. A disciplined investor is a rich investor
+10. Generally not a good idea to think short -term
    
