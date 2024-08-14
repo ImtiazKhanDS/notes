@@ -9,3 +9,13 @@
 9. [https://cur8.capital](https://cur8.capital/)
 10. Nester peer to peer lending
 11. https://www.calculator.net/investment-calculator.html
+12. Amanah funds
+13. Funding soug 
+14. Lendo 
+15. Erad 
+
+#### Book learning
+
+1. Liquidity: How quickly you can encash
+2. Volatility : simply means prices go up and down
+3. 
