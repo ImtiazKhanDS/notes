@@ -18,4 +18,4 @@
 
 1. Liquidity: How quickly you can encash
 2. Volatility : simply means prices go up and down
-3. 
+3. For individual haram investments e.g shares in an alchohol manufacturer, you should divest from such assets as soon as you can. Let's say you bought 5000 rs/- of Diageo shares which are now worth 
