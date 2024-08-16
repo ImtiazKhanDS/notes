@@ -14,9 +14,13 @@ def test_fail(f, msg='', contains='', args=None, kwargs=None):
 
 1. We can check that code raises an exception when that's expected (`test_fail`).
 2. examples 
+
 ```Python
 def _fail(): raise Exception("foobar")
 test_fail(_fail, contains="foo")
 
 def _fail(): raise Exception()
-test_fail(_fail)```
+test_fail(_fail)
+```
+
+3. 
