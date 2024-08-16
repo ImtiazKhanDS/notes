@@ -23,4 +23,12 @@ def _fail(): raise Exception()
 test_fail(_fail)
 ```
 
+
+```Python
+def test(a, b, cmp, cname=None):
+    "`assert` that `cmp(a,b)`; display inputs and `cname or cmp.__name__` if it fails"
+    if cname is None: cname=cmp.__name__
+    assert cmp(a,b),f"{cname}:\n{a}\n{b}"
+```
+
 3. 
