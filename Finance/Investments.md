@@ -5,3 +5,5 @@
    2. Buy only coin / biscuit
    3. Buy from reputed jewellery
    4. Must have selling option @ Market rate
+4. SWP Tata ethical fund for monthly cashflow and investment 
+5. 
