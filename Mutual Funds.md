@@ -1,7 +1,7 @@
 
 1. Managed by asset management companies (AMC)
-2. An aggregration of stocks
-3. Mutal Funds types
+2. An aggregation of stocks
+3. Mutual Funds types
    1. Equity - We can only invest here.
    2. Debt - Not Halal
    3. Hybrid - Not Halal
@@ -17,6 +17,9 @@
      1. Growth (profit gets reinvested) - recommended.
      2. IDCW (dividends will be given back)
 10. Net Asset Value : (a unit)
-11. cagr - compounded aggregrated growth return
+11. CAGR - compounded aggregated growth return
 12. expense ratio, What ever amount you get in return (expense ratio) amount will go to the fund manager (check for if it is low.)
-13. exit load : 
+13. exit load :  For excess selling above 12 percent in a year , there will be 1 percent charge.
+14. Always Do SIP
+15. Zerodha ,Groww, upstox.
+16. 
