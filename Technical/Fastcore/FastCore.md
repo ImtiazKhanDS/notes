@@ -20,3 +20,9 @@
 3. More Details [here]( https://fastcore.fast.ai/tour.html)
 4. Resources
 	1. https://www.fast.ai/2019/08/06/delegation/
+
+
+Notebook wise explanation of code
+
+1. [00_test.ipynb](00_test.ipynb)
+2. 

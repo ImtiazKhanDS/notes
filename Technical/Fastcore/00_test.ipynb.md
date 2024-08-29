@@ -78,6 +78,11 @@ a==b
 # This returns false because a is not equal to b
 ```
 
+```Python
+def df_equal(a,b): 
+	return a.equals(b) if isinstance_str(a, 'NDFrame') else b.equals(a)
+```
+
 
 ```Python
 def equals(a,b):
@@ -117,4 +122,12 @@ def all_equal(a,b):
 	return all(equals(a_,b_) for a_,b_ in itertools.zip_longest(a,b))
 ```
 
-7. 
+7. `itertools.zip_longest` adds `None` to the shortest sequence.
+8.  not equals method is just negation of equals
+
+```Python
+def nequals(a,b):
+	"Compares `a` and `b` for `not equals`"
+	return not equals(a,b)
+```
+
