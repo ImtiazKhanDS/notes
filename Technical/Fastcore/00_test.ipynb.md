@@ -46,3 +46,6 @@ def isinstance_str(x, cls_name):
     return cls_name in [t.__name__ for t in type(x).__mro__]
 ```
 
+4. In numpy if arrays `a`  = [1, 2] and `b` = [1, 2] , we can compare this two for equality as
+    `(a == b).all()`
+5. 
