@@ -1,7 +1,7 @@
 
 
 
-```Python
+```python
 def test_fail(f, msg='', contains='', args=None, kwargs=None):
     "Fails with `msg` unless `f()` raises an exception and (optionally) has `contains` in `e.args`"
     args, kwargs = args or [], kwargs or {}
@@ -15,7 +15,7 @@ def test_fail(f, msg='', contains='', args=None, kwargs=None):
 1. We can check that code raises an exception when that's expected (`test_fail`).
 2. examples 
 
-```Python
+```python
 def _fail(): raise Exception("foobar")
 test_fail(_fail, contains="foo")
 
@@ -24,14 +24,14 @@ test_fail(_fail)
 ```
 
 
-```Python
+```python
 def test(a, b, cmp, cname=None):
     "`assert` that `cmp(a,b)`; display inputs and `cname or cmp.__name__` if it fails"
     if cname is None: cname=cmp.__name__
     assert cmp(a,b),f"{cname}:\n{a}\n{b}"
 ```
 
-```Python
+```python
 def is_iter(o):
     "Test whether `o` can be used in a `for` loop"
     #Rank 0 tensors in PyTorch are not really iterable
@@ -40,7 +40,7 @@ def is_iter(o):
 
 3. ` __mro__`    is the method resolution order , As long as we have single inheritance `__mro__` is just the tuple of the class, its base and its base's base.
 
-```Python
+```python
 def isinstance_str(x, cls_name):
     "Like `isinstance`, except takes a type name instead of a type"
     return cls_name in [t.__name__ for t in type(x).__mro__]
@@ -48,7 +48,7 @@ def isinstance_str(x, cls_name):
 
 4. In numpy if arrays `a`  = [1, 2] and `b` = [1, 2] , we can compare this two for equality as
     `(a == b).all()`
-```Python
+```python
 def array_equal(a,b):
 	if hasattr(a, '__array__'): a = a.__array__()
 	if hasattr(b, '__array__'): b = b.__array__()
@@ -57,14 +57,14 @@ def array_equal(a,b):
 	return all_equal(a,b)
 ```
 
-```Python
+```python
 def any_is_instance(t, *args):
 	return any(isinstance(a,t) for a in args)
 ```
 
 5. sample example of using **any_is_instance**.
 
-```Python
+```python
 class temp:
 
 	def __init__(self, a):
@@ -78,13 +78,13 @@ a==b
 # This returns false because a is not equal to b
 ```
 
-```Python
+```python
 def df_equal(a,b): 
 	return a.equals(b) if isinstance_str(a, 'NDFrame') else b.equals(a)
 ```
 
 
-```Python
+```python
 def equals(a,b):
 
 "Compares `a` and `b` for equality; supports sublists, tensors and arrays too"
@@ -113,7 +113,7 @@ def equals(a,b):
 
 6. Covers all conditions and chooses the cmp (comparator) as per the operands.
 
-```Python
+```python
 def all_equal(a,b):
 	"Compares whether `a` and `b` are the same length and have the same   contents"
 
@@ -125,7 +125,7 @@ def all_equal(a,b):
 7. `itertools.zip_longest` adds `None` to the shortest sequence.
 8.  not equals method is just negation of equals
 
-```Python
+```python
 def nequals(a,b):
 	"Compares `a` and `b` for `not equals`"
 	return not equals(a,b)
