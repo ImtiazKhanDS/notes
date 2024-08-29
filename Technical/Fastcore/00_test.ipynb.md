@@ -106,3 +106,15 @@ def equals(a,b):
 	return cmp(a,b)
 ```
 
+6. Covers all conditions and chooses the cmp (comparator) as per the operands.
+
+```Python
+def all_equal(a,b):
+	"Compares whether `a` and `b` are the same length and have the same   contents"
+
+	if not is_iter(b): return a==b
+	
+	return all(equals(a_,b_) for a_,b_ in itertools.zip_longest(a,b))
+```
+
+7. 
