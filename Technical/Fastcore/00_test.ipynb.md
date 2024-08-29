@@ -62,4 +62,20 @@ def any_is_instance(t, *args):
 	return any(isinstance(a,t) for a in args)
 ```
 
-5. 
+5. Sample example of using any_is_instance.
+
+```Python
+class temp:
+
+	def __init__(self, a):
+		self.a = a
+
+a = temp(1)
+b = 2
+any_is_instance(temp, a,b)
+ # This returns true because a is an instance of temp
+a==b 
+# This returns false because a is not equal to b
+```
+
+6. 
