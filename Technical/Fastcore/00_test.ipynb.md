@@ -57,4 +57,9 @@ def array_equal(a,b):
 	return all_equal(a,b)
 ```
 
+```Python
+def any_is_instance(t, *args):
+	return any(isinstance(a,t) for a in args)
+```
+
 5. 
