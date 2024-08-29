@@ -62,7 +62,7 @@ def any_is_instance(t, *args):
 	return any(isinstance(a,t) for a in args)
 ```
 
-5. Sample example of using any_is_instance.
+5. sample example of using **any_is_instance**.
 
 ```Python
 class temp:
