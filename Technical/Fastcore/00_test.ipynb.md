@@ -38,4 +38,11 @@ def is_iter(o):
     return isinstance(o, (Iterable,Generator)) and getattr(o,'ndim',1)
 ```
 
-3.` __mro__ 
+3. ` __mro__`    is the method resolution order , As long as we have single inheritance `__mro__` is just the tuple of the class, its base and its base's base.
+
+```Python
+def isinstance_str(x, cls_name):
+    "Like `isinstance`, except takes a type name instead of a type"
+    return cls_name in [t.__name__ for t in type(x).__mro__]
+```
+
