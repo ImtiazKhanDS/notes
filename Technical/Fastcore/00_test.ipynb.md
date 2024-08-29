@@ -37,3 +37,5 @@ def is_iter(o):
     #Rank 0 tensors in PyTorch are not really iterable
     return isinstance(o, (Iterable,Generator)) and getattr(o,'ndim',1)
 ```
+
+3.` __mro__ 
