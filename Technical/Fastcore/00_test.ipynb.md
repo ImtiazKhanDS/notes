@@ -48,4 +48,13 @@ def isinstance_str(x, cls_name):
 
 4. In numpy if arrays `a`  = [1, 2] and `b` = [1, 2] , we can compare this two for equality as
     `(a == b).all()`
+```Python
+def array_equal(a,b):
+	if hasattr(a, '__array__'): a = a.__array__()
+	if hasattr(b, '__array__'): b = b.__array__()
+	if isinstance_str(a, 'ndarray') and isinstance_str(b, 'ndarray'):  
+		return (a==b).all() 
+	return all_equal(a,b)
+```
+
 5. 
