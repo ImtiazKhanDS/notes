@@ -12,10 +12,11 @@
 8. Funds in USA which are shariah compliant
    1. Falah capital iman fund
    2. Iman fund
-   3. **Wahed FTSE USA Shariah ETF (HLAL)**
+   3. **Wahed FTSE USA Shariah ETF (HLAL)** **-5k**
    4. S & P 500 shariah stocks
-   5. **Wahed S & P shariah fund**
+   5. **Wahed S & P shariah fund** -**5k**
    6. Halal dividend stocks
    7. FTSE USA shariah index
 9. Islamicly and Mussaffa 
-10. 
+10. **The Sp Funds Dow Jones Global Sukuk Etf**
+11. 
