@@ -8,7 +8,6 @@
    4. Must have selling option @ Market rate
 5. SWP Tata ethical fund for monthly cashflow and investment 
 6. For international investments use INDmoney 
-7. Almost 40 percent shares in usa are shariah compliant
 8. Funds in USA which are shariah compliant
    1. Falah capital iman fund
    2. Iman fund
@@ -17,6 +16,6 @@
    5. **Wahed S & P shariah fund** -**5k**
    6. Halal dividend stocks
    7. FTSE USA shariah index
-9. Islamicly and Mussaffa 
+9. Islamicly and Mussaffa for checking compliance
 10. **The Sp Funds Dow Jones Global Sukuk Etf**
 11. 
