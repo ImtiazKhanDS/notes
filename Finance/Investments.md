@@ -19,7 +19,9 @@
 9. Islamicly and Mussaffa for checking compliance
 10. **The Sp Funds Dow Jones Global Sukuk Etf**
 
-Resources to look for 
+**Resources to look for** 
 
-1. Bloomberg Asia (paid) (go to canada website )
-2. 
+1. Bloomberg Asia (paid) (go to canada website its free) for asian markets
+2. Wall street Journal for US Markets
+3. Economic times, livemint and moneycontrol - India
+4. 
