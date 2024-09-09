@@ -18,4 +18,8 @@
    7. FTSE USA shariah index
 9. Islamicly and Mussaffa for checking compliance
 10. **The Sp Funds Dow Jones Global Sukuk Etf**
-11. 
+
+Resources to look for 
+
+1. Bloomberg Asia (paid) (go to canada website )
+2. 
