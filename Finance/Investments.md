@@ -1,14 +1,15 @@
 1. Sip - Tata Ethical Fund **aug 27th - 5k**
-2. Smallcase - Nayab shariah gems 
-3. Physical Gold
+2. Sip - Taurus Ethical Fund **aug 29th - 5k**
+3. Smallcase - Nayab shariah gems 
+4. Physical Gold
    1. 24c gold
    2. Buy only coin / biscuit
    3. Buy from reputed jewellery
    4. Must have selling option @ Market rate
-4. SWP Tata ethical fund for monthly cashflow and investment 
-5. For international investments use INDmoney 
-6. Almost 40 percent shares in usa are shariah compliant
-7. Funds in USA which are shariah compliant
+5. SWP Tata ethical fund for monthly cashflow and investment 
+6. For international investments use INDmoney 
+7. Almost 40 percent shares in usa are shariah compliant
+8. Funds in USA which are shariah compliant
    1. Falah capital iman fund
    2. Iman fund
    3. **Wahed FTSE USA Shariah ETF (HLAL)**
@@ -16,13 +17,5 @@
    5. **Wahed S & P shariah fund**
    6. Halal dividend stocks
    7. FTSE USA shariah index
-8. Islamicly and Mussaffa 
-9. For technical analysis use investing.com
-10. Amana fund AMAGX
-11. **The Sp Funds Dow Jones Global Sukuk Etf**
-
-**Resources to look for**
-
-1. Bloomberg Asia (paid) (go to canada website its free) for asian markets
-2. Wall street Journal for US Markets
-3. Economic times, livemint and moneycontrol - India
+9. Islamicly and Mussaffa 
+10. ![[Pasted image 20240831213421.png]]
