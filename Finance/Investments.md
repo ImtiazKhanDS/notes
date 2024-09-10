@@ -18,4 +18,4 @@
    6. Halal dividend stocks
    7. FTSE USA shariah index
 9. Islamicly and Mussaffa 
-10. ![[Pasted image 20240831213421.png]]
+10. ![[Investments-image-1.png]]
