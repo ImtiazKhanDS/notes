@@ -116,3 +116,13 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 5. consider the fact that these two hypermedia controls, anchors and forms, are the _only_ native ways for a user to interact with a server in plain HTML.
 6. ![htmx advantage](../../assets/images/HypermediaSystems-1.png)
 7. By adopting the hypermedia approach for these applications, you will save yourself a huge amount of client-side complexity that comes with adopting the Single Page Application approach: there is no need for client-side routing, for managing a client-side model, for hand-wiring in JavaScript logic, and so forth. The back button will “just work.” Deep linking will “just work.” You will be able to focus your efforts on your server, where your application is actually adding value.
+8. A _hypermedia system_ consists of a number of components, including:
+
+- A hypermedia, such as HTML.
+    
+- A network protocol, such as HTTP.
+    
+- A server that presents a hypermedia API responding to network requests with hypermedia responses.
+    
+- A client that properly interprets those responses.
+
