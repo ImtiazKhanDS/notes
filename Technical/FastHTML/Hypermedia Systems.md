@@ -114,4 +114,5 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 ```
 
 5. consider the fact that these two hypermedia controls, anchors and forms, are the _only_ native ways for a user to interact with a server in plain HTML.
-6. ![[![htmx advantage](../assets/images/Hypermedia Systems-image-1.png)]]
+6. ![htmx advantage](Hypermedia%20Systems-image-1.png)
+7. 
