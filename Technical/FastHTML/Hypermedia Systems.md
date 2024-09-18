@@ -47,4 +47,69 @@
    2. When the user clicks on that text, issue an HTTP `GET` request to the URL `https://hypermedia.systems/`
     
    3.  Take the HTML content in the body of the HTTP response to this request and replace the entire screen in the browser as a new document, updating the navigation bar to this new URL.
-4.  
+4. Form tags
+
+Anchor tags provide _navigation_ between documents or resources, but don’t allow you to update those resources. That functionality falls to the form tag.
+
+Here is a simple example of a form in HTML:
+
+```html
+<form action="/signup" method="post">
+  <input type="text" name="email" placeholder="Enter Email To Sign Up">
+  <button>Sign Up</button>
+</form>
+```
+
+A simple form
+
+Like an anchor tag, a form tag consists of the tag itself, `<form></form>`, combined with the attributes and content within the tag. Note that the form tag does not have an `href` attribute, but rather has an `action` attribute that specifies where to issue an HTTP request.
+
+Furthermore, it also has a `method` attribute, which specifies exactly which HTTP “method” to use. In this example the form is asking the browser to issue a `POST` request.
+
+In contrast with anchor tags, the content and tags _within_ a form can have an effect on the hypermedia interaction that the form makes with a server. The _values_ of `input` tags and other tags such as `select` tags will be included with the HTTP request when the form is submitted, as URL parameters in the case of a `GET` and as part of the request body in the case of a `POST`. This allows a form to include an arbitrary amount of information collected from a user in a request, unlike the anchor tag.
+
+In a typical browser this form tag and its contents would be interpreted by the browser roughly as follows:
+
+- Show a text input and a “Sign Up” button to the user
+    
+- When the user submits the form by clicking the “Sign Up” button or by hitting the enter key while the input element is focused, issue an HTTP `POST` request to the path `/signup` on the “current” server
+    
+- Take the HTML content in the body of the HTTP response body and replace the entire screen in the browser as a new document, updating the navigation bar to this new URL.
+    
+
+This mechanism allows the user to issue requests to _update the state_ of resources on the server. Note that despite this new type of request the communication between client and server is still done entirely with _hypermedia_.
+
+It is the form tag that makes Hypermedia-Driven Applications possible.
+
+```
+┌────────────────────────┐      ┌─HTTP REQUEST────────────────┐
+│ BROWSER              X │      │                             │
+├────────────────────────┤      │ POST /                      │
+│                        │      │ Host: hypermedia.systems    │
+│ SIGN UP                │      │ ...                         │
+│ ┌────────────────────┐ │      │ email=joe@example.com       │
+│ │ joe@example.com    │ │      └─────────────────────────────┘
+│ └────────────────────┘ │
+│ ┌─────────┐        ────┼───────────┐
+│ │ Sign up │            │           │
+│ └─────────┘            │           │
+└────────────────────────┘           │
+                              ┌──────▼──────┐
+                              │   H T T P   │
+                              │ S E R V E R │
+                              └──────┬──────┘
+┌────────────────────────┐           │
+│ BROWSER              X │           │
+├────────────────────────┤           │
+│                        │           │
+│ THANK YOU FOR SIGNING  ◀───────────┘
+│ UP                     │
+│                        │      ┌─HTTP RESPONSE───────────────┐
+│                        │      │                             │
+│                        │      │ 201 Created                 │
+│                        │      │ ...                         │
+└────────────────────────┘      │ <h1>Thank you for signing   │
+                                │ up</h1>                     │
+                                └─────────────────────────────┘
+```
+
