@@ -148,6 +148,6 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 	    
 	- `DELETE` deletes the given resource.
 
-17. 
+17. Htmx is a JavaScript library that extends HTML in exactly this manner. Again, htmx is not the only JavaScript library that takes this hypermedia-oriented approach (other excellent examples are [Unpoly](https://unpoly.com/) and [Hotwire](https://hotwire.dev/)), but htmx is the purest in its pursuit of extending HTML as a hypermedia.
     
 
