@@ -164,5 +164,42 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 
 </div>
 ```
-    
 
+19. By using CSS selectors, htmx builds on top of familiar and standard HTML concepts. This keeps the additional conceptual load for working with htmx to a minimum.
+
+	Given this new configuration, what would the HTML on the client look like after a user clicks on this button and a response has been received and processed?
+	
+	It would look something like this:
+
+```html
+<div id="main">
+  <ul>
+    <li><a href="mailto:joe@example.com">Joe</a></li>
+    <li><a href="mailto:sarah@example.com">Sarah</a></li>
+    <li><a href="mailto:fred@example.com">Fred</a></li>
+  </ul>
+</div>
+```
+
+	Our HTML after the htmx request finishes
+
+20. Now, perhaps we don’t want to load the content from the server response _into_ the div, as child elements. Perhaps, for whatever reason, we wish to _replace_ the entire div with the response. To handle this, htmx provides another attribute, `hx-swap`, that allows you to specify exactly _how_ the content should be swapped into the DOM.
+
+	The `hx-swap` attribute supports the following values:
+	
+	- `innerHTML` - The default, replace the inner html of the target element.
+	    
+	- `outerHTML` - Replace the entire target element with the response.
+	    
+	- `beforebegin` - Insert the response before the target element.
+	    
+	- `afterbegin` - Insert the response before the first child of the target element.
+	    
+	- `beforeend` - Insert the response after the last child of the target element.
+	    
+	- `afterend` - Insert the response after the target element.
+	    
+	- `delete` - Deletes the target element regardless of the response.
+	    
+	- `none` - No swap will be performed.
+	
