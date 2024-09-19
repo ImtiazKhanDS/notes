@@ -331,4 +331,28 @@ Now, when a response is received, the _entire_ div will be replaced with the h
     2. Any event should be able to trigger an HTTP request`hx-trigger`
     3. Any HTTP Action should be available`hx-put`, `hx-patch`, `hx-delete`
     4. Any place on the page should be replaceable (transclusion)`hx-target`, `hx-swap`
+25. The simplest way to pass input values with a request in htmx is to enclose the element making a request within a form tag.
+
+	Let’s take our original search form and convert it to use htmx instead:
+	
+	```html
+	<form action="/contacts" method="get" class="tool-bar"> <1>
+	  <label for="search">Search Term</label>
+	  <input id="search" type="search" name="q" 
+	    value="{{ request.args.get('q') or '' }}"
+	    placeholder="Search Contacts"/>
+	  <button hx-post="/contacts" hx-target="#main"> <2>
+	    Search
+	  </button>
+	</form>
+	```
+	
+	An htmx-powered search button
+	
+	1. When an htmx-powered element is withing an ancestor form tag, all input values within that form will be submitted for non-`GET` requests
+	    
+	2. We have switched from an `input` of type `submit` to a `button` and added the `hx-post` attribute
+	    
+	
+	Now, when a user clicks on this button, the value of the input with the id `search` will be included in the request. This is by virtue of the fact that there is a form tag enclosing both the button and the input: when an htmx-driven request is triggered, htmx will look up the DOM hierarchy for an enclosing form, and, if one is found, it will include all values from within that form. (This is sometimes referred to as “serializing” the form.)
 
