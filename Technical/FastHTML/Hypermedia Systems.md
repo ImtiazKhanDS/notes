@@ -263,70 +263,72 @@ Now, when a response is received, the _entire_ div will be replaced with the h
 	Event filters are a mechanism for determining if a given event should trigger a request or not. They are applied to an event by adding square brackets after it: `someEvent[someFilter]`. The filter itself is a JavaScript expression that will be evaluated when the given event occurs. If the result is truthy, in the JavaScript sense, it will trigger the request. If not, the request will not be triggered.
 	
 	In the case of keyboard shortcuts, we want to catch the `keyup` event in addition to the click event:
-
-```html
-<div id="main">
-
-  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"
-    hx-trigger="click, keyup"> <1>
-    Get The Contacts
-  </button>
-
-</div>
-```    
-
+	
+	```html
+	<div id="main">
+	
+	  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"
+	    hx-trigger="click, keyup"> <1>
+	    Get The Contacts
+	  </button>
+	
+	</div>
+	```    
+	
 	Note that we have a comma separated list of events that can trigger this element, allowing us to respond to more than one potential triggering event. We still want to respond to the `click` event and load the contacts, in addition to handling the `Ctrl-L` keyboard shortcut.
 	
 	Unfortunately there are two problems with our `keyup` addition: As it stands, it will trigger requests on _any_ keyup event that occurs. And, worse, it will only trigger when a keyup occurs _within_ this button. The user would need to tab onto the button to make it active and then begin typing.
 	
 	Let’s fix these two issues. To fix the first one, we will use a trigger filter to test that Control key and the “L” key are pressed together:
+	
+	```html
+	<div id="main">
+	
+	  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"
+	    hx-trigger="click, keyup[ctrlKey && key == 'l']"> <1>
+	    Get The Contacts
+	  </button>
+	
+	</div>
+	```
+	
+	The trigger filter in this case is `ctrlKey && key == 'l'`. This can be read as “A key up event, where the ctrlKey property is true and the key property is equal to l.” Note that the properties `ctrlKey` and `key` are resolved against the event rather than the global name space, so you can easily filter on the properties of a given event. You can use any expression you like for a filter, however: calling a global JavaScript function, for example, is perfectly acceptable.
+	
+	OK, so this filter limits the keyup events that will trigger the request to only `Ctrl-L` presses. However, we still have the problem that, as it stands, only `keyup` events _within_ the button will trigger the request.
+	
+	If you are not familiar with the JavaScript event bubbling model: events typically “bubble” up to parent elements. So an event like `keyup` will be triggered first on the focused element, and then on its parent (enclosing) element, and so on, until it reaches the top level `document` object that is the root of all other elements.
+	
+	To support a global keyboard shortcut that works regardless of what element has focus, we will take advantage of event bubbling and a feature that the `hx-trigger` attribute supports: the ability to listen to _other elements_ for events. The syntax for doing this is the `from:` modifier, which is added after an event name and that allows you to specify a specific element to listen for the given event on using a CSS selector.
+	
+	In this case, we want to listen to the `body` element, which is the parent element of all visible elements on the page.
+	
+	Here is what our updated `hx-trigger` attribute looks like:
+	
+	```html
+	<div id="main">
+	
+	  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"
+	    hx-trigger="click, keyup[ctrlKey && key == 'l'] from:body"> <1>
+	    Get The Contacts
+	  </button>
+	
+	</div>
+	```
+	
+	Even better, listen for keyup on the body
+	
+	1. Listen to the ‘keyup” event on the `body` tag.
+	    
+	
+	Now, in addition to clicks, the button will listen for `keyup` events on the body of the page. So it will issue a request when it is clicked on and also whenever someone hits `Ctrl-L` within the body of the page.
+	
+	And now we have a nice keyboard shortcut for our Hypermedia-Driven Application.
+	
+	The `hx-trigger` attribute supports many more modifiers, and it is more elaborate than other htmx attributes. This is because events, in general, are complicated and require a lot of details to get just right. The default trigger will often suffice, however, and you typically don’t need to reach for complicated `hx-trigger` features when using htmx.
 
-```
-<div id="main">
+24. Summary of HTMX : HTML Extended
+    1. Any element should be able to make HTTP requests`hx-get`, `hx-post`, `hx-put`, `hx-patch`, `hx-delete`
+    2. Any event should be able to trigger an HTTP request`hx-trigger`
+    3. Any HTTP Action should be available`hx-put`, `hx-patch`, `hx-delete`
+    4. Any place on the page should be replaceable (transclusion)`hx-target`, `hx-swap`
 
-  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"
-    hx-trigger="click, keyup[ctrlKey && key == 'l']"> <1>
-    Get The Contacts
-  </button>
-
-</div>
-```
-
-Getting better with filter on keyup
-
-1. `keyup` now has a filter, so the control key and L must be pressed.
-    
-
-The trigger filter in this case is `ctrlKey && key == 'l'`. This can be read as “A key up event, where the ctrlKey property is true and the key property is equal to l.” Note that the properties `ctrlKey` and `key` are resolved against the event rather than the global name space, so you can easily filter on the properties of a given event. You can use any expression you like for a filter, however: calling a global JavaScript function, for example, is perfectly acceptable.
-
-OK, so this filter limits the keyup events that will trigger the request to only `Ctrl-L` presses. However, we still have the problem that, as it stands, only `keyup` events _within_ the button will trigger the request.
-
-If you are not familiar with the JavaScript event bubbling model: events typically “bubble” up to parent elements. So an event like `keyup` will be triggered first on the focused element, and then on its parent (enclosing) element, and so on, until it reaches the top level `document` object that is the root of all other elements.
-
-To support a global keyboard shortcut that works regardless of what element has focus, we will take advantage of event bubbling and a feature that the `hx-trigger` attribute supports: the ability to listen to _other elements_ for events. The syntax for doing this is the `from:` modifier, which is added after an event name and that allows you to specify a specific element to listen for the given event on using a CSS selector.
-
-In this case, we want to listen to the `body` element, which is the parent element of all visible elements on the page.
-
-Here is what our updated `hx-trigger` attribute looks like:
-
-```
-<div id="main">
-
-  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"
-    hx-trigger="click, keyup[ctrlKey && key == 'l'] from:body"> <1>
-    Get The Contacts
-  </button>
-
-</div>
-```
-
-Even better, listen for keyup on the body
-
-1. Listen to the ‘keyup” event on the `body` tag.
-    
-
-Now, in addition to clicks, the button will listen for `keyup` events on the body of the page. So it will issue a request when it is clicked on and also whenever someone hits `Ctrl-L` within the body of the page.
-
-And now we have a nice keyboard shortcut for our Hypermedia-Driven Application.
-
-The `hx-trigger` attribute supports many more modifiers, and it is more elaborate than other htmx attributes. This is because events, in general, are complicated and require a lot of details to get just right. The default trigger will often suffice, however, and you typically don’t need to reach for complicated `hx-trigger` features when using htmx.
