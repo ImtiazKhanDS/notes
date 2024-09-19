@@ -137,4 +137,17 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 	- It is a layered system
 	- Optionally, it can allow for Code-On-Demand, that is, scripting.
 15. In practice, for many web applications today, we actually violate "stateless" constraint: it is common to establish a _session cookie_ that acts as a unique identifier for a given user and that is sent along with every request. While this session cookie is, by itself, not stateful (it is sent with every request), it is typically used as a key to look up information stored on the server, in what is usually termed “the session.” This session information is typically stored in some sort of shared storage across multiple web servers, holding things like the current user’s email or id, their roles, partially created domain objects, caches, and so forth.
-16. 
+16. These operations correspond closely to the CRUD operations. By giving us access to only two of the five, HTML hamstrings our ability to take full advantage of HTTP.
+	- `GET` corresponds with “getting” a representation for a resource from a URL: it is a pure read, with no mutation of the resource.
+	    
+	- `POST` submits an entity (or data) to the given resource, often creating or mutating the resource and causing a state change.
+	    
+	- `PUT` submits an entity (or data) to the given resource for update or replacement, again likely causing a state change.
+	    
+	- `PATCH` is similar to `PUT` but implies a partial update and state change rather than a complete replacement of the entity.
+	    
+	- `DELETE` deletes the given resource.
+
+17. 
+    
+
