@@ -203,3 +203,33 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 	    
 	- `none` - No swap will be performed.
 	
+21. To do so would require only a small change to our button, adding a new `hx-swap` attribute:
+
+```html
+<div id="main">
+
+  <button hx-get="/contacts" hx-target="#main" hx-swap="outerHTML"> <1>
+    Get The Contacts
+  </button>
+
+</div>
+```
+
+	Replacing the entire div
+	
+	1. The `hx-swap` attribute specifies how to swap in new content.
+    
+
+Now, when a response is received, the _entire_ div will be replaced with the hypermedia content:
+
+```html
+<ul>
+  <li><a href="mailto:joe@example.com">Joe</a></li>
+  <li><a href="mailto:sarah@example.com">Sarah</a></li>
+  <li><a href="mailto:fred@example.com">Fred</a></li>
+</ul>
+```
+
+	Our HTML after the htmx request finishes
+
+22. 
