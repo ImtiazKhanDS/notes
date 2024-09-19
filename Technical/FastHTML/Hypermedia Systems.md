@@ -151,9 +151,9 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 17. Htmx is a JavaScript library that extends HTML in exactly this manner. Again, htmx is not the only JavaScript library that takes this hypermedia-oriented approach (other excellent examples are [Unpoly](https://unpoly.com/) and [Hotwire](https://hotwire.dev/)), but htmx is the purest in its pursuit of extending HTML as a hypermedia.
 18. It turns out that the default htmx behavior is to simply put the returned content inside the element that triggered the request. That’s _not_ a good thing in the case of our button: we will end up with a list of contacts awkwardly embedded within the button element. That will look pretty silly and is obviously not what we want.
 
-Fortunately htmx provides another attribute, `hx-target` which can be used to specify exactly _where_ in the DOM the new content should be placed. The value of the `hx-target` attribute is a Cascading Style Sheet (CSS) _selector_ that allows you to specify the element to put the new hypermedia content into.
-
-Let’s add a `div` tag that encloses the button with the id `main`. We will then target this `div` with the response:
+	Fortunately htmx provides another attribute, `hx-target` which can be used to specify exactly _where_ in the DOM the new content should be placed. The value of the `hx-target` attribute is a Cascading Style Sheet (CSS) _selector_ that allows you to specify the element to put the new hypermedia content into.
+	
+	Let’s add a `div` tag that encloses the button with the id `main`. We will then target this `div` with the response:
 
 ```html
 <div id="main"> <1>
