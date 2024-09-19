@@ -136,3 +136,5 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 	- It must have a _uniform interface
 	- It is a layered system
 	- Optionally, it can allow for Code-On-Demand, that is, scripting.
+15. In practice, for many web applications today, we actually violate "stateless" constraint: it is common to establish a _session cookie_ that acts as a unique identifier for a given user and that is sent along with every request. While this session cookie is, by itself, not stateful (it is sent with every request), it is typically used as a key to look up information stored on the server, in what is usually termed “the session.” This session information is typically stored in some sort of shared storage across multiple web servers, holding things like the current user’s email or id, their roles, partially created domain objects, caches, and so forth.
+16. 
