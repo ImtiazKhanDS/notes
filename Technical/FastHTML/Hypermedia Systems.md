@@ -126,4 +126,4 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 
 
 10. Here we have a _relative_ hypermedia reference, where the protocol, host and port are _implied_ to be that of the “current document,” that is, the same as whatever the protocol and server were to retrieve the current HTML page. So, if this link was found in an HTML document retrieved from `https://hypermedia.systems/`, then the implied URL for this anchor would be`https://hypermedia.systems/book/contents/`.
-11. 
+11. The cache behavior of an HTTP response from a server can be indicated with the `Cache-Control` response header. This header can have a number of different values indicating the cacheability of a given response. If, for example, the header contains the value `max-age=60`, this indicates that a client may cache this response for 60 seconds, and need not issue another HTTP request for that resource until that time limit has expired.
