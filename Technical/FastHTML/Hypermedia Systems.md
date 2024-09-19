@@ -129,3 +129,10 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 11. The cache behavior of an HTTP response from a server can be indicated with the `Cache-Control` response header. This header can have a number of different values indicating the cacheability of a given response. If, for example, the header contains the value `max-age=60`, this indicates that a client may cache this response for 60 seconds, and need not issue another HTTP request for that resource until that time limit has expired.
 12. building a Hypermedia-Driven Application gives you a lot more freedom in picking the back end technology you want to use. Your decision can be based on the domain of your application, what languages and server software you are familiar with or are passionate about, or just what you feel like trying out.
 13. Browsers aren’t the only hypermedia clients out there, however. Hyperview, a mobile-oriented hypermedia. One of the outstanding features of Hyperview is that it doesn’t simply provide a hypermedia, HXML, but also provides a _working hypermedia client_ for that hypermedia. This makes building a proper Hypermedia-Driven Application with Hyperview extremely easy.
+14. Here are the constraints of REST Fielding outlines:
+	- It is a client-server architecture
+	- It must be stateless; that is, every request contains all information necessary to respond to that request.
+	- It must allow for caching.
+	- It must have a _uniform interface
+	- It is a layered system
+	- Optionally, it can allow for Code-On-Demand, that is, scripting.
