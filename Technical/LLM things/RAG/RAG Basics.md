@@ -5,6 +5,6 @@ The R in  'RAG' : **Information Retrieval** : The process of obtaining relevant 
 ![](assets/images/RAG%20Basics-image-2.png)
 
 
-
+![](assets/images/RAG%20Basics-image-3.png)
 
 
