@@ -199,6 +199,16 @@ print(countPaths(m-1, n-1))
 digits = '23'
 output = [ad, ae, af, bd, be, bf, cd, ce, cf]
 
+```mermaid
+graph TD
+
+f("' ' | 23") --> a("a | *```
+<u></u>
+```23")
+f("' ' | 23") --> b("b | *23")
+f("' ' | 23") --> c("c | *23")
+```
+
 
 
 
