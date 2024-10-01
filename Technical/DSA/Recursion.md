@@ -150,14 +150,23 @@ total nodes = 1 + 2+ 4 .....2^(i-1) = 2^i  , Now i is nothing but height of the 
 CountPaths Alternate solution  - I
 
 ```python
-count = 0
-# m, n defined
-def countPaths(i:int, j:int):
-	if i == m-1 or j == n-1:
-		count+=1
-		return
-	countPaths(i, j+1)
-	countPaths(i+1, j)
+count =0
+def helper(m:int, n:int):
+	def countPaths(i:int, j:int):
+		global count
+		
+		if i == m-1 or j == n-1:
+			count=count+1
+			return
+			
+		countPaths(i, j+1)
+		countPaths(i+1, j)
+	
+	countPaths(0, 0)
+	
+	return count
+
+helper(3, 3)
 ```
 
 
