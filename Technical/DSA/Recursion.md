@@ -124,6 +124,12 @@ How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom
 | -      | -   | -      |
 | -      | -   | (m, n) |
 
+`Recurrence relation : CountPaths(i,j) = CountPaths(i,j+1) + CountPaths(i+1,j)`
+
+
+
+
+
 
 
 
