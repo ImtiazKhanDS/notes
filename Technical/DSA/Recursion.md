@@ -135,7 +135,9 @@ def CountPaths(i:int, j:int, m:int, n:int):
 	return CountPaths(i+1,j, m,n) + CountPaths(i, j+1, m, n)
 ```
 
+Time Complexity  : O(2^ (m + n)) 
 
+Space Complexity :  O(m * n)
 
 
 
