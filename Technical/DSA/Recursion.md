@@ -135,7 +135,13 @@ def CountPaths(i:int, j:int, m:int, n:int):
 	return CountPaths(i+1,j, m,n) + CountPaths(i, j+1, m, n)
 ```
 
-Time Complexity  : O(2^ (m + n)) 
+Time Complexity  : O(2^ (m + n))  
+
+The height of the binary tree is m + n (since every root to leaf path has  n right moves and m bottom moves , so total height is m  + n)
+
+Now every node has two  nodes
+
+total nodes = 1 + 2+ 4 .....2^(i-1) = 2^i  , Now i is nothing but height of the tree which is O(2^(m+n)) 
 
 Space Complexity :  O(m * n)
 
