@@ -25,3 +25,12 @@ A[main] --> B["fact(5)"] --> C["fact(4)"] --> D["fact(3)"] --> E["fact(2)"] --> 
 
 
 ```
+
+This is top to bottom (depth first) , the return happens in bottom to top fashion. The first function to return is the bottom (LIFO) . This is called stack.
+
+Time complexity : O(n)
+
+Space complexity : O(n)
+
+
+
