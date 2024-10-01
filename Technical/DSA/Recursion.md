@@ -133,6 +133,8 @@ def CountPaths(i:int, j:int, m:int, n:int):
 	if i == m -1 or j==n-1:
 		return 1
 	return CountPaths(i+1,j, m,n) + CountPaths(i, j+1, m, n)
+
+CountPaths(0,0, 3,3)
 ```
 
 Time Complexity  : O(2^ (m + n))  
@@ -145,7 +147,7 @@ total nodes = 1 + 2+ 4 .....2^(i-1) = 2^i  , Now i is nothing but height of the 
 
 
 
-CountPaths Alternate solution
+CountPaths Alternate solution  - I
 
 ```python
 count = 0
@@ -159,6 +161,18 @@ def countPaths(i:int, j:int):
 ```
 
 
+CountPaths Alternate solution  - II
+
+Make the source fixed and travel from 0,0 to reach i, j
+
+```python
+def countPaths(i:int, j:int):
+	if i == 0 or j == 0:
+		return 1
+	return countPaths(i-1, j) + countPaths(i, j-1)
+
+print(countPaths(m-1, n-1))
+```
 
 
 
