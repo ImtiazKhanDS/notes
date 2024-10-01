@@ -32,6 +32,41 @@ Time complexity : O(n)      ->    n push operations and n pop operations
 
 Space complexity : O(n)   ->    Recursion stack memory
 
+This type of recursion is called single branch recursion.
+
+
+```python
+def func(x : int):
+	print(x)
+	if x>=3:
+		return
+	func(x+1)
+	func(x+2)
+
+if __name__ == "__main__":
+	func(0)
+```
+
+
+The above snippet of code is for multi branch recursion
+
+
+```mermaid
+graph TD
+
+f_0("f(0)") --> f_1_0("0")
+f_0("f(0)") --> f_1_1("f(1)")
+
+f_0("f(0)") --> f_1_2("f(2)")
+
+f_1_1_1("f(1)") --> f_2_0("1")
+
+f_1_1_1("f(1)") --> f_2_0("f(2)")
+
+
+f_1_1_1("f(1)") --> f_2_0("f(3)")
+```
+
 
 
 
