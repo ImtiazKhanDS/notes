@@ -221,7 +221,27 @@ c --> f3("cf | 2<u>3</u>")
 
 ```python
 def letterComb(digits:str):
-	digitMap = [[]]
+	digitMap = [['a', 'b', 'c'],
+				['d', 'e', 'f'],
+				['g', 'h', 'i'],
+				['j', 'k', 'l'],
+				['m', 'n', 'o'],
+				['p', 'q', 'r', 's'],
+				['t', 'u', 'v'],
+				['w', 'x', 'y', 'z']]
+
+	if len(digits) == 0:
+		return
+
+
+def printAllCombs(tmp:str, digits:str, i:int):
+	if len(tmp) == len(digits):
+		print(tmp)
+		return
+
+	for ch in digit
+
+	
 ```
 
 
