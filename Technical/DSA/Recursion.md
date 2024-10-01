@@ -86,7 +86,26 @@ f_6_2 --> f_7_1("4")
 ```
 
 
+```python
+# Given N print 1 -> N using recursion
+def f(x:int, n:int):
+	if x > n:
+		return
+	print(x)
+	f(x+1, n)
 
+f(1, 10)
+  
+
+# with a single variable.
+def f(n:int):
+	if n == 0:
+		return
+	f(n-1)
+	print(n)
+
+f(10)
+```
 
 
 
