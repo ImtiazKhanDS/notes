@@ -143,7 +143,15 @@ Now every node has two  nodes
 
 total nodes = 1 + 2+ 4 .....2^(i-1) = 2^i  , Now i is nothing but height of the tree which is O(2^(m+n)) 
 
-Space Complexity :  O(m * n)
+
+
+CountPaths Alternate solution
+
+
+
+
+
+
 
 
 
