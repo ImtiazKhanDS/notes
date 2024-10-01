@@ -118,11 +118,11 @@ Need to reach (0, 0) --> (m-1, n-1)
 How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom
 
 
-|     |     |     |
-| --- | --- | --- |
-|     |     |     |
-|     |     |     |
-|     |     |     |
+| (0, 0) |     |            |
+| ------ | --- | ---------- |
+|        |     |            |
+|        |     |            |
+|        |     | (m-1, n-1) |
 
 
 
