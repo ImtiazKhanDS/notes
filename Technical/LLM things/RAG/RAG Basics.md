@@ -8,3 +8,6 @@ The R in  'RAG' : **Information Retrieval** : The process of obtaining relevant 
 
 
 
+
+
+
