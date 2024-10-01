@@ -191,7 +191,7 @@ print(countPaths(m-1, n-1))
 	4 - ghi
 	5 - jkl
 	6 - mno
-	7- pqrs
+	7 - pqrs
 	8 - tuv
 	9 - wxyz
 	
@@ -202,14 +202,27 @@ output = [ad, ae, af, bd, be, bf, cd, ce, cf]
 ```mermaid
 graph TD
 
-f("' ' | 23") --> a("a | *```
-<u></u>
-```23")
-f("' ' | 23") --> b("b | *23")
-f("' ' | 23") --> c("c | *23")
+f("' ' | 23") --> a("a | <u>2</u>3")
+f("' ' | 23") --> b("b | <u>2</u>3")
+f("' ' | 23") --> c("c | <u>2</u>3")
+
+a --> d("ad | 2<u>3</u>")
+a --> e("ae | 2<u>3</u>")
+a --> f1("af | 2<u>3</u>")
+
+b --> d1("bd | 2<u>3</u>")
+b --> e1("be | 2<u>3</u>")
+b --> f2("bf | 2<u>3</u>")
+
+c --> d2("cd | 2<u>3</u>")
+c --> e2("ce | 2<u>3</u>")
+c --> f3("cf | 2<u>3</u>")
 ```
 
-
+```python
+def letterComb(digits:str):
+	digitMap = [[]]
+```
 
 
 
