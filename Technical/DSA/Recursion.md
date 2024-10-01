@@ -126,7 +126,14 @@ How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom
 
 `Recurrence relation : CountPaths(i,j) = CountPaths(i,j+1) + CountPaths(i+1,j)`
 
+`Termination condition : if i == m-1 or j == n-1  return 1`
 
+```python
+def CountPaths(i:int, j:int, m:int, n:int):
+	if i == m -1 or j==n-1:
+		return 1
+	return CountPaths(i+1,j, m,n) + CountPaths(i, j+1, m, n)
+```
 
 
 
