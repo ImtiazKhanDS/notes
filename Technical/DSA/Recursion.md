@@ -85,6 +85,7 @@ f_6_1 --> f_7_0("3")
 f_6_2 --> f_7_1("4")
 ```
 
+Print numbers from 1 to N
 
 ```python
 # Given N print 1 -> N using recursion
@@ -106,6 +107,23 @@ def f(n:int):
 
 f(10)
 ```
+
+
+Given a m * n Grid  
+
+Destination : (m-1, n-1)
+
+Need to reach (0, 0) --> (m-1, n-1)
+
+How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom
+
+
+|     |     |     |
+| --- | --- | --- |
+|     |     |     |
+|     |     |     |
+|     |     |     |
+
 
 
 
