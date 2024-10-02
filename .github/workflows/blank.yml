@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Jekyll Deploy Action
-        uses: jeffreytse/jekyll-deploy-action@v0.6.0
+        uses: jeffreytse/jekyll-deploy-action@master
         with:
           provider: 'github'         # Default is github
           token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
