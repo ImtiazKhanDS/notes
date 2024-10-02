@@ -305,11 +305,15 @@ l --> p("f(3, [1,2,3])")
 def subsets(tmp:list, i:int, input_:list):
 	if i == len(input_):
 		print(tmp)
+		return
 
 	tmp.append(input_[i])
-	subsets(tmp, i, input_)
+	subsets(tmp, i+1, input_)
 	tmp.pop()
+	subsets(tmp, i+1, input_)
 	
+temp = []
+subsets(temp, 0, [1,2,3])
 ```
 
 
