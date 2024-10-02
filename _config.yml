@@ -1,12 +1,10 @@
 title: Imtiaz Notes
 description: © Copyright 2024 https://imtiazkhands.github.io/notes
 theme: minima
-mermaid: true
-use_math: true
-# Other Jekyll configuration options
 
 plugins:
   - jekyll-relative-links
+  - jekyll-mathjax 
 relative_links:
   enabled: true
   collections: true
@@ -14,11 +12,8 @@ relative_links:
 # Jekyll 3 now only supports Kramdown for Markdown
 markdown: kramdown
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
-  syntax_highlighter: rouge
   math_engine: mathjax
-  syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
-    css_class: 'highlight'
+  
+highlighter: rouge
+  
