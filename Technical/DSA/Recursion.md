@@ -322,6 +322,9 @@ Time complexity : O($2^N$) : Since there will be $2^{N}$ leaf nodes (approximati
 
 $$1 + 2 + 4 .....2^{N}   =  \frac{2^{N+1} -1}{(2-1)}$$
 
+How to do the same thing with binary digits
+
+
 
 
 
