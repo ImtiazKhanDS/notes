@@ -279,7 +279,14 @@ output = \[[1, 2, 3], [1,2], [1,3], [1], [2,3], [2], [3], []]
 
 Think in the manner of inclusion exclusion
 
+```mermaid
+graph TD
+a("f(0, [])") --> b("f(1, [])")
+a --> c("f(1, [1])")
 
+b --> d("f(2, [])")
+b --> e("f(2, [2])")
+```
 
 
 
