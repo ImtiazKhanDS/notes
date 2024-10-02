@@ -5,6 +5,7 @@ theme: minima
 plugins:
   - jekyll-relative-links
   - jekyll-mathjax 
+  - jekyll-mermaid
 relative_links:
   enabled: true
   collections: true
