@@ -1,7 +1,8 @@
 title: Imtiaz Notes
 description: © Copyright 2024 https://imtiazkhands.github.io/notes
 theme: minima
-
+mermaid: true
+use_math: true
 # Other Jekyll configuration options
 
 plugins:
