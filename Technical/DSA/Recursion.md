@@ -242,6 +242,34 @@ printAllCombs("", "23", 0,digitMap )
 ```
 
 
+Use character list to avoid extra space, since the extra space is due to the string being created each time and its pass by value.
+
+```python
+digitMap = [['a', 'b', 'c'],
+			['d', 'e', 'f'],
+			['g', 'h', 'i'],
+			['j', 'k', 'l'],
+			['m', 'n', 'o'],
+			['p', 'q', 'r', 's'],
+			['t', 'u', 'v'],
+			['w', 'x', 'y', 'z']]
+
+def printAllCombs(tmp:list, digits:str, i:int, digitMap:list):
+
+	if len(tmp) == len(digits):
+		print(''.join(tmp))
+		return
+
+	for ch in digitMap[ord(digits[i]) - ord('2')]:
+		tmp.append(ch)
+		printAllCombs(tmp, digits, i+1, digitMap)
+		tmp.pop()
+		
+temp = []
+printAllCombs(temp, "23", 0,digitMap )
+```
+
+**Subsets**
 
 
 
