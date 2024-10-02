@@ -318,7 +318,9 @@ subsets(temp, 0, [1,2,3])
 
 
 
-Time complexity : O(2^N) : Since there will be 2^N leaf nodes (approximating the whole of the nodes 1 + 2 + 4 .....$2^N   =  \frac{2^{N+1) -1}{(2-1)}$
+Time complexity : O($2^N$) : Since there will be $2^{N}$ leaf nodes (approximating the whole of the nodes
+
+$$1 + 2 + 4 .....2^{N}   =  \frac{2^{N+1} -1}{(2-1)}$$
 
 
 
