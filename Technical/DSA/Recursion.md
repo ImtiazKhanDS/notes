@@ -271,6 +271,8 @@ printAllCombs(temp, "23", 0,digitMap )
 
 **Subsets**
 
+Generate all the subsets of a given array
+
 
 
 
