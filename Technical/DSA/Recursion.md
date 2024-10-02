@@ -120,8 +120,6 @@ How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom
 
 | (0, 0) | -   | -      |
 | ------ | --- | ------ |
-| -      | -   | -      |
-| -      | -   | -      |
 | -      | -   | (m, n) |
 
 `Recurrence relation : CountPaths(i,j) = CountPaths(i,j+1) + CountPaths(i+1,j)`
@@ -303,7 +301,16 @@ l --> o("f(3, [1,2])")
 l --> p("f(3, [1,2,3])")
 ```
 
+```python
+def subsets(tmp:list, i:int, input_:list):
+	if i == len(input_):
+		print(tmp)
 
+	tmp.append(input_[i])
+	subsets(tmp, i, input_)
+	tmp.pop()
+	
+```
 
 
 
