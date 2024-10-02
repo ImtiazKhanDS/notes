@@ -4,15 +4,13 @@ theme: minima
 
 plugins:
   - jekyll-relative-links
-  - jekyll-mathjax 
+  - jekyll-spaceship
 relative_links:
   enabled: true
   collections: true
 
 # Jekyll 3 now only supports Kramdown for Markdown
 markdown: kramdown
-mermaid: true
 kramdown:
   input: GFM
-  math_engine: mathjax
   syntax_highlighter: coderay  
