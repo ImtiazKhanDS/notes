@@ -114,7 +114,7 @@ It is the form tag that makes Hypermedia-Driven Applications possible.
 ```
 
 5. consider the fact that these two hypermedia controls, anchors and forms, are the _only_ native ways for a user to interact with a server in plain HTML.
-6. ![htmx advantage](assets/images/Hypermedia%20Systems-image-1.png)
+6. ![htmx advantage](Hypermedia%20Systems-image-1.png)
 7. By adopting the hypermedia approach for these applications, you will save yourself a huge amount of client-side complexity that comes with adopting the Single Page Application approach: there is no need for client-side routing, for managing a client-side model, for hand-wiring in JavaScript logic, and so forth. The back button will “just work.” Deep linking will “just work.” You will be able to focus your efforts on your server, where your application is actually adding value.
 8. A **uniform resource locator** is a textual string that refers to, or _points to_ a location on a network where a _resource_ can be retrieved from, as well as the mechanism by which the resource can be retrieved. A URL is a string consisting of various subcomponents:    [scheme]://[userinfo]@[host]:[port][path]?[query]#[fragment]
 9. Note that URLs are often not written out entirely within HTML. It is very common to see anchor tags that look like this, for example:
