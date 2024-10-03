@@ -18,6 +18,8 @@ relative_links:
 
 
 
+remote_theme: https://github.com/jekyll/minima	# 3.0
+
 minima:
   # skin: classic
   # skin: dark
