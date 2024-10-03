@@ -15,9 +15,6 @@ plugins:
 relative_links:
   enabled: true
   collections: true
-
-remote_theme: https://github.com/jekyll/minima	# 3.0
-
 minima:
   # skin: classic
   # skin: dark
