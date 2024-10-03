@@ -17,14 +17,6 @@ relative_links:
   collections: true
 
 
-
-remote_theme: https://github.com/jekyll/minima	# 3.0
-
-minima:
-  # skin: classic
-  # skin: dark
-  skin: solarized-dark
-
 # Jekyll 3 now only supports Kramdown for Markdown
 markdown: kramdown
 kramdown:
