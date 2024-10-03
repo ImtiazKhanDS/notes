@@ -13,12 +13,10 @@ def fact(N:int):
 ```
 
 
-``` 
-```mermaid!
+```mermaid
 flowchart TD
 
 A[main] --> B["fact(5)"] --> C["fact(4)"] --> D["fact(3)"] --> E["fact(2)"] --> F["fact(1)"] --> G["fact(0)"]
-```
 
 
 
@@ -137,13 +135,13 @@ def CountPaths(i:int, j:int, m:int, n:int):
 CountPaths(0,0, 3,3)
 ```
 
-Time Complexity  : O(2^ (m + n))  
+Time Complexity  : O($2^ {m + n}$)  
 
 The height of the binary tree is m + n (since every root to leaf path has  n right moves and m bottom moves , so total height is m  + n)
 
 Now every node has two  nodes
 
-total nodes = 1 + 2+ 4 .....2^(i-1) = 2^i  , Now i is nothing but height of the tree which is O(2^(m+n)) 
+total nodes = $1 + 2+ 4 .....2^{i-1} = 2^i$  , Now i is nothing but height of the tree which is O($2^{m+n}$) 
 
 
 
