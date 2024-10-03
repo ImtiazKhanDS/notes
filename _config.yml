@@ -4,6 +4,8 @@ remote_theme: "jeffreytse/jekyll-theme-yat"
 
 repository: imtiazkhands/notes
 
+title: Building a second brain !
+
 plugins:
   - jekyll-relative-links
   - jekyll-feed
