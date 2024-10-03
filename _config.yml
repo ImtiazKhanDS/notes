@@ -2,6 +2,9 @@ title: Imtiaz Notes
 description: © Copyright 2024 https://imtiazkhands.github.io/notes
 remote_theme: "jeffreytse/jekyll-theme-yat"
 
+repository: "ImtiazKhanDS/notes"
+
+
 plugins:
   - jekyll-relative-links
   - jekyll-feed
