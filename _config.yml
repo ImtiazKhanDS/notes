@@ -7,6 +7,7 @@ repository: imtiazkhands/notes
 title: Second Brain
 heading: "Building a second brain !"
 subheading: "   imtiaz"
+banner : "assets/images/banners/home.jpeg"
 
 plugins:
   - jekyll-relative-links
