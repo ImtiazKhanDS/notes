@@ -13,18 +13,18 @@ def fact(N:int):
 ```
 
 
-```mermaid
-flowchart TD
+<pre class="mermaid">
+	flowchart TD
+	
+	A[main] --> B["fact(5)"] --> C["fact(4)"] --> D["fact(3)"] --> E["fact(2)"] --> F["fact(1)"] --> G["fact(0)"]
 
-A[main] --> B["fact(5)"] --> C["fact(4)"] --> D["fact(3)"] --> E["fact(2)"] --> F["fact(1)"] --> G["fact(0)"]
-
-
-
-
+</pre>
 
 
 
-```
+
+
+
 
 This is top to bottom (depth first) , the return happens in bottom to top fashion. The first function to return is the bottom (LIFO) . This is called stack.
 
