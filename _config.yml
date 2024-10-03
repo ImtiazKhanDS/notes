@@ -2,7 +2,7 @@ title: Imtiaz Notes
 description: © Copyright 2024 https://imtiazkhands.github.io/notes
 remote_theme: "jeffreytse/jekyll-theme-yat"
 
-repository: ImtiazKhanDS/notes
+
 url: https://imtiazkhands.github.io/notes 	# the base hostname & protocol for your site, e.g. http://example.com
 baseurl: ""
 
