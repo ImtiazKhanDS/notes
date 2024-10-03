@@ -1,6 +1,7 @@
 title: Imtiaz Notes
 description: © Copyright 2024 https://imtiazkhands.github.io/notes
-theme: yat
+remote_theme: "jeffreytse/jekyll-theme-yat"
+theme: jekyll-theme-yat
 
 plugins:
   - jekyll-relative-links
