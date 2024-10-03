@@ -1,6 +1,6 @@
 
 
-### All Posts
+### Technical
 
 -  [DSA](Technical/DSA/Index.md)
 

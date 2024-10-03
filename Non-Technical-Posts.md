@@ -1,6 +1,6 @@
 
 
-### All Posts
+### Non Technical
 
 
 - [Asset Investing Categories](Finance/AssetClasses.md)
