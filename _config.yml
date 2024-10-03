@@ -4,10 +4,24 @@ theme: minima
 
 plugins:
   - jekyll-relative-links
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
   - jekyll-spaceship
+  - jekyll-remote-theme
+  - jekyll-redirect-from
+  - jekyll-toc
 relative_links:
   enabled: true
   collections: true
+
+remote_theme: https://github.com/jekyll/minima	# 3.0
+
+minima:
+  # skin: classic
+  # skin: dark
+  skin: solarized-dark
 
 # Jekyll 3 now only supports Kramdown for Markdown
 markdown: kramdown
