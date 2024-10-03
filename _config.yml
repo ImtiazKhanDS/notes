@@ -25,6 +25,6 @@ relative_links:
 
 
 # Jekyll 3 now only supports Kramdown for Markdown
-markdown: kramdown
-kramdown:
+markdown: GFM
+GFM:
   input: GFM
