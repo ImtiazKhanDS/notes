@@ -4,7 +4,10 @@ remote_theme: "jeffreytse/jekyll-theme-yat"
 
 repository: imtiazkhands/notes
 
-title: Building a second brain !
+title: Second Brain !
+home:
+    heading: "Building a second brain"
+    subheading: "   -imtiaz"
 
 plugins:
   - jekyll-relative-links
