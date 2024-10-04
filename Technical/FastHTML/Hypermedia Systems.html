@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Second Brain | © Copyright 2024 https://imtiazkhands.github.io/notes</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Second Brain">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<meta property="og:description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<link rel="canonical" href="https://imtiazkhands.github.io/notes/Technical/FastHTML/Hypermedia%20Systems.html">
+<meta property="og:url" content="https://imtiazkhands.github.io/notes/Technical/FastHTML/Hypermedia%20Systems.html">
+<meta property="og:site_name" content="Second Brain">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Second Brain">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"© Copyright 2024 https://imtiazkhands.github.io/notes","headline":"Second Brain","url":"https://imtiazkhands.github.io/notes/Technical/FastHTML/Hypermedia%20Systems.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://imtiazkhands.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/notes/assets/css/main.css">
+  <script src="/notes/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://imtiazkhands.github.io/notes/feed.xml" title="Second Brain">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/notes/">
+  <img class="site-favicon" title="Second Brain" src="" onerror="this.style.display='none'">
+  Second Brain
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/notes/Non-Technical-Posts.html">NON TECHNICAL</a><a class="page-link" href="/notes/Technical-Posts.html">TECHNICAL</a><a class="page-link" href="/notes/">ALL POSTS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/notes/assets/images/banners/home.jpeg)"></div>
+        <img class="img-placeholder" src="/notes/assets/images/banners/home.jpeg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              Building a second brain !
+            </h1>
+            <h2 class="page-banner-subheading">
+                 imtiaz
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <ol>
+<li>
+<p>What is a hypermedia control ?</p>
+<p>Consider a simple anchor tag, embedded within a larger HTML document:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://hypermedia.systems/"</span><span class="nt">&gt;</span>
+  Hypermedia Systems
+<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+<p>An anchor tag consists of the tag itself, <code>&lt;a&gt;&lt;/a&gt;</code>, as well as the attributes and content within the tag. Of particular interest is the <code>href</code> attribute, which specifies a <em>hypertext reference</em> to another document or document fragment. It is this attribute that makes the anchor tag a hypermedia control.</p>
+</li>
+<li><pre><code></code></pre></li>
+</ol>
+<p>────────────────────────┐      ┌─HTTP REQUEST────────────────┐
+│ BROWSER              X │      │                             │
+├────────────────────────┤      │ GET /                       │
+│                        │      │ Host: hypermedia.systems    │
+│ lorem ipsum dolor      │      └─────────────────────────────┘
+│                        │
+│ Hypermedia Systems ────┼───────────┐
+│ ──────────────────     │           │
+│ sit amet               │           │
+│                        │           │
+└────────────────────────┘           │
+┌──────▼──────┐
+│   H T T P   │
+│ S E R V E R │
+└──────┬──────┘
+┌────────────────────────┐           │
+│ BROWSER              X │           │
+├────────────────────────┤           │
+│                        │           │
+│ HYPERMEDIA SYSTEMS     ◀───────────┘
+│                        │
+│ The revolutionary      │      ┌─HTTP RESPONSE───────────────┐
+│                        │      │                             │
+│ ideas that empowered...│      │ 200 OK                      │
+│                        │      │ ...                         │
+└────────────────────────┘      │ </p>
+<h1>Hypermedia Systems</h1> │
+│ ...                         │```
+<ol start="3">
+<li>
+<p>In a typical web browser, this anchor tag would be interpreted to mean</p>
+<ol>
+<li>
+<p>Show the text “Hypermedia Systems” in a manner indicating that it is clickable</p>
+</li>
+<li>
+<p>When the user clicks on that text, issue an HTTP <code>GET</code> request to the URL <code>https://hypermedia.systems/</code></p>
+</li>
+<li>
+<p>Take the HTML content in the body of the HTTP response to this request and replace the entire screen in the browser as a new document, updating the navigation bar to this new URL.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Form tags</p>
+</li>
+</ol>
+<p>Anchor tags provide <em>navigation</em> between documents or resources, but don’t allow you to update those resources. That functionality falls to the form tag.</p>
+<p>Here is a simple example of a form in HTML:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"/signup"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">"Enter Email To Sign Up"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button&gt;</span>Sign Up<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+<p>A simple form</p>
+<p>Like an anchor tag, a form tag consists of the tag itself, <code>&lt;form&gt;&lt;/form&gt;</code>, combined with the attributes and content within the tag. Note that the form tag does not have an <code>href</code> attribute, but rather has an <code>action</code> attribute that specifies where to issue an HTTP request.</p>
+<p>Furthermore, it also has a <code>method</code> attribute, which specifies exactly which HTTP “method” to use. In this example the form is asking the browser to issue a <code>POST</code> request.</p>
+<p>In contrast with anchor tags, the content and tags <em>within</em> a form can have an effect on the hypermedia interaction that the form makes with a server. The <em>values</em> of <code>input</code> tags and other tags such as <code>select</code> tags will be included with the HTTP request when the form is submitted, as URL parameters in the case of a <code>GET</code> and as part of the request body in the case of a <code>POST</code>. This allows a form to include an arbitrary amount of information collected from a user in a request, unlike the anchor tag.</p>
+<p>In a typical browser this form tag and its contents would be interpreted by the browser roughly as follows:</p>
+<ul>
+<li>
+<p>Show a text input and a “Sign Up” button to the user</p>
+</li>
+<li>
+<p>When the user submits the form by clicking the “Sign Up” button or by hitting the enter key while the input element is focused, issue an HTTP <code>POST</code> request to the path <code>/signup</code> on the “current” server</p>
+</li>
+<li>
+<p>Take the HTML content in the body of the HTTP response body and replace the entire screen in the browser as a new document, updating the navigation bar to this new URL.</p>
+</li>
+</ul>
+<p>This mechanism allows the user to issue requests to <em>update the state</em> of resources on the server. Note that despite this new type of request the communication between client and server is still done entirely with <em>hypermedia</em>.</p>
+<p>It is the form tag that makes Hypermedia-Driven Applications possible.</p>
+<pre><code>┌────────────────────────┐      ┌─HTTP REQUEST────────────────┐
+│ BROWSER              X │      │                             │
+├────────────────────────┤      │ POST /                      │
+│                        │      │ Host: hypermedia.systems    │
+│ SIGN UP                │      │ ...                         │
+│ ┌────────────────────┐ │      │ email=joe@example.com       │
+│ │ joe@example.com    │ │      └─────────────────────────────┘
+│ └────────────────────┘ │
+│ ┌─────────┐        ────┼───────────┐
+│ │ Sign up │            │           │
+│ └─────────┘            │           │
+└────────────────────────┘           │
+                              ┌──────▼──────┐
+                              │   H T T P   │
+                              │ S E R V E R │
+                              └──────┬──────┘
+┌────────────────────────┐           │
+│ BROWSER              X │           │
+├────────────────────────┤           │
+│                        │           │
+│ THANK YOU FOR SIGNING  ◀───────────┘
+│ UP                     │
+│                        │      ┌─HTTP RESPONSE───────────────┐
+│                        │      │                             │
+│                        │      │ 201 Created                 │
+│                        │      │ ...                         │
+└────────────────────────┘      │ &lt;h1&gt;Thank you for signing   │
+                                │ up&lt;/h1&gt;                     │
+                                └─────────────────────────────┘
+</code></pre>
+<ol start="5">
+<li>consider the fact that these two hypermedia controls, anchors and forms, are the <em>only</em> native ways for a user to interact with a server in plain HTML.</li>
+<li><img src="Hypermedia%20Systems-image-1.png" alt="htmx advantage"></li>
+<li>By adopting the hypermedia approach for these applications, you will save yourself a huge amount of client-side complexity that comes with adopting the Single Page Application approach: there is no need for client-side routing, for managing a client-side model, for hand-wiring in JavaScript logic, and so forth. The back button will “just work.” Deep linking will “just work.” You will be able to focus your efforts on your server, where your application is actually adding value.</li>
+<li>A <strong>uniform resource locator</strong> is a textual string that refers to, or <em>points to</em> a location on a network where a <em>resource</em> can be retrieved from, as well as the mechanism by which the resource can be retrieved. A URL is a string consisting of various subcomponents:    [scheme]://[userinfo]@[host]:[port][path]?[query]#[fragment]</li>
+<li>Note that URLs are often not written out entirely within HTML. It is very common to see anchor tags that look like this, for example:</li>
+</ol>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/book/contents/"</span><span class="nt">&gt;</span>Table Of Contents<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+<ol start="10">
+<li>
+<p>Here we have a <em>relative</em> hypermedia reference, where the protocol, host and port are <em>implied</em> to be that of the “current document,” that is, the same as whatever the protocol and server were to retrieve the current HTML page. So, if this link was found in an HTML document retrieved from <code>https://hypermedia.systems/</code>, then the implied URL for this anchor would be<code>https://hypermedia.systems/book/contents/</code>.</p>
+</li>
+<li>
+<p>The cache behavior of an HTTP response from a server can be indicated with the <code>Cache-Control</code> response header. This header can have a number of different values indicating the cacheability of a given response. If, for example, the header contains the value <code>max-age=60</code>, this indicates that a client may cache this response for 60 seconds, and need not issue another HTTP request for that resource until that time limit has expired.</p>
+</li>
+<li>
+<p>building a Hypermedia-Driven Application gives you a lot more freedom in picking the back end technology you want to use. Your decision can be based on the domain of your application, what languages and server software you are familiar with or are passionate about, or just what you feel like trying out.</p>
+</li>
+<li>
+<p>Browsers aren’t the only hypermedia clients out there, however. Hyperview, a mobile-oriented hypermedia. One of the outstanding features of Hyperview is that it doesn’t simply provide a hypermedia, HXML, but also provides a <em>working hypermedia client</em> for that hypermedia. This makes building a proper Hypermedia-Driven Application with Hyperview extremely easy.</p>
+</li>
+<li>
+<p>Here are the constraints of REST Fielding outlines:</p>
+<ul>
+<li>It is a client-server architecture</li>
+<li>It must be stateless; that is, every request contains all information necessary to respond to that request.</li>
+<li>It must allow for caching.</li>
+<li>It must have a _uniform interface</li>
+<li>It is a layered system</li>
+<li>Optionally, it can allow for Code-On-Demand, that is, scripting.</li>
+</ul>
+</li>
+<li>
+<p>In practice, for many web applications today, we actually violate "stateless" constraint: it is common to establish a <em>session cookie</em> that acts as a unique identifier for a given user and that is sent along with every request. While this session cookie is, by itself, not stateful (it is sent with every request), it is typically used as a key to look up information stored on the server, in what is usually termed “the session.” This session information is typically stored in some sort of shared storage across multiple web servers, holding things like the current user’s email or id, their roles, partially created domain objects, caches, and so forth.</p>
+</li>
+<li>
+<p>These operations correspond closely to the CRUD operations. By giving us access to only two of the five, HTML hamstrings our ability to take full advantage of HTTP.</p>
+<ul>
+<li>
+<p><code>GET</code> corresponds with “getting” a representation for a resource from a URL: it is a pure read, with no mutation of the resource.</p>
+</li>
+<li>
+<p><code>POST</code> submits an entity (or data) to the given resource, often creating or mutating the resource and causing a state change.</p>
+</li>
+<li>
+<p><code>PUT</code> submits an entity (or data) to the given resource for update or replacement, again likely causing a state change.</p>
+</li>
+<li>
+<p><code>PATCH</code> is similar to <code>PUT</code> but implies a partial update and state change rather than a complete replacement of the entity.</p>
+</li>
+<li>
+<p><code>DELETE</code> deletes the given resource.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Htmx is a JavaScript library that extends HTML in exactly this manner. Again, htmx is not the only JavaScript library that takes this hypermedia-oriented approach (other excellent examples are <a href="https://unpoly.com/">Unpoly</a> and <a href="https://hotwire.dev/">Hotwire</a>), but htmx is the purest in its pursuit of extending HTML as a hypermedia.</p>
+</li>
+<li>
+<p>It turns out that the default htmx behavior is to simply put the returned content inside the element that triggered the request. That’s <em>not</em> a good thing in the case of our button: we will end up with a list of contacts awkwardly embedded within the button element. That will look pretty silly and is obviously not what we want.</p>
+<p>Fortunately htmx provides another attribute, <code>hx-target</code> which can be used to specify exactly <em>where</em> in the DOM the new content should be placed. The value of the <code>hx-target</code> attribute is a Cascading Style Sheet (CSS) <em>selector</em> that allows you to specify the element to put the new hypermedia content into.</p>
+<p>Let’s add a <code>div</code> tag that encloses the button with the id <code>main</code>. We will then target this <code>div</code> with the response:</p>
+</li>
+</ol>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">hx-get=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">2</span><span class="nt">&gt;</span>
+    Get The Contacts
+  <span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<ol start="19">
+<li>
+<p>By using CSS selectors, htmx builds on top of familiar and standard HTML concepts. This keeps the additional conceptual load for working with htmx to a minimum.</p>
+<p>Given this new configuration, what would the HTML on the client look like after a user clicks on this button and a response has been received and processed?</p>
+<p>It would look something like this:</p>
+</li>
+</ol>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"mailto:joe@example.com"</span><span class="nt">&gt;</span>Joe<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"mailto:sarah@example.com"</span><span class="nt">&gt;</span>Sarah<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"mailto:fred@example.com"</span><span class="nt">&gt;</span>Fred<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<pre><code>Our HTML after the htmx request finishes
+</code></pre>
+<ol start="20">
+<li>
+<p>Now, perhaps we don’t want to load the content from the server response <em>into</em> the div, as child elements. Perhaps, for whatever reason, we wish to <em>replace</em> the entire div with the response. To handle this, htmx provides another attribute, <code>hx-swap</code>, that allows you to specify exactly <em>how</em> the content should be swapped into the DOM.</p>
+<p>The <code>hx-swap</code> attribute supports the following values:</p>
+<ul>
+<li>
+<p><code>innerHTML</code> - The default, replace the inner html of the target element.</p>
+</li>
+<li>
+<p><code>outerHTML</code> - Replace the entire target element with the response.</p>
+</li>
+<li>
+<p><code>beforebegin</code> - Insert the response before the target element.</p>
+</li>
+<li>
+<p><code>afterbegin</code> - Insert the response before the first child of the target element.</p>
+</li>
+<li>
+<p><code>beforeend</code> - Insert the response after the last child of the target element.</p>
+</li>
+<li>
+<p><code>afterend</code> - Insert the response after the target element.</p>
+</li>
+<li>
+<p><code>delete</code> - Deletes the target element regardless of the response.</p>
+</li>
+<li>
+<p><code>none</code> - No swap will be performed.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>To do so would require only a small change to our button, adding a new <code>hx-swap</code> attribute:</p>
+</li>
+</ol>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">hx-get=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span> <span class="na">hx-swap=</span><span class="s">"outerHTML"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+    Get The Contacts
+  <span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<pre><code>Replacing the entire div
+
+1. The `hx-swap` attribute specifies how to swap in new content.
+</code></pre>
+<p>Now, when a response is received, the <em>entire</em> div will be replaced with the hypermedia content:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"mailto:joe@example.com"</span><span class="nt">&gt;</span>Joe<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"mailto:sarah@example.com"</span><span class="nt">&gt;</span>Sarah<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"mailto:fred@example.com"</span><span class="nt">&gt;</span>Fred<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+<pre><code>Our HTML after the htmx request finishes
+</code></pre>
+<ol start="22">
+<li>
+<p>htmx generalizes this notion of an event triggering a request by using, you guessed it, another attribute: <code>hx-trigger</code>. The <code>hx-trigger</code> attribute allows you to specify one or more events that will cause the element to trigger an HTTP request.</p>
+<p>Often you don’t need to use <code>hx-trigger</code> because the default triggering event will be what you want. The default triggering event depends on the element type, and should be fairly intuitive:</p>
+<ul>
+<li>
+<p>Requests on <code>input</code>, <code>textarea</code> &amp; <code>select</code> elements are triggered by the <code>change</code> event.</p>
+</li>
+<li>
+<p>Requests on <code>form</code> elements are triggered on the <code>submit</code> event.</p>
+</li>
+<li>
+<p>Requests on all other elements are triggered by the <code>click</code> event.</p>
+</li>
+</ul>
+<p>To demonstrate how <code>hx-trigger</code> works, consider the following situation: we want to trigger the request on our button when the mouse enters it. Now, this is certainly not a <em>good</em> UX pattern, but bear with us: we are just using this as an example.</p>
+<p>To respond to a mouse entering the button, we would add the following attribute to our button:</p>
+</li>
+</ol>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">hx-get=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span> <span class="na">hx-swap=</span><span class="s">"outerHTML"</span>
+    <span class="na">hx-trigger=</span><span class="s">"mouseenter"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+    Get The Contacts
+  <span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<ol start="23">
+<li>
+<p>Let’s try something a bit more realistic and potentially useful: let’s add support for a keyboard shortcut for loading the contacts, <code>Ctrl-L</code> (for “Load”). To do this we will need to take advantage of additional syntax that the <code>hx-trigger</code> attribute supports: event filters and additional arguments.</p>
+<p>Event filters are a mechanism for determining if a given event should trigger a request or not. They are applied to an event by adding square brackets after it: <code>someEvent[someFilter]</code>. The filter itself is a JavaScript expression that will be evaluated when the given event occurs. If the result is truthy, in the JavaScript sense, it will trigger the request. If not, the request will not be triggered.</p>
+<p>In the case of keyboard shortcuts, we want to catch the <code>keyup</code> event in addition to the click event:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">hx-get=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span> <span class="na">hx-swap=</span><span class="s">"outerHTML"</span>
+    <span class="na">hx-trigger=</span><span class="s">"click, keyup"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+    Get The Contacts
+  <span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p>Note that we have a comma separated list of events that can trigger this element, allowing us to respond to more than one potential triggering event. We still want to respond to the <code>click</code> event and load the contacts, in addition to handling the <code>Ctrl-L</code> keyboard shortcut.</p>
+<p>Unfortunately there are two problems with our <code>keyup</code> addition: As it stands, it will trigger requests on <em>any</em> keyup event that occurs. And, worse, it will only trigger when a keyup occurs <em>within</em> this button. The user would need to tab onto the button to make it active and then begin typing.</p>
+<p>Let’s fix these two issues. To fix the first one, we will use a trigger filter to test that Control key and the “L” key are pressed together:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">hx-get=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span> <span class="na">hx-swap=</span><span class="s">"outerHTML"</span>
+    <span class="na">hx-trigger=</span><span class="s">"click, keyup[ctrlKey &amp;&amp; key == 'l']"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+    Get The Contacts
+  <span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p>The trigger filter in this case is <code>ctrlKey &amp;&amp; key == 'l'</code>. This can be read as “A key up event, where the ctrlKey property is true and the key property is equal to l.” Note that the properties <code>ctrlKey</code> and <code>key</code> are resolved against the event rather than the global name space, so you can easily filter on the properties of a given event. You can use any expression you like for a filter, however: calling a global JavaScript function, for example, is perfectly acceptable.</p>
+<p>OK, so this filter limits the keyup events that will trigger the request to only <code>Ctrl-L</code> presses. However, we still have the problem that, as it stands, only <code>keyup</code> events <em>within</em> the button will trigger the request.</p>
+<p>If you are not familiar with the JavaScript event bubbling model: events typically “bubble” up to parent elements. So an event like <code>keyup</code> will be triggered first on the focused element, and then on its parent (enclosing) element, and so on, until it reaches the top level <code>document</code> object that is the root of all other elements.</p>
+<p>To support a global keyboard shortcut that works regardless of what element has focus, we will take advantage of event bubbling and a feature that the <code>hx-trigger</code> attribute supports: the ability to listen to <em>other elements</em> for events. The syntax for doing this is the <code>from:</code> modifier, which is added after an event name and that allows you to specify a specific element to listen for the given event on using a CSS selector.</p>
+<p>In this case, we want to listen to the <code>body</code> element, which is the parent element of all visible elements on the page.</p>
+<p>Here is what our updated <code>hx-trigger</code> attribute looks like:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"main"</span><span class="nt">&gt;</span>
+
+  <span class="nt">&lt;button</span> <span class="na">hx-get=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span> <span class="na">hx-swap=</span><span class="s">"outerHTML"</span>
+    <span class="na">hx-trigger=</span><span class="s">"click, keyup[ctrlKey &amp;&amp; key == 'l'] from:body"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+    Get The Contacts
+  <span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+<p>Even better, listen for keyup on the body</p>
+<ol>
+<li>Listen to the ‘keyup” event on the <code>body</code> tag.</li>
+</ol>
+<p>Now, in addition to clicks, the button will listen for <code>keyup</code> events on the body of the page. So it will issue a request when it is clicked on and also whenever someone hits <code>Ctrl-L</code> within the body of the page.</p>
+<p>And now we have a nice keyboard shortcut for our Hypermedia-Driven Application.</p>
+<p>The <code>hx-trigger</code> attribute supports many more modifiers, and it is more elaborate than other htmx attributes. This is because events, in general, are complicated and require a lot of details to get just right. The default trigger will often suffice, however, and you typically don’t need to reach for complicated <code>hx-trigger</code> features when using htmx.</p>
+</li>
+<li>
+<p>Summary of HTMX : HTML Extended</p>
+<ol>
+<li>Any element should be able to make HTTP requests<code>hx-get</code>, <code>hx-post</code>, <code>hx-put</code>, <code>hx-patch</code>, <code>hx-delete</code>
+</li>
+<li>Any event should be able to trigger an HTTP request<code>hx-trigger</code>
+</li>
+<li>Any HTTP Action should be available<code>hx-put</code>, <code>hx-patch</code>, <code>hx-delete</code>
+</li>
+<li>Any place on the page should be replaceable (transclusion)<code>hx-target</code>, <code>hx-swap</code>
+</li>
+</ol>
+</li>
+<li>
+<p>The simplest way to pass input values with a request in htmx is to enclose the element making a request within a form tag.</p>
+<p>Let’s take our original search form and convert it to use htmx instead:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"/contacts"</span> <span class="na">method=</span><span class="s">"get"</span> <span class="na">class=</span><span class="s">"tool-bar"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">1</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Search Term<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">name=</span><span class="s">"q"</span> 
+    <span class="na">value=</span><span class="s">""</span>
+    <span class="na">placeholder=</span><span class="s">"Search Contacts"</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">hx-post=</span><span class="s">"/contacts"</span> <span class="na">hx-target=</span><span class="s">"#main"</span><span class="nt">&gt;</span> <span class="nt">&lt;</span><span class="err">2</span><span class="nt">&gt;</span>
+    Search
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+<p>An htmx-powered search button</p>
+<ol>
+<li>
+<p>When an htmx-powered element is withing an ancestor form tag, all input values within that form will be submitted for non-<code>GET</code> requests</p>
+</li>
+<li>
+<p>We have switched from an <code>input</code> of type <code>submit</code> to a <code>button</code> and added the <code>hx-post</code> attribute</p>
+</li>
+</ol>
+<p>Now, when a user clicks on this button, the value of the input with the id <code>search</code> will be included in the request. This is by virtue of the fact that there is a form tag enclosing both the button and the input: when an htmx-driven request is triggered, htmx will look up the DOM hierarchy for an enclosing form, and, if one is found, it will include all values from within that form. (This is sometimes referred to as “serializing” the form.)</p>
+</li>
+</ol>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/notes/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div></div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/notes/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

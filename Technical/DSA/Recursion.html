@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Second Brain | © Copyright 2024 https://imtiazkhands.github.io/notes</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Second Brain">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<meta property="og:description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<link rel="canonical" href="https://imtiazkhands.github.io/notes/Technical/DSA/Recursion.html">
+<meta property="og:url" content="https://imtiazkhands.github.io/notes/Technical/DSA/Recursion.html">
+<meta property="og:site_name" content="Second Brain">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Second Brain">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"© Copyright 2024 https://imtiazkhands.github.io/notes","headline":"Second Brain","url":"https://imtiazkhands.github.io/notes/Technical/DSA/Recursion.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://imtiazkhands.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/notes/assets/css/main.css">
+  <script src="/notes/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://imtiazkhands.github.io/notes/feed.xml" title="Second Brain">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+<script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/notes/">
+  <img class="site-favicon" title="Second Brain" src="" onerror="this.style.display='none'">
+  Second Brain
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/notes/Non-Technical-Posts.html">NON TECHNICAL</a><a class="page-link" href="/notes/Technical-Posts.html">TECHNICAL</a><a class="page-link" href="/notes/">ALL POSTS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/notes/assets/images/banners/home.jpeg)"></div>
+        <img class="img-placeholder" src="/notes/assets/images/banners/home.jpeg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              Building a second brain !
+            </h1>
+            <h2 class="page-banner-subheading">
+                 imtiaz
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p>A process in which a function keeps calling itself is known as recursion and the corresponding function is called a recursive function. There are two important components to write a recursive function -</p>
+<ol>
+<li>Recurrence relation - Break a larger problem to a smaller problem</li>
+<li>Termination condition</li>
+</ol>
+<p>Control Flow</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">fact</span><span class="p">(</span><span class="n">N</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">N</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="k">return</span> <span class="mi">1</span>
+	<span class="k">return</span> <span class="n">N</span> <span class="o">*</span> <span class="n">fact</span><span class="p">(</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+<pre><code class="language-mermaid">flowchart TD
+
+A[main] --&gt; B["fact(5)"] --&gt; C["fact(4)"] --&gt; D["fact(3)"] --&gt; E["fact(2)"] --&gt; F["fact(1)"] --&gt; G["fact(0)"]
+
+</code></pre>
+<p>This is top to bottom (depth first) , the return happens in bottom to top fashion. The first function to return is the bottom (LIFO) . This is called stack.</p>
+<p>Time complexity : O(n) -&gt; n push operations and n pop operations</p>
+<p>Space complexity : O(n) -&gt; Recursion stack memory</p>
+<p>This type of recursion is called single branch recursion.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span> <span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+	<span class="k">if</span> <span class="n">x</span><span class="o">&gt;=</span><span class="mi">3</span><span class="p">:</span>
+		<span class="k">return</span>
+	<span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+	<span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
+	<span class="n">func</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div></div>
+<p>The above snippet of code is for multi branch recursion</p>
+<p><strong>Recursion Tree Diagram</strong></p>
+<pre><code class="language-mermaid">graph TD
+
+f_0("f(0)") --&gt; f_1_0("0")
+f_0("f(0)") --&gt; f_1_1("f(1)")
+
+f_0("f(0)") --&gt; f_1_2("f(2)")
+
+f_1_1 --&gt; f_2_0("1")
+f_1_1 --&gt; f_2_1("f(2)")
+f_1_1 --&gt; f_2_2("f(3)")
+
+f_2_2 --&gt; f_5_0("3")
+
+
+f_2_1 --&gt; f_3_0("2")
+f_2_1 --&gt; f_3_1("f(3)")
+f_2_1 --&gt; f_3_2("f(4)")
+
+
+f_3_1 --&gt; f_4_0("3")
+f_3_2 --&gt; f_4_1("4")
+
+
+f_1_2 --&gt; f_6_0("2")
+f_1_2 --&gt; f_6_1("f(3)")
+f_1_2 --&gt; f_6_2("f(4)")
+
+
+f_6_1 --&gt; f_7_0("3")
+f_6_2 --&gt; f_7_1("4")
+</code></pre>
+<p>Print numbers from 1 to N</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Given N print 1 -&gt; N using recursion
+</span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+		<span class="k">return</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+	<span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+
+<span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+
+
+<span class="c1"># with a single variable.
+</span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+		<span class="k">return</span>
+	<span class="n">f</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+	<span class="k">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+<span class="n">f</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Given a m * n Grid</p>
+<p>Destination : (m-1, n-1)</p>
+<p>Need to reach (0, 0) --&gt; (m-1, n-1)</p>
+<p>How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom</p>
+<table>
+<thead>
+<tr>
+<th>(0, 0)</th>
+<th>
+<ul>
+<li>
+</li>
+</ul>
+</th>
+<th>
+<ul>
+<li>
+</li>
+</ul>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<ul>
+<li>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
+</li>
+</ul>
+</td>
+<td>(m, n)</td>
+</tr>
+</tbody>
+</table>
+<p><code>Recurrence relation : CountPaths(i,j) = CountPaths(i,j+1) + CountPaths(i+1,j)</code></p>
+<p><code>Termination condition : if i == m-1 or j == n-1  return 1</code></p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">CountPaths</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">m</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">m</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">j</span><span class="o">==</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+		<span class="k">return</span> <span class="mi">1</span>
+	<span class="k">return</span> <span class="n">CountPaths</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">j</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="n">CountPaths</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+
+<span class="n">CountPaths</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Time Complexity : O($2^ {m + n}$)</p>
+<p>The height of the binary tree is m + n (since every root to leaf path has n right moves and m bottom moves , so total height is m + n)</p>
+<p>Now every node has two nodes</p>
+<p>total nodes = $1 + 2+ 4 .....2^{i-1} = 2^i$ , Now i is nothing but height of the tree which is O($2^{m+n}$)</p>
+<p>CountPaths Alternate solution - I</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">count</span> <span class="o">=</span><span class="mi">0</span>
+<span class="k">def</span> <span class="nf">helper</span><span class="p">(</span><span class="n">m</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">n</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">def</span> <span class="nf">countPaths</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+		<span class="k">global</span> <span class="n">count</span>
+
+		<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="n">m</span><span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">j</span> <span class="o">==</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+			<span class="n">count</span><span class="o">=</span><span class="n">count</span><span class="o">+</span><span class="mi">1</span>
+			<span class="k">return</span>
+
+		<span class="n">countPaths</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+		<span class="n">countPaths</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span>
+
+	<span class="n">countPaths</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+	<span class="k">return</span> <span class="n">count</span>
+
+<span class="n">helper</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<p>CountPaths Alternate solution - II</p>
+<p>Make the source fixed and travel from 0,0 to reach i, j</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">countPaths</span><span class="p">(</span><span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+		<span class="k">return</span> <span class="mi">1</span>
+	<span class="k">return</span> <span class="n">countPaths</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">+</span> <span class="n">countPaths</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">print</span><span class="p">(</span><span class="n">countPaths</span><span class="p">(</span><span class="n">m</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</code></pre></div></div>
+<p><strong>Letter combinations</strong></p>
+<pre><code>2 - abc
+3 - def
+4 - ghi
+5 - jkl
+6 - mno
+7 - pqrs
+8 - tuv
+9 - wxyz
+</code></pre>
+<p>digits = '23'
+output = [ad, ae, af, bd, be, bf, cd, ce, cf]</p>
+<pre><code class="language-mermaid">graph TD
+
+f("' ' | 23") --&gt; a("a | &lt;u&gt;2&lt;/u&gt;3")
+f("' ' | 23") --&gt; b("b | &lt;u&gt;2&lt;/u&gt;3")
+f("' ' | 23") --&gt; c("c | &lt;u&gt;2&lt;/u&gt;3")
+
+a --&gt; d("ad | 2&lt;u&gt;3&lt;/u&gt;")
+a --&gt; e("ae | 2&lt;u&gt;3&lt;/u&gt;")
+a --&gt; f1("af | 2&lt;u&gt;3&lt;/u&gt;")
+
+b --&gt; d1("bd | 2&lt;u&gt;3&lt;/u&gt;")
+b --&gt; e1("be | 2&lt;u&gt;3&lt;/u&gt;")
+b --&gt; f2("bf | 2&lt;u&gt;3&lt;/u&gt;")
+
+c --&gt; d2("cd | 2&lt;u&gt;3&lt;/u&gt;")
+c --&gt; e2("ce | 2&lt;u&gt;3&lt;/u&gt;")
+c --&gt; f3("cf | 2&lt;u&gt;3&lt;/u&gt;")
+</code></pre>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">digitMap</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'g'</span><span class="p">,</span> <span class="s">'h'</span><span class="p">,</span> <span class="s">'i'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'j'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">,</span> <span class="s">'l'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'m'</span><span class="p">,</span> <span class="s">'n'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'p'</span><span class="p">,</span> <span class="s">'q'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="s">'s'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'t'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'w'</span><span class="p">,</span> <span class="s">'x'</span><span class="p">,</span> <span class="s">'y'</span><span class="p">,</span> <span class="s">'z'</span><span class="p">]]</span>
+
+<span class="k">def</span> <span class="nf">printAllCombs</span><span class="p">(</span><span class="n">tmp</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">digits</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">digitMap</span><span class="p">:</span><span class="nb">list</span><span class="p">):</span>
+
+	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">digits</span><span class="p">):</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+		<span class="k">return</span>
+
+	<span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">digitMap</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">digits</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s">'2'</span><span class="p">)]:</span>
+		<span class="n">printAllCombs</span><span class="p">(</span><span class="n">tmp</span><span class="o">+</span><span class="n">ch</span><span class="p">,</span> <span class="n">digits</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">digitMap</span><span class="p">)</span>
+
+<span class="n">printAllCombs</span><span class="p">(</span><span class="s">""</span><span class="p">,</span> <span class="s">"23"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">digitMap</span> <span class="p">)</span>
+</code></pre></div></div>
+<p>Use character list to avoid extra space, since the extra space is due to the string being created each time and its pass by value.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">digitMap</span> <span class="o">=</span> <span class="p">[[</span><span class="s">'a'</span><span class="p">,</span> <span class="s">'b'</span><span class="p">,</span> <span class="s">'c'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'d'</span><span class="p">,</span> <span class="s">'e'</span><span class="p">,</span> <span class="s">'f'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'g'</span><span class="p">,</span> <span class="s">'h'</span><span class="p">,</span> <span class="s">'i'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'j'</span><span class="p">,</span> <span class="s">'k'</span><span class="p">,</span> <span class="s">'l'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'m'</span><span class="p">,</span> <span class="s">'n'</span><span class="p">,</span> <span class="s">'o'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'p'</span><span class="p">,</span> <span class="s">'q'</span><span class="p">,</span> <span class="s">'r'</span><span class="p">,</span> <span class="s">'s'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'t'</span><span class="p">,</span> <span class="s">'u'</span><span class="p">,</span> <span class="s">'v'</span><span class="p">],</span>
+			<span class="p">[</span><span class="s">'w'</span><span class="p">,</span> <span class="s">'x'</span><span class="p">,</span> <span class="s">'y'</span><span class="p">,</span> <span class="s">'z'</span><span class="p">]]</span>
+
+<span class="k">def</span> <span class="nf">printAllCombs</span><span class="p">(</span><span class="n">tmp</span><span class="p">:</span><span class="nb">list</span><span class="p">,</span> <span class="n">digits</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">digitMap</span><span class="p">:</span><span class="nb">list</span><span class="p">):</span>
+
+	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">digits</span><span class="p">):</span>
+		<span class="k">print</span><span class="p">(</span><span class="s">''</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">tmp</span><span class="p">))</span>
+		<span class="k">return</span>
+
+	<span class="k">for</span> <span class="n">ch</span> <span class="ow">in</span> <span class="n">digitMap</span><span class="p">[</span><span class="nb">ord</span><span class="p">(</span><span class="n">digits</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="o">-</span> <span class="nb">ord</span><span class="p">(</span><span class="s">'2'</span><span class="p">)]:</span>
+		<span class="n">tmp</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">ch</span><span class="p">)</span>
+		<span class="n">printAllCombs</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">digits</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">digitMap</span><span class="p">)</span>
+		<span class="n">tmp</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
+
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">printAllCombs</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="s">"23"</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">digitMap</span> <span class="p">)</span>
+</code></pre></div></div>
+<p><strong>Subsets</strong></p>
+<p>Generate all the subsets of a given array</p>
+<p>input = [1, 2, 3]</p>
+<p>output = [[1, 2, 3], [1,2], [1,3], [1], [2,3], [2], [3], []]</p>
+<p>Think in the manner of inclusion exclusion</p>
+<pre><code class="language-mermaid">graph TD
+a("f(0, [])") --&gt; b("f(1, [])")
+a --&gt; c("f(1, [1])")
+
+b --&gt; d("f(2, [])")
+b --&gt; e("f(2, [2])")
+
+d --&gt; g("f(3, [])")
+d --&gt; h("f(3, [3])")
+
+e --&gt; i("f(3, [2])")
+e --&gt; j("f(3, [2,3])")
+
+c --&gt; k("f(2, [1])")
+c --&gt; l("f(2, [1,2])")
+
+k --&gt; m("f(3, [1])")
+k --&gt; n("f(3, [1,3])")
+
+l --&gt; o("f(3, [1,2])")
+l --&gt; p("f(3, [1,2,3])")
+</code></pre>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">subsets</span><span class="p">(</span><span class="n">tmp</span><span class="p">:</span><span class="nb">list</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">input_</span><span class="p">:</span><span class="nb">list</span><span class="p">):</span>
+	<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_</span><span class="p">):</span>
+		<span class="k">print</span><span class="p">(</span><span class="n">tmp</span><span class="p">)</span>
+		<span class="k">return</span>
+
+	<span class="n">tmp</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">input_</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+	<span class="n">subsets</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">input_</span><span class="p">)</span>
+	<span class="n">tmp</span><span class="p">.</span><span class="n">pop</span><span class="p">()</span>
+	<span class="n">subsets</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">input_</span><span class="p">)</span>
+
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">subsets</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+</code></pre></div></div>
+<p>Time complexity : O($2^N$) : Since there will be $2^{N}$ leaf nodes (approximating the whole of the nodes</p>
+<p>$$1 + 2 + 4 .....2^{N}   =  \frac{2^{N+1} -1}{(2-1)}$$</p>
+<p>How to do the same thing with binary digits</p>
+<p>Bit masking is used in such categories if you only have two decisions</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">subsets</span><span class="p">(</span><span class="n">input_list</span><span class="p">:</span><span class="nb">list</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">input_list</span><span class="p">)</span>
+    <span class="n">to_bin</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s">'</span><span class="si">{</span><span class="n">i</span><span class="si">:</span><span class="mi">0</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="n">b</span><span class="si">}</span><span class="s">'</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="o">**</span><span class="n">n</span><span class="p">)]</span>
+    <span class="n">output</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">z</span> <span class="ow">in</span> <span class="n">to_bin</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">z</span><span class="p">,</span><span class="n">input_list</span><span class="p">):</span>
+            <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span><span class="s">'0'</span><span class="p">:</span>
+                <span class="n">temp</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="n">output</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">output</span>
+
+
+<span class="n">subsets</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+
+</code></pre></div></div>
+<p>Divide and Conquer Paradigm</p>
+<p>Given an integer array of size N , find the max element of the array.</p>
+<p>[7,1,4,3,2,6,5]</p>
+<pre><code class="language-mermaid">graph TD
+
+f0("f(0, 6)") --&gt; f1("f(0,3)")
+
+f0("f(0,6)") --&gt; f2("f(4,6)")
+
+f1("f(0,3)") --&gt; f4("f(0, 1)")
+
+
+f1("f(0,3)") --&gt; f5("f(2, 3)")
+
+f4("f(0, 1)") --&gt; f8("f(0, 0)")
+
+f4("f(0, 1)") --&gt; f9("f(1, 1)")
+
+f5("f(2, 3)") --&gt; f11("f(2, 2)")
+f5("f(2, 3)") --&gt; f12("f(3, 3)")
+
+f2("f(4,6)") --&gt; f7("f(4,5)")
+
+f2("f(4,6)") --&gt; f6("f(5,6)")
+
+f7("f(4,5)") --&gt; f13("f(4,4)")
+f7("f(4,5)") --&gt; f14("f(5, 5)")
+
+f6("f(5,6)") --&gt; f15("f(5,5)")
+f6("f(5,6)") --&gt; f16("f(6, 6)")
+
+
+</code></pre>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">def</span> <span class="nf">get_max</span><span class="p">(</span><span class="n">arr</span><span class="p">:</span><span class="nb">list</span><span class="p">,</span> <span class="n">i</span><span class="p">:</span><span class="nb">int</span><span class="p">,</span> <span class="n">j</span><span class="p">:</span><span class="nb">int</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="n">j</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="n">j</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
+    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">get_max</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">m</span><span class="p">),</span> <span class="n">get_max</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">m</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>
+
+<span class="n">temp</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">get_max</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</code></pre></div></div>
+<p>Time Complexity : $N +  \frac{N}{2}  + \frac{N}{4}....1 = \log_{2}{N}$</p>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/notes/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div></div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/notes/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

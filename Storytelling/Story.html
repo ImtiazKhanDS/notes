@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Second Brain | © Copyright 2024 https://imtiazkhands.github.io/notes</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Second Brain">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<meta property="og:description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<link rel="canonical" href="https://imtiazkhands.github.io/notes/Storytelling/Story.html">
+<meta property="og:url" content="https://imtiazkhands.github.io/notes/Storytelling/Story.html">
+<meta property="og:site_name" content="Second Brain">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Second Brain">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"© Copyright 2024 https://imtiazkhands.github.io/notes","headline":"Second Brain","url":"https://imtiazkhands.github.io/notes/Storytelling/Story.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://imtiazkhands.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/notes/assets/css/main.css">
+  <script src="/notes/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://imtiazkhands.github.io/notes/feed.xml" title="Second Brain">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/notes/">
+  <img class="site-favicon" title="Second Brain" src="" onerror="this.style.display='none'">
+  Second Brain
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/notes/Non-Technical-Posts.html">NON TECHNICAL</a><a class="page-link" href="/notes/Technical-Posts.html">TECHNICAL</a><a class="page-link" href="/notes/">ALL POSTS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/notes/assets/images/banners/home.jpeg)"></div>
+        <img class="img-placeholder" src="/notes/assets/images/banners/home.jpeg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              Building a second brain !
+            </h1>
+            <h2 class="page-banner-subheading">
+                 imtiaz
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <h4 id="the-art-of-story-telling">The art of story telling</h4>
+<pre><code>  ~ Michael Lewis
+</code></pre>
+<p>Story telling is a muscle , if you develop it,   It ends up improving your life.</p>
+<p><strong>Stocks , Stats and finding your story</strong></p>
+<ol>
+<li>You need a story because facts don’t stick story does.</li>
+<li>The simplest mistake that writers think is that the material is inside them as opposed to outside them</li>
+<li>Tell the stories that entertain and engage you</li>
+<li>Practice writing for someone who loves you</li>
+<li>If something is fun to read that is your voice .</li>
+<li>If you read it aloud you will notice something’s that are dead spots and boring , you can catch those and change it.</li>
+<li>Try your story with a group of friends observe their reaction and see where it’s working .</li>
+<li>Ears understand the emotion of a story eyes don’t, If you listen to a story you get emotionally connected to it rather than when you just read it with your eyes.</li>
+<li>Don’t go hunting for ideas , just be alive what interests you in the world.</li>
+<li>When you find something interesting just note it down , come back to it later.</li>
+<li>Pay attention to your curiosity because your curiosity will lead to a passion on the page</li>
+<li>You can make anything interesting or important by just the power of your curiosity</li>
+<li>Some of the best books written about are things that you would never imagine a book would be written about.</li>
+<li>Boil your story down to the essence and then you explode all your thoughts around it. The essence is the hub and all your points around are perspectives, facts etc.</li>
+<li>You want the topic to lead you to the character or vice versa , they go together hand in hand.</li>
+<li>Find a character you want to follow</li>
+<li>Allow characters to take over your story even if conventional wisdom is that’s not about who you are writing a story about.</li>
+<li>Taking somebody who is unimportant and saying no this person is very important to the story.</li>
+<li>Be curious about your characters.</li>
+<li>You can move the spotlight to the characters you want to show, Don’t stick to write about characters that are famous , In that case you will be saying something which the reader knows already.</li>
+<li>Find the motive behind your characters</li>
+<li>Find the gold by thinking about things differently , some view which is not expressed, some character which other people think unimportant, some story that no one cares about.</li>
+<li>Characters motive : Why they do what they do ?
+<ol>
+<li>Look at their past</li>
+<li>What are their triggers ?</li>
+<li>What are their obsessions?</li>
+<li>What are their goals ?</li>
+<li>What are their needs ?</li>
+</ol>
+</li>
+<li>People do things for a reason just be alive to what that reason could be.</li>
+<li>Listen to how people tell stories</li>
+<li>Some people tell the stories where they are always the victim , some people tell the stories where they are the smartest person, some people tell stories where they are lucky or grateful. It’s your job as a writer to only write how you see it and hope things may fall in.</li>
+<li>An analogy of a writer is like a tape recorder , looking at your own recording first time on a tape recorder you may say , that’s not me or I don’t know I sounded like that or that’s  little different or I don’t want to hear it . But the tape recorder is not lying, it actually giving you what you sound like. A writers job is to be the tape recorder</li>
+<li>Getting your subjects to open up</li>
+<li>You have to create an environment for your subject where they feel safe to open up.</li>
+<li>Make yourself an useful listener</li>
+</ol>
+<p><strong>Tackles Sub-primes Crypto and Premonitions</strong></p>
+<ol>
+<li>Slow down the action</li>
+<li>Even casual conversations could lead to your next story.</li>
+<li>Look for friction between perception and reality</li>
+<li>Places where the whole world is looking wrong and you can show it . It’s a huge opportunity when you can explain a mistake the world is making in the form of a character</li>
+<li>Parallel plot structure
+<ol>
+<li>Incorporate multiple stories linked by common characters or themes</li>
+<li>The stories unfold concurrently</li>
+<li>The stories provide multiple hooks to pique the interest of your audience</li>
+</ol>
+</li>
+<li>Broadly what I am doing in this world as a writer is filtering what is interesting and organising it into a story.</li>
+<li>The process starts by talking to people or wandering around and observing scenes</li>
+<li>Building blocks of a story are characters scenes and explanations</li>
+<li>Cards
+<ol>
+<li>Orange : characters</li>
+<li>Yellow : scenes</li>
+<li>Green : explanations</li>
+</ol>
+</li>
+<li>Using these card structures and reshuffling them you can inexpensively play with the structure and gives chance to argue with your own structure.</li>
+<li>Figure out your beginning and end before you start.</li>
+<li>If you have a beginning and ending then you can create a relationship between those two structures , For example end where you have begun.</li>
+<li>There’s something timeless about the structure where you come back to the place where you started.</li>
+<li>General advice : shorter is always better, if you want to write a 500 page book , make it 280. If you want to write a 30 word sentence make it 15.</li>
+<li>Verbosity gets in the way of meaning and connecting so it’s like make it punchier.</li>
+<li>Infuse your characters with personal stakes.</li>
+<li>The most difficult subjects can be explained to the most slow-witted man if he has not formed any idea of them already , but the simplest thing cannot be made clear to the most intelligent man if he is firmly persuaded that he knows already.</li>
+<li>The trick to explain complex things is to create the characters that you are attached to.</li>
+<li>Don’t feel the need to prove how smart you are</li>
+<li>Make the reader feel smart rather than making yourself smart and reader feel stupid through your writing. Make the reader understand.</li>
+<li>Some of the things you should simplify and leave it out to make the reader understand, knowingly that it’s a vulnerability since you didn’t go to the details , There would be someone who would question that, But you have to take that risk so that reader gets it in a digestible way.</li>
+<li>Kill your darlings , You have to exclude some parts from your book which are not really adding anything to the story.</li>
+<li>Add strength or importance to your character</li>
+<li>Ask your character for information on multiple situations</li>
+<li>Know the character’s environment</li>
+<li>If it’s in your head as a picture it’s so much easier to paint that picture in readers mind.</li>
+<li>Walk a mile in your characters shoes.</li>
+<li>A discovery process in the environment of a character could lead to gold.</li>
+<li>Insist on your view of the character and story. You will likely running against the characters view of themselves.</li>
+</ol>
+<p><strong>Start to Finish</strong></p>
+<ol>
+<li>Make the book into little manageable tasks.</li>
+<li>Have your own space and environment where you don’t get distracted</li>
+<li>Create a small private space so that you associate that place with writing so that you minimise distractions</li>
+<li>It’s useful to have a routine but don’t be superstitious. Make your Routine loose or flexible</li>
+<li>Don’t get up until you have 1000 words.</li>
+<li>Make your self criticism positive</li>
+<li>Create in the morning and edit it in the evening</li>
+<li>Have the nerve to be yourself</li>
+<li>Write for someone you love or trust</li>
+<li>If you are going to do anything meaningful someone is not gonna like it.</li>
+<li>Reward is that you see the human imagination of society’s judgement where your character rises out of the judgement and shows to all why no one can be judged.</li>
+<li>Knowing your ending helps you guide through the story</li>
+<li>The ending guides you to an emotional place that informs the rest of the story</li>
+<li>Knowing what happens to your character at the end will help frame and guide your writing</li>
+<li>Don’t start off writing a particular book , let the material take you to write</li>
+<li>Getting into someone’s world and asking about their experience on a specific question would help you more on the story</li>
+<li>Just adopt being curious and find stories in everything you see.</li>
+<li>Funny stories that end in a dark place is the theme of Michael Lewis books</li>
+</ol>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/notes/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div></div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/notes/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-translate-customization" content="108d9124921d80c3-80e20d618ff053c8-g4f02ec6f3dba68b7-c">
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Second Brain | © Copyright 2024 https://imtiazkhands.github.io/notes</title>
+<meta name="generator" content="Jekyll v3.10.0">
+<meta property="og:title" content="Second Brain">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<meta property="og:description" content="© Copyright 2024 https://imtiazkhands.github.io/notes">
+<link rel="canonical" href="https://imtiazkhands.github.io/notes/Productivity/Habits.html">
+<meta property="og:url" content="https://imtiazkhands.github.io/notes/Productivity/Habits.html">
+<meta property="og:site_name" content="Second Brain">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Second Brain">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"© Copyright 2024 https://imtiazkhands.github.io/notes","headline":"Second Brain","url":"https://imtiazkhands.github.io/notes/Productivity/Habits.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="icon" href="">
+  <link rel="canonical" href="https://imtiazkhands.github.io">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-noto-sans@0.0.72/index.min.css">
+  <link rel="stylesheet" href="/notes/assets/css/main.css">
+  <script src="/notes/assets/js/main.js"></script><link type="application/atom+xml" rel="alternate" href="https://imtiazkhands.github.io/notes/feed.xml" title="Second Brain">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+<!-- and it's easy to individually load additional languages -->
+<script charset="UTF-8" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/languages/go.min.js" async></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Init highlight js
+document.addEventListener('DOMContentLoaded', function(event) {
+  var els = document.querySelectorAll('pre code')
+
+  function addLangData(block) {
+    var outer = block.parentElement.parentElement.parentElement;
+    var lang = block.getAttribute('data-lang');
+    for (var i = 0; i < outer.classList.length; i++) {
+      var cls = outer.classList[i];
+      if (cls.startsWith('language-')) {
+        lang = cls;
+        break;
+      }
+    }
+    if (!lang) {
+      cls = block.getAttribute('class');
+      lang = cls ? cls.replace('hljs ', '') : '';
+    }
+    if (lang.startsWith('language-')) {
+      lang = lang.substr(9);
+    }
+    block.setAttribute('class', 'hljs ' + lang);
+    block.parentNode.setAttribute('data-lang', lang);
+  }
+
+  function addBadge(block) {
+    var enabled = ('true' || 'true').toLowerCase();
+    if (enabled == 'true') {
+      var pre = block.parentElement;
+      pre.classList.add('badge');
+    }
+  }
+
+  function handle(block) {
+    addLangData(block);
+    addBadge(block)
+    hljs.highlightBlock(block);
+  }
+
+  for (var i = 0; i < els.length; i++) {
+    var el = els[i];
+    handle(el);
+  }
+});
+</script>
+
+<style>
+  /* code language badge */
+  pre.badge::before {
+    content: attr(data-lang);
+    color: #fff;
+    background-color: #ff4e00;
+    padding: 0 .5em;
+    border-radius: 0 2px;
+    text-transform: uppercase;
+    text-align: center;
+    min-width: 32px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  /* fix wrong badge display for firefox browser */
+  code > table pre::before {
+    display: none;
+  }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe-lightbox.umd.min.js" async></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/umd/photoswipe.umd.min.js" async></script>
+<link href="//cdnjs.cloudflare.com/ajax/libs/photoswipe/5.3.7/photoswipe.min.css" rel="stylesheet">
+<style>
+  .pswp .pswp__container .pswp__img {
+    background-color: white;
+  }
+</style>
+
+<script>
+  function initPhotoSwipe() {
+    let customOptions = {};
+
+    try {
+      const data = ``.replaceAll("=>", ":");
+      customOptions = JSON.parse(data);
+    } catch (e) {
+      console.info("Invalid custom photo previewer options! " + e.message);
+    }
+
+    // Define object and gallery options
+    const options = Object.assign(
+      {
+        gallery: "section.main",
+        children: "a.photo-swipe",
+        photo_scale: 2,
+        // dynamic import is not supported in UMD version
+        pswpModule: PhotoSwipe,
+      },
+      customOptions
+    );
+
+    const galleryEl = document.querySelector(options.gallery);
+    if (!galleryEl) {
+      return;
+    }
+
+    const imgEls = [];
+    const els = galleryEl.querySelectorAll("img:not(.emoji)");
+    els.forEach((el) => {
+      if (el.src.trim() == "") {
+        return;
+      }
+      if (!imgEls.includes(el)) {
+        imgEls.push(el);
+      }
+    });
+
+    if (imgEls.length === 0) {
+      return;
+    }
+
+    imgEls.forEach((imgEl) => {
+      imgEl.outerHTML = `
+      <a class="photo-swipe"
+        href="${imgEl.src}"
+        data-pswp-width="${
+          Math.max(imgEl.naturalWidth, imgEl.width) * options.photo_scale
+        }"
+        data-pswp-height="${
+          Math.max(imgEl.naturalHeight, imgEl.height) * options.photo_scale
+        }"
+        data-pswp-caption="${imgEl.getAttribute("caption") || imgEl.alt}"
+        target="_blank">
+        ${imgEl.outerHTML}
+      </a>`;
+    });
+
+    // Initialize PhotoSwipe 5
+    var lightbox = new PhotoSwipeLightbox(options);
+
+    lightbox.init();
+  }
+
+  window.addEventListener("load", initPhotoSwipe);
+</script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="site-header site-header-transparent" role="banner">
+
+  <div class="wrapper">
+    <div class="site-header-inner">
+<span class="site-brand"><a class="site-brand-inner" rel="author" href="/notes/">
+  <img class="site-favicon" title="Second Brain" src="" onerror="this.style.display='none'">
+  Second Brain
+</a>
+</span><nav class="site-nav">
+          <input type="checkbox" id="nav-trigger" class="nav-trigger">
+          <label for="nav-trigger">
+            <span class="menu-icon">
+              <svg viewbox="0 0 18 15" width="18px" height="15px">
+                <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"></path>
+              </svg>
+            </span>
+          </label>
+
+          <div class="trigger">
+<a class="page-link" href="/notes/Non-Technical-Posts.html">NON TECHNICAL</a><a class="page-link" href="/notes/Technical-Posts.html">TECHNICAL</a><a class="page-link" href="/notes/">ALL POSTS</a>
+
+
+
+
+</div>
+        </nav>
+</div>
+  </div>
+</header>
+
+<script>
+  function initHeader() {
+    var lastScrollY = getScrollPos().y;
+    var documentElement = document.documentElement;
+
+    function storeScrollData() {
+      var y = getScrollPos().y;documentElement.setAttribute("data-header-transparent", "");var scrollStatus = "";
+
+      if (y <= 0) {
+        scrollStatus = "top";
+      } else if ((window.innerHeight + y) >= document.body.offsetHeight) {
+        scrollStatus = "bottom";
+      } else {
+        var isScrollDown = (y - lastScrollY > 0) ? true : false;
+        scrollStatus = isScrollDown ? "down" : "up";
+      }
+
+      lastScrollY = y;
+      documentElement.setAttribute("data-scroll-status", scrollStatus);
+    }
+
+    window.addEventListener('scroll', function(e) {
+      storeScrollData();
+    });
+
+    storeScrollData();
+  }
+  document.addEventListener('DOMContentLoaded', initHeader);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="page-banner">
+    <div class="page-banner-img">
+<div style="background-image: url(/notes/assets/images/banners/home.jpeg)"></div>
+        <img class="img-placeholder" src="/notes/assets/images/banners/home.jpeg">
+</div>
+    <div class="wrapper">
+      <div class="page-banner-inner"><div class="page-banner-default">
+            <h1 class="page-banner-heading">
+              Building a second brain !
+            </h1>
+            <h2 class="page-banner-subheading">
+                 imtiaz
+            </h2>
+          </div></div>
+    </div>
+  </section><script>
+  function hashLocate(hashValue) {
+    hashValue = hashValue.replace(/^.*#h-/, '');
+    hashValue = decodeURIComponent(hashValue);
+    var element = document.getElementById(hashValue);
+
+    if (!element) {
+      return;
+    }
+
+    var header = document.querySelector('header.site-header');
+    var headerRect = header.getBoundingClientRect();
+    var headerTop = Math.floor(headerRect.top);
+    var headerHeight = Math.floor(headerRect.height);
+    var scrollPos = getScrollPos();
+    var offsetY = element.offsetTop - (headerTop + headerHeight + 20);
+
+    if (offsetY == scrollPos.y) {
+      return;
+    }
+
+    if (headerTop == 0  && offsetY > scrollPos.y) {
+      offsetY += headerHeight + 2;
+    } else if (headerTop < 0  && offsetY < scrollPos.y) {
+      offsetY -= headerHeight - 2;
+    }
+
+    smoothScrollTo(offsetY);
+  }
+
+  // The first event occurred
+  window.addEventListener('load', function(event) {
+    if (window.location.hash) {
+      hashLocate(window.location.hash);
+    }
+  });
+
+  // The first event occurred
+  window.addEventListener('click', function(event) {
+    if (event.target.tagName.toLowerCase() == 'a') {
+      hashLocate(event.target.getAttribute('href'));
+    }
+  });
+</script>
+<div class="theme-toggle">
+  <input type="checkbox" id="theme-switch">
+  <label for="theme-switch">
+    <div class="toggle"></div>
+    <div class="names">
+      <p class="light">Light</p>
+      <p class="dark">Dark</p>
+    </div>
+  </label>
+</div>
+
+
+
+
+<script>
+  (function() {
+    var sw = document.getElementById('theme-switch');
+    var html = document.getElementsByTagName('html')[0];
+    var nightModeOption = ('auto' || 'auto').toLowerCase();
+    var storage = nightModeOption === 'manual'
+        ? localStorage
+        : sessionStorage;
+    var themeData = loadThemeData();
+
+    function saveThemeData(data) {
+      storage.setItem('theme', JSON.stringify(data));
+    }
+
+    function loadThemeData() {
+      var data = storage.getItem('theme');
+      try {
+        data = JSON.parse(data ? data : '');
+      } catch(e) {
+        data = { nightShift: undefined, autoToggleAt: 0 };
+        saveThemeData(data);
+      }
+      return data;
+    }
+
+    function handleThemeToggle(nightShift) {
+      themeData.nightShift = nightShift;
+      saveThemeData(themeData);
+      html.dataset.theme = nightShift ? 'dark' : 'light';
+      setTimeout(function() {
+        sw.checked = nightShift ? true : false;
+      }, 50);
+    }
+
+    function autoThemeToggle() {
+      // Next time point of theme toggle
+      var now = new Date();
+      var toggleAt = new Date();
+      var hours = now.getHours();
+      var nightShift = hours >= 19 || hours <=7;
+
+      if (nightShift) {
+        if (hours > 7) {
+          toggleAt.setDate(toggleAt.getDate() + 1);
+        }
+        toggleAt.setHours(7);
+      } else {
+        toggleAt.setHours(19);
+      }
+
+      toggleAt.setMinutes(0);
+      toggleAt.setSeconds(0);
+      toggleAt.setMilliseconds(0)
+
+      var delay = toggleAt.getTime() - now.getTime();
+
+      // auto toggle theme mode
+      setTimeout(function() {
+        handleThemeToggle(!nightShift);
+      }, delay);
+
+      return {
+        nightShift: nightShift,
+        toggleAt: toggleAt.getTime()
+      };
+    }
+
+    // Listen the theme toggle event
+    sw.addEventListener('change', function(event) {
+      handleThemeToggle(event.target.checked);
+    });
+
+    if (nightModeOption == 'auto') {
+      var data = autoThemeToggle();
+
+      // Toggle theme by local setting
+      if (data.toggleAt > themeData.autoToggleAt) {
+        themeData.autoToggleAt = data.toggleAt;
+        handleThemeToggle(data.nightShift);
+      } else {
+        handleThemeToggle(themeData.nightShift);
+      }
+    } else if (nightModeOption == 'manual') {
+      handleThemeToggle(themeData.nightShift);
+    } else {
+      var nightShift = themeData.nightShift;
+      if (nightShift === undefined) {
+        nightShift = nightModeOption === 'on';
+      }
+      handleThemeToggle(nightShift);
+    }
+  })();
+</script>
+<div id="click-to-top" class="click-to-top">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  (function () {
+    const clickToTop = document.getElementById('click-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        clickToTop.classList.add('show')
+      }else {
+        clickToTop.classList.remove('show')
+      }
+    });
+    clickToTop.addEventListener('click', () => {
+      window.smoothScrollTo(0);
+    });
+  })();
+</script>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <p><strong>Getting 1 percent better</strong></p>
+<pre><code>Thing big act small
+</code></pre>
+<ol>
+<li>Do something consistently small to unlock elite results.</li>
+<li>Instead of thinking about what can I do on my best day , think about what can I cover even on my worst day.</li>
+<li>It wasn’t the last workout that made what you are , but it was the ones that came before , accumulation leads to gains</li>
+</ol>
+<p><strong>Goal vs system</strong></p>
+<ol>
+<li>Iceberg analogy , the surface of the iceberg is the goal , the under the surface is the system.</li>
+<li>Identify goals you want to achieve</li>
+<li>Break the goals into smaller habits</li>
+<li>Repeat daily habits over time to create a system</li>
+<li>Spend the vast majority of time in building a better system.</li>
+<li>Goals have an endpoint , systems last forever</li>
+<li>If you reclaim the habit as fast as you could the breaking of it doesn’t matter much</li>
+<li>Goals are about results, systems are about process</li>
+<li>Start with systems when you want to change your goals</li>
+<li>Goals are short term , systems are long term.</li>
+</ol>
+<p><strong>Habits make our Identity</strong></p>
+<ol>
+<li>The stories that you tell about yourself are they serving you or hindering you ?</li>
+<li>Determine who you want to become</li>
+<li>Create habits that support that identity</li>
+<li>Example :<em>Become a writer</em>
+<ol>
+<li>Identity : I am a person who writes each day</li>
+<li>System : Write 100 words each day</li>
+</ol>
+</li>
+<li>Example : <em>To get in shape</em>
+<ol>
+<li>Identity : I am a person who doesn’t miss workouts</li>
+<li>System : Wake up early , get dressed and exercise.</li>
+</ol>
+</li>
+<li>Example : <em>To improve your relationship</em>
+<ol>
+<li>I am a type of person who makes partner’s life easier</li>
+<li>Find one thing each day that I can take of their plate</li>
+</ol>
+</li>
+<li>
+<strong>Creating a new habit</strong>
+<ol>
+<li>Take your ultimate goal</li>
+<li>Translate the goal into an identity</li>
+<li>Figure out a process that reinforces being that person.</li>
+</ol>
+</li>
+</ol>
+<p><strong>The Habit Feedback loop</strong></p>
+<ol>
+<li>
+<em>Habit</em> : The strategies we follow to solve the problems we repeatedly face.</li>
+<li>Four stages of a habit feedback loop
+<ol>
+<li>
+<strong>Cue</strong> : The trigger that tells the brain to initiate the habit</li>
+<li>
+<strong>Craving</strong> : The desire or motivation for a particular outcome</li>
+<li>
+<strong>Response</strong> : The thought or action you take to form the habit</li>
+<li>
+<strong>Reward</strong> : The payoff you get from the habit</li>
+</ol>
+</li>
+<li>What are the odds that the habits you have are the optimal way to solve problems that you face in life ? Very unlikely</li>
+</ol>
+<p><strong>Laws of behavioural change</strong></p>
+<ol>
+<li>
+<p><strong>Make it obvious</strong></p>
+<ol>
+<li>Diderot effect: When one action leads to another action</li>
+<li>Example Diderot effect : I go to the washroom -&gt; I wash my hands -&gt; Dry my hands -&gt; Use the towel -&gt; Oh I need to do the laundry -&gt; Oh I have to go to buy some detergents.</li>
+<li>The momentum that feeds from one action to another in Diderot effect can also be used while building habits</li>
+<li>By this you not only make it easy for yourself to show up every day but also, you make it easy to win every day.</li>
+<li>Template Have clear plan: I will perform X behaviour on this day  at this place on this time?</li>
+<li>Example : I will get a flue  shot on November 14 at government hospital at 9 AM</li>
+<li>The more you do these specific behaviours the more momentum you gain the more rewarding it will be.</li>
+<li>You don’t need motivation what you need is implementation intentions with which you are likely to do something than waiting for motivation to strike you.</li>
+<li>Behaviour change starts with self awareness</li>
+<li>Set an implementation intention.</li>
+</ol>
+</li>
+<li>
+<p><strong>Make it Attractive</strong></p>
+<ol>
+<li>Getting somebody involved in the habit</li>
+<li>Come up with a ritual that feels right and makes you plugged in.</li>
+<li>Reframe your mindset , instead of saying oh I have to do lot of work say I get the opportunity to do productive work.</li>
+<li>Change Obligation to opportunity.</li>
+<li>Social expectations help you stay on the habit.</li>
+<li>The more attractive a behaviour the forming it is.</li>
+<li>Reprogram your story</li>
+<li>Reframe your mindset from “have to” to “get to”</li>
+<li>Socialise your habit</li>
+</ol>
+</li>
+<li>
+<p><strong>Make it easy</strong></p>
+<ol>
+<li>Motion is often preparation , research or planning or the things that you do before you take an action</li>
+<li>Action is the type of thing that delivers the result that you are looking for.</li>
+<li>Example : Reading is motion , writing is action.</li>
+<li>Example : Going to the gym and talking to a personal trainer is a motion whereas getting under the bar and doing a set of squats is an action.</li>
+<li>Motion is fine if it complements the action you are taking.</li>
+<li>Habit shaping : You start with an easy version of the habit , you build it more gradually into a larger version.</li>
+<li>Example : You start running with 1 mile then 2 miles , then 5 miles , later half marathon, leading up to a marathon.</li>
+<li>2minute rule : Whatever habit you are trying to create , can you roll it down to 2 minutes.</li>
+<li>Example : Read 30 books an year  -&gt; 2minute rule -&gt; read 1 page</li>
+<li>Know the difference between action and motion</li>
+<li>Shape your habits to make them stick</li>
+<li>Use the 2 minute rule.</li>
+</ol>
+</li>
+<li>
+<p><strong>Make it satisfying</strong></p>
+<ol>
+<li>A lot of returns while building habits are delayed.</li>
+<li>Example : You are working out since a month but no signs of change</li>
+<li>It’s better to have a long time line but also have some signals of progress each day.</li>
+<li>Signals of progress gives you momentum</li>
+<li>Visual measures help demonstrate your progress, and making progress is highly satisfying.</li>
+<li>We likely stick to a habit when our experience is satisfying</li>
+<li>Reward the good habit immediately</li>
+<li>What is immediately rewarded is repeated</li>
+<li>Track progress to become successful</li>
+</ol>
+</li>
+</ol>
+<p><strong>Unpacking the Most common Habits</strong></p>
+<p><strong>1. Question</strong> : I want to be more productive and avoid procrastination, How do I apply 4 laws of behaviour change?</p>
+<p><strong>Answer</strong>:  Productivity is different for different individuals, So let’s take writing as an example.</p>
+<p><strong>Goal</strong> : To write every day
+<strong>System</strong> : Collection of habits that lead to writing every day.</p>
+<p><strong>Make it obvious</strong> : Write the topic that you want to write about and stick it on the keyboard or keep the google doc open with the topic name</p>
+<p><strong>Make it attractive</strong> : Write about what interests you</p>
+<p><strong>Make it easy</strong> : Just write one sentence</p>
+<p><strong>Make it satisfying</strong>: Reward yourself with a treat , get a coffee or  use social media browse for 15 mins etc</p>
+<p><strong>2. Question</strong> : How do I make a habit of saving money for a house ?</p>
+<p><strong>Answer</strong>:  collection of financial habits that make you reach the goal.</p>
+<p><strong>Goal</strong> : To save for a house
+<strong>System</strong> : Collection of habits that lead to saving finances every day.</p>
+<p><strong>Make it obvious</strong> : Use a spread sheet , to show the amount of money you saved per week.</p>
+<p><strong>Make it attractive</strong> : Envision the home that you like to have.</p>
+<p><strong>Make it easy</strong> : Automating your savings from your bank account to savings account monthly or weekly</p>
+<p><strong>Make it satisfying</strong>: Ultimately purchasing the house which makes it satisfying.</p>
+<p><strong>3. Question</strong> : How can I apply the four laws in quitting smoking  ?</p>
+<p><strong>Answer</strong>:  For building a habit you make it obvious, attractive easy and satisfying but for breaking it you do the inverse , you make it invisible, unattractive, difficult and unsatisfying.</p>
+<p><strong>Goal</strong> : Quit Smoking
+<strong>System</strong> : Collection of habits that lead to quitting smoking.</p>
+<p><strong>Make it invisible</strong> : Change your commute to avoid where you buy cigarettes</p>
+<p><strong>Make it unattractive</strong> : Do not identify yourself as a smoker</p>
+<p><strong>Make it difficult</strong> : Substitute with something that gives the same feeling or Reduce the consumption.</p>
+<p><strong>Make it unsatisfying</strong>: Accomplish the first three steps this takes care of itself.</p>
+<p><strong>5 pm to 9 pm habits that affect 9 am to 5 pm</strong></p>
+<ol>
+<li>Scrolling mindlessly is the probably the greatest interruption we all have</li>
+<li>One space one use</li>
+<li>If you can have a separate room or zone then work can happen in there and personal life can happen elsewhere.</li>
+<li>You want fewer steps between you and desired behaviour and more steps between you and undesired behaviour</li>
+<li>Leave your mobile in another room , don’t take it to your home office</li>
+<li>Time will magnify what every you feed it</li>
+<li>If you have good habits time becomes your ally , if you have bad habits time becomes your enemy</li>
+<li>Don’t worry too much about your current position think about your current trajectory, is it becoming 1 % better or 1% worse ?</li>
+<li>Scale your habits down , make it simple , utilise those four laws and try to master the art of showing up.</li>
+<li>Bias towards action to achieve remarkable results</li>
+</ol>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/notes/"></data>
+
+  <div class="wrapper">
+    <div class="site-footer-inner">
+<div></div>
+      <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
+      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
+      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="/notes/feed.xml">via RSS</a>
+</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
