@@ -318,6 +318,12 @@ $$1 + 2 + 4 .....2^{N}   =  \frac{2^{N+1} -1}{(2-1)}$$
 
 How to do the same thing with binary digits
 
+Bit masking is used in such categories if you only have two decisions
+
+```python
+def 
+```
+
 
 
 
