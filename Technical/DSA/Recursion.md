@@ -313,8 +313,22 @@ How to do the same thing with binary digits
 Bit masking is used in such categories if you only have two decisions
 
 ```python
-def subsets(n:int):
-	for i in range(1,2**(n)):
-        print(i)
+def subsets(input_list:list):
+    n = len(input_list)
+    to_bin = [f'{i:0{n}b}' for i in range(1,2**n)]
+    output = []
+    for z in to_bin:
+        temp = []
+        for x, y in zip(z,input_list):
+            if x !='0':
+                temp.append(y)
+        output.append(temp)
+
+    return output
+
+
+subsets([1, 2, 3])
 
 ```
+
+Divide and Conquer Paradigm
