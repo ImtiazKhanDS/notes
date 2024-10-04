@@ -372,14 +372,13 @@ f6("f(5,6)") --> f16("f(6, 6)")
 ```python
 
 def get_max(arr:list, i:int, j:int):
-	if i == j:
-		return arr[i]
-
+    if i==j:
+        return arr[i]
     m = (i+j)//2
-    return max(get_max(arr,i, m ), get_max(arr, m+1, j))
+    return max(get_max(arr, i, m), get_max(arr, m+1, j))
 
+temp = [7,1,4,3,2,6,5]
+get_max(temp, 0, 6)
 ```
 
-
 Time Complexity : $N +  \frac{N}{2}  + \frac{N}{4}....1 = \log_{2}{N}$
-
