@@ -1,17 +1,21 @@
+---
+id: Recursion
+aliases: []
+tags: []
+---
 
 A process in which a function keeps calling itself is known as recursion and the corresponding function is called a recursive function. There are two important components to write a recursive function -
 
 1. Recurrence relation - Break a larger problem to a smaller problem
-2. Termination condition 
+2. Termination condition
 
-Control Flow 
+Control Flow
 
 ```python
 def fact(N:int):
 	if N == 0: return 1
 	return N * fact(N-1)
 ```
-
 
 ```mermaid
 flowchart TD
@@ -22,12 +26,11 @@ A[main] --> B["fact(5)"] --> C["fact(4)"] --> D["fact(3)"] --> E["fact(2)"] --> 
 
 This is top to bottom (depth first) , the return happens in bottom to top fashion. The first function to return is the bottom (LIFO) . This is called stack.
 
-Time complexity : O(n)      ->    n push operations and n pop operations
+Time complexity : O(n) -> n push operations and n pop operations
 
-Space complexity : O(n)   ->    Recursion stack memory
+Space complexity : O(n) -> Recursion stack memory
 
 This type of recursion is called single branch recursion.
-
 
 ```python
 def func(x : int):
@@ -41,10 +44,9 @@ if __name__ == "__main__":
 	func(0)
 ```
 
-
 The above snippet of code is for multi branch recursion
 
- **Recursion Tree Diagram**
+**Recursion Tree Diagram**
 
 ```mermaid
 graph TD
@@ -90,7 +92,7 @@ def f(x:int, n:int):
 	f(x+1, n)
 
 f(1, 10)
-  
+
 
 # with a single variable.
 def f(n:int):
@@ -102,15 +104,13 @@ def f(n:int):
 f(10)
 ```
 
-
-Given a m * n Grid  
+Given a m \* n Grid
 
 Destination : (m-1, n-1)
 
 Need to reach (0, 0) --> (m-1, n-1)
 
 How many distinct paths ? Given Constraints : 1. 1 Unit right and 1 Unit Bottom
-
 
 | (0, 0) | -   | -      |
 | ------ | --- | ------ |
@@ -129,40 +129,37 @@ def CountPaths(i:int, j:int, m:int, n:int):
 CountPaths(0,0, 3,3)
 ```
 
-Time Complexity  : O($2^ {m + n}$)  
+Time Complexity : O($2^ {m + n}$)
 
-The height of the binary tree is m + n (since every root to leaf path has  n right moves and m bottom moves , so total height is m  + n)
+The height of the binary tree is m + n (since every root to leaf path has n right moves and m bottom moves , so total height is m + n)
 
-Now every node has two  nodes
+Now every node has two nodes
 
-total nodes = $1 + 2+ 4 .....2^{i-1} = 2^i$  , Now i is nothing but height of the tree which is O($2^{m+n}$) 
+total nodes = $1 + 2+ 4 .....2^{i-1} = 2^i$ , Now i is nothing but height of the tree which is O($2^{m+n}$)
 
-
-
-CountPaths Alternate solution  - I
+CountPaths Alternate solution - I
 
 ```python
 count =0
 def helper(m:int, n:int):
 	def countPaths(i:int, j:int):
 		global count
-		
+
 		if i == m-1 or j == n-1:
 			count=count+1
 			return
-			
+
 		countPaths(i, j+1)
 		countPaths(i+1, j)
-	
+
 	countPaths(0, 0)
-	
+
 	return count
 
 helper(3, 3)
 ```
 
-
-CountPaths Alternate solution  - II
+CountPaths Alternate solution - II
 
 Make the source fixed and travel from 0,0 to reach i, j
 
@@ -175,18 +172,16 @@ def countPaths(i:int, j:int):
 print(countPaths(m-1, n-1))
 ```
 
-
 **Letter combinations**
 
-	2 - abc
-	3 - def
-	4 - ghi
-	5 - jkl
-	6 - mno
-	7 - pqrs
-	8 - tuv
-	9 - wxyz
-	
+    2 - abc
+    3 - def
+    4 - ghi
+    5 - jkl
+    6 - mno
+    7 - pqrs
+    8 - tuv
+    9 - wxyz
 
 digits = '23'
 output = [ad, ae, af, bd, be, bf, cd, ce, cf]
@@ -233,7 +228,6 @@ def printAllCombs(tmp:str, digits:str, i:int, digitMap:list):
 printAllCombs("", "23", 0,digitMap )
 ```
 
-
 Use character list to avoid extra space, since the extra space is due to the string being created each time and its pass by value.
 
 ```python
@@ -256,7 +250,7 @@ def printAllCombs(tmp:list, digits:str, i:int, digitMap:list):
 		tmp.append(ch)
 		printAllCombs(tmp, digits, i+1, digitMap)
 		tmp.pop()
-		
+
 temp = []
 printAllCombs(temp, "23", 0,digitMap )
 ```
@@ -305,12 +299,10 @@ def subsets(tmp:list, i:int, input_:list):
 	subsets(tmp, i+1, input_)
 	tmp.pop()
 	subsets(tmp, i+1, input_)
-	
+
 temp = []
 subsets(temp, 0, [1,2,3])
 ```
-
-
 
 Time complexity : O($2^N$) : Since there will be $2^{N}$ leaf nodes (approximating the whole of the nodes
 
@@ -321,12 +313,8 @@ How to do the same thing with binary digits
 Bit masking is used in such categories if you only have two decisions
 
 ```python
-def 
+def subsets(n:int):
+	for i in range(1,2**(n)):
+        print(i)
+
 ```
-
-
-
-
-
-
-
