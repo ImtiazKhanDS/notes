@@ -340,8 +340,10 @@ Given an integer array of size N , find the max element of the array.
 ```mermaid
 graph TD
 
-f0("f(i,j)") --> f1("f(i,m)")
+f0("f(0, 6)") --> f1("f(0,3)")
 
-f0("f(i,j)") --> f2("f(m+1,j)")
+f0("f(0,6)") --> f2("f(4,6)")
+
+
 
 ```
