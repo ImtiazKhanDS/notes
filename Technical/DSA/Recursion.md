@@ -332,3 +332,16 @@ subsets([1, 2, 3])
 ```
 
 Divide and Conquer Paradigm
+
+Given an integer array of size N , find the max element of the array.
+
+[7,1,4,3,2,6,5]
+
+```mermaid
+graph TD
+
+f0("f(i,j)") --> f1("f(i,m)")
+
+f0("f(i,j)") --> f2("f(m+1,j)")
+
+```
