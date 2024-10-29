@@ -34,3 +34,6 @@ Tech Stack
 
 Fine tune your custom embedding models
 
+Chunking strategy by both OpenAI and Claude 
+800 tokens with 50% overlap
+
