@@ -25,3 +25,5 @@ topic , count, mean cosine, mean feedback
 - rank importance of question types against relevance and satisfaction 
 - Look at data to propose experiments to improve individual clusters 
 - Build classifiers to improve observations in real time.
+
+Once you know the topic clusters , create more questions for certain topics from an llm and improve rag
