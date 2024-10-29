@@ -21,4 +21,7 @@ Rag companies Jason liu consulted
 (query , cosine , feedback)
 
 **Cluster queries to understand** 
-topic , count, mean cosine, 
+topic , count, mean cosine, mean feedback
+- rank importance of question types against relevance and satisfaction 
+- Look at data to propose experiments to improve individual clusters 
+- Build classifiers to improve observations in real time.
