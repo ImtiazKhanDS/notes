@@ -31,3 +31,6 @@ Once you know the topic clusters , create more questions for certain topics from
 Tech Stack
 1. LanceDB
 2. Pydantic
+
+Fine tune your custom embedding models
+
