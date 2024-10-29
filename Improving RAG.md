@@ -13,9 +13,12 @@ Rag companies Jason liu consulted
 12. Modal Labs
 13. Pydantic
 
-Feedback design
+**Feedback design**
 1. Thumbs up or thumbs down 
 2. Is your query responded correctly 
 3. Satisfaction
-Monitor cosine and rerankers
-()
+**Monitor cosine and rerankers (relevancy)**
+(query , cosine , feedback)
+
+**Cluster queries to understand** 
+topic , count, mean cosine, 
